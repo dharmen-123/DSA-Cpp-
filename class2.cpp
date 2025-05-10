@@ -33,14 +33,20 @@
 
 // array has inbuild pointer which stay  at zero indexing
 // aaray always hold its address and it work on address
+// array default behaviour is call by reference
+
 
 #include<iostream> 
 using namespace std;
 void show(int a[])
 {  
     for(int i=0; i<5; i++)
-{      a[i]+=2;
- cout<<a[i]<<"\n";
+
+{ 
+  if(a[i]%2==0){  
+     a[i]+=2;
+  }
+//  cout<<a[i]<<"\n";
 }    
 }
 int main()
