@@ -3,7 +3,7 @@ using namespace std;
 void bubble(int arr[] , int s){
  
     for(int i=0; i<s ; i++){
-     for(int j=0; j<s-1 ; j++){
+     for(int j=0; j<s ; j++){
         if(arr[j]>arr[j+1]){
         int temp=arr[j];
         arr[j]=arr[j+1];
