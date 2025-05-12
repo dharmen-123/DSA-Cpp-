@@ -1,24 +1,29 @@
            ///////   BUBBLE SORTING 
 
-           #include"iostream"
+#include"iostream"
 using namespace std;
 void bubble(int arr[] , int s){
- 
-    for(int i=0; i<s ; i++){
+  int c=0;
+    for(int i=0; i<s-1 ; i++){
+      if(arr[i]>arr[i+1]){
      for(int j=0; j<s-1 ; j++){
+      c++;
         if(arr[j]>arr[j+1]){
         int temp=arr[j];
         arr[j]=arr[j+1];
         arr[j+1]=temp;
         }
     }   
+   }
     }
+    cout<<c<<"\n";
 }
 int main(){
-   int arr[]={7,3,9,6,2};
+   int arr[]={1,2,3,4,5};
    int n=sizeof(arr)/sizeof(arr[0]);
    bubble(arr , n);
    for(int i=0; i<n;i++){
       cout<<arr[i]<<" ";
    }
+   // cout<<c;
 }
