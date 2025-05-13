@@ -2,15 +2,22 @@
 using namespace std;
 void bubble(int arr[], int s){
 int temp,c=0;
+bool d;
   for(int i=0;i<s;i++){
+    d=false;
     for(int j=0;j<s-i-1;j++){
-      c++;
+        c++;
         if(arr[j]>arr[j+1]){
          temp=arr[j];
          arr[j]=arr[j+1];
          arr[j+1]=temp;
+        d=true;
         }
     }
+    if(d==false){
+      break;
+    }
+    
   }
   cout<<"Loop is runing "<<c<<" Times \n";
 }
