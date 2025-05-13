@@ -17,11 +17,9 @@ bool d;
     if(d==false){
       break;
     }
-    
   }
   cout<<"Loop is runing "<<c<<" Times \n";
 }
-
 int main(){
     int s;
     cout<<"Enter the array size \n";
