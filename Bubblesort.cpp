@@ -56,7 +56,7 @@ int main(){
     cin>>s;
     if(s<=0){
       cout<<"INVALID";
-      return 0;
+      return 0;      
     }
     else if(s==1){
       cout<<"Array size minimum 2";
@@ -64,9 +64,10 @@ int main(){
     }
     else if(s>10){
       cout<<"Array size not more than 10";
-    return 0;
+      return 0;
     }
     else{
+
     int arr[s];
     cout<<"Enter "<<s<<"Values \n";
     for(int i=0;i<s;i++){
@@ -75,6 +76,6 @@ int main(){
     bubble(arr, s);
     for(int i=0;i<s;i++){
         cout<<arr[i]<<"\t";
-    }
+    }     
     }
 }
