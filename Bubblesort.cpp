@@ -26,6 +26,7 @@
 //    // cout<<c;
 // }
 
+
 // ////////  Condition applying bubble sort
 
 #include"iostream"
