@@ -6,4 +6,12 @@
   // Theta 0 --> Average Case 
  
   // Mostly use Worst case 
-  
+
+#include"iostream"
+using namespace std;
+int  main(){
+   int n;
+   cout<<"Enter the number: ";
+   cin>>n;
+   cout<<n;
+}
