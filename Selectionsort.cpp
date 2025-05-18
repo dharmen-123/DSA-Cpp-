@@ -21,12 +21,9 @@ void Selection(int arr[], int s)
     }
     cout<<hit<<"\n";
 }
-
-int main()
-{
+int main(){
     int arr[] = {5,1,4,2,3};
     int s = sizeof(arr) / sizeof(arr[0]);
-    // cout<<"Selection";
     Selection(arr, s);
     for (int i = 0; i < s; i++)
     {
