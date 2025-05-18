@@ -3,11 +3,11 @@ using namespace std;
 void Selection(int arr[], int s)
 {
     int hit=0;
-    for (int i = 0; i < s - 1; i++)
+    for (int i = 0; i < s - 1; i++)      // loop is run (n-1) times
     {  
         hit++;
         int min = i;
-        for (int j = i + 1; j < s; j++)
+        for (int j = i + 1; j < s; j++)     // loop is running n times
         {
             if (arr[j]< arr[min])
             {
@@ -30,3 +30,8 @@ int main(){
         cout << arr[i] << "\t";
     }
 }
+
+//  Time complexity of Selection Sort is n(n-1)=
+// Worst case=  O(n^2) 
+// Best case=  O(n^2) 
+// Average case=  O(n^2) 
