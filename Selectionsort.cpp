@@ -32,6 +32,6 @@ int main(){
 }
 
 //  Time complexity of Selection Sort is n(n-1)=
-// Worst case=  O(n^2) 
-// Best case=  O(n^2) 
-// Average case=  O(n^2) 
+// Worst case = O(n^2) 
+// Best case  = O(n^2) 
+// Average case=O(n^2) 
