@@ -80,3 +80,17 @@ int main(){
     }     
     }
 }
+
+
+
+// In bubble sort compare the every node with its adjacent node
+
+// Q.1 no of swaping in program
+// Q.2 Is it stable or unstable
+// Q.3 Is it place or not
+// Q.4 Time complexity
+// Q.5 If code is optimise then complexity is O(n)
+// If not optimise then Complexity is O(n)^2
+
+
+// If array having duplicate value then stable condition check
