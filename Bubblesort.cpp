@@ -94,3 +94,12 @@ int main(){
 
 
 // If array having duplicate value then stable condition check
+// If data is aseccending ordre then it si stable and in desecending then it is not stable
+// If situation is this type [2,5,9,5,7] this it is stable condition
+
+
+////  ######### InPlace and Not Inplace ####### ////
+
+// If extra array is created then it is inplace and if new array is not create then it is place
+// Drawback of bubble sort
+// It is use for small data not for large data 
