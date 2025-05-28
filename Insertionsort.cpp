@@ -5,7 +5,7 @@
 using namespace std;
 void Insertion(int arr[], int n){
    
-    
+
  
 }
     
@@ -18,3 +18,6 @@ int main(){
     Insertion(arr, s);
 }
 
+
+// Why minimum value is greater than zero index
+// because it start from one index
