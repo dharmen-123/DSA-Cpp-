@@ -3,6 +3,7 @@
 
 #include"iostream"
 using namespace std;
+
 void Insertion(int arr[], int s){
   int count=0;
     for(int i=1;i<s;i++){
@@ -27,8 +28,8 @@ int main(){
         cin>>arr[i];
     }
     Insertion(arr, s);
-     cout<<"\n after Sorting \n";
-  for(int i=0;i<s;i++){
+    cout<<"\n after Sorting \n";
+    for(int i=0;i<s;i++){
      cout<<arr[i]<<" ";
    }
   }
@@ -37,7 +38,6 @@ int main(){
 //  It is also Inplace 
 // Time Complexity O(n)
 // Space Complexity is O(n) 
-
 
 // here while loop is used instead of if because if check only once at a time
 // Why minimum value is greater than zero index
