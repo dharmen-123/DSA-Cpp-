@@ -36,7 +36,10 @@ int main(){
 
   // Insertion Sort is Stable sorting algorithm  
 //  It is also Inplace 
-// Time Complexity O(n)
+// Time Complexity:::: 
+// Best case O(n)
+// Average Case O(n^2)
+// Worst Case O(n^2)
 // Space Complexity is O(n) 
 
 // here while loop is used instead of if because if check only once at a time
