@@ -32,21 +32,34 @@
 using namespace std;
 
 void Selection(int arr[],int s){
-     
+     for(int i=0;i<s;i++){
+        int min=i;
+        for (int j=i+1; j <s; j++)
+        {
+              if(arr[j]<arr[min]){
+                 min=j;
+              }
+        }
+        if(min!=i){
+            int swp=arr[i];
+            arr[i]=arr[min];
+            arr[min]=swp;
+        }
+     }
        
      
 }
 int main(){
-     int s;
-     cout<<"Enter Size of array\n";
-     cin>>s;
-     int arr[s];
-     cout<<"Enter the values\n";
-     for(int i=0;i<s;i++){
-        cin>>arr[i];
-     }
-     Selection(arr,s);
+    int s;
+    cout<<"Enter Size of array\n";
+    cin>>s;
+    int arr[s];
+    cout<<"Enter the values\n";
     for(int i=0;i<s;i++){
-    cout<<arr[i]<<" ";
-     }
+        cin>>arr[i];
+    }
+    Selection(arr,s);
+    for(int i=0;i<s;i++){
+    cout<<arr[i]<<"\t";
+    }
 }
