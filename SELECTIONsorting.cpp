@@ -28,6 +28,8 @@
 //     }
 // }
 
+// ##############################################################
+
 #include<iostream>
 using namespace std;
 
@@ -45,9 +47,7 @@ void Selection(int arr[],int s){
             arr[i]=arr[min];
             arr[min]=swp;
         }
-     }
-       
-     
+     }   
 }
 int main(){
     int s;
@@ -59,7 +59,18 @@ int main(){
         cin>>arr[i];
     }
     Selection(arr,s);
+    cout<<"AFTER SORTING\n";
     for(int i=0;i<s;i++){
     cout<<arr[i]<<"\t";
     }
 }
+
+// // SELECTION SORT  Conditions
+// Time Complexity
+// Space Complexity
+// Stable --> It is not Stable Sort algorithm
+// Inplace 
+// Approach
+// Optimise
+
+// It is an odd one example because it time complexity in every case O(n)
