@@ -5,7 +5,7 @@
 using namespace std;
 
 void Insertion(int arr[], int s){
-  int count=0;
+    int count=0;
     for(int i=1;i<s;i++){
       int min=i;
       while(min>0 && arr[min]<arr[min-1]){
@@ -34,14 +34,15 @@ int main(){
    }
   }
 
-  // Insertion Sort is Stable sorting algorithm  
+// Insertion Sort is Stable sorting algorithm 
+
 //  It is also Inplace 
-// Time Complexity:::: 
+//---- Time Complexity------
 // Best case O(n)
 // Average Case O(n^2)
 // Worst Case O(n^2)
 // Space Complexity is O(n) 
 
-// here while loop is used instead of if because if check only once at a time
+// Here while loop is used instead of if because if check only once at a time
 // Why minimum value is greater than zero index
 // because it start from one index
