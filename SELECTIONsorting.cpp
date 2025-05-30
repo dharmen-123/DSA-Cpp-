@@ -34,12 +34,14 @@
 using namespace std;
 
 void Selection(int arr[],int s){
+    int c=0;
      for(int i=0;i<s;i++){
         int min=i;
         for (int j=i+1; j <s; j++)
         {
+               c++;
               if(arr[j]<arr[min]){
-                 min=j;
+                min=j;
               }
         }
         if(min!=i){
@@ -48,6 +50,7 @@ void Selection(int arr[],int s){
             arr[min]=swp;
         }
      }   
+     cout<<"\nHits :"<<c<<"\n";
 }
 int main(){
     int s;
@@ -66,11 +69,11 @@ int main(){
 }
 
 // // SELECTION SORT  Conditions
-// Time Complexity
-// Space Complexity
+// Time Complexity   O(n)
+// Space Complexity --> O(1)
 // Stable --> It is not Stable Sort algorithm
-// Inplace 
-// Approach
-// Optimise
+// Inplace --> It is Inplace 
+// Approach --> Subtract and Conquer Approach
+// Optimise --> Not optimise
 
 // It is an odd one example because it time complexity in every case O(n)
