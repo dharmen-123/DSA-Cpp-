@@ -7,7 +7,9 @@
 //It is not mandatory to select the pivot element is always first element  
 // It use two pointer
  
-// LOGIC of Quick Sort 
+
+////   LOGIC of Quick Sort 
+
 //choose first element as a pivot 
 // then after pivot element first element as P and last element is Q
 // if P > Pivot then
@@ -19,3 +21,8 @@
 //    stop
 // else
 //    Q--
+
+
+// If two pointer are not cross each other then swap is done between two pointer 
+// and  if two pointer are cross each other then swap is done between 
+// last pointer Q  and pivot element and mid value is obtained
