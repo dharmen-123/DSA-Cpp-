@@ -18,3 +18,5 @@
 //Best  Case : O(n)
 //Average Case : O(n)
 //Worst Case : O(n)
+
+// Bubble , Selection and Insertion are the time taken algorithms
