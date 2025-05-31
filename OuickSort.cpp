@@ -5,6 +5,7 @@
 // It divide array in two part may be or not
 // It also use Recurssion 
 
+
 // LOGIC of Quick Sort 
 //choose first element as a pivot 
 // then after pivot element first element as P and last element is Q
