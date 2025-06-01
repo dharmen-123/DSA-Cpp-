@@ -18,6 +18,7 @@ void Insertion(int arr[], int s){
     }
     cout<<"No of hits "<<count;
 }
+
 int main(){
     int s;
     cout<<"Enter the array size \n";
@@ -27,12 +28,13 @@ int main(){
     for(int i=0;i<s;i++){
         cin>>arr[i];
     }
-    Insertion(arr, s);
+   Insertion(arr, s);
     cout<<"\n after Sorting \n";
     for(int i=0;i<s;i++){
      cout<<arr[i]<<" ";
    }
   }
+
 
 // Insertion Sort is Stable sorting algorithm 
 
