@@ -8,3 +8,45 @@
 // Head Recursion and Tail Recursion 
 //  If function call before print in recursion it is called Tail recursion
 //  If function call After print in recursion it is called Head recursion
+
+// #include<iostream>
+// using namespace std;
+// void msg(int a){
+
+//     if(a==0){
+//         return;
+//     }
+//     //// msg(a-1);   Tail Recursion
+//     cout<<a<<"\n";
+//     msg(a-1);      // Head Recursion
+    
+// }
+// int main(){
+//    int a;
+//    cout<<"Enter any number : ";
+//    cin>>a;
+//    msg(a);
+// }
+
+
+// ########## factorial  program 
+
+#include<iostream>
+using namespace std;
+int fact(int a){
+    if(a==1){
+        return 1;
+    }
+ int ans = a*fact(a-1);
+ return ans;
+}
+
+int main(){
+   int a;
+   cout<<"Enter any number: ";
+   cin>>a;
+   cout<<fact(a);
+}
+
+// WAP for power for using recurssion
+// WAP for print table using recursion
