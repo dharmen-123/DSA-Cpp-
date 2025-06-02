@@ -26,7 +26,7 @@ void bubble(int arr[],int s)
 }
 int main()
 {
-    int arr[6]={6,5,4,3,2,1};
+    int arr[6]={1,2,3,4,5,6};
     bubble (arr,6);
     for(int i=0;i<6;i++)
     {
