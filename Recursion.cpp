@@ -31,22 +31,39 @@
 
 // ########## factorial  program 
 
-#include<iostream>
-using namespace std;
-int fact(int a){
-    if(a==1){
-        return 1;
-    }
- int ans = a*fact(a-1);
- return ans;
-}
+// #include<iostream>
+// using namespace std;
+// int fact(int a){
+//     if(a==1){
+//         return 1;
+//     }
+//  int ans = a*fact(a-1);
+//  return ans;
+// }
 
-int main(){
-   int a;
-   cout<<"Enter any number: ";
-   cin>>a;
-   cout<<fact(a);
-}
+// int main(){
+//    int a;
+//    cout<<"Enter any number: ";
+//    cin>>a;
+//    cout<<fact(a);
+// }
 
 // WAP for power for using recurssion
 // WAP for print table using recursion
+
+#include<iostream>
+using namespace std;
+void Table(int a){
+
+    if(a==11){
+        return;
+    }
+    cout<<a;
+}
+int main(){
+   int n;
+   cout<<"Enter any number :";
+   cin>>n;
+   Table(n);
+
+}
