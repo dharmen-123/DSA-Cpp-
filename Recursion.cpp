@@ -49,21 +49,25 @@
 // }
 
 // WAP for power for using recurssion
+
 // WAP for print table using recursion
 
 #include<iostream>
 using namespace std;
-void Table(int a){
+void Table(int a, int n){
 
     if(a==11){
         return;
     }
-    cout<<a;
+    int k;
+    k=a*n;
+    cout<<k<<"\t";
+    Table(a,n+1);
 }
 int main(){
    int n;
    cout<<"Enter any number :";
    cin>>n;
-   Table(n);
+   Table(n,1);
 
 }
