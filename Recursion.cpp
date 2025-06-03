@@ -56,7 +56,7 @@
 using namespace std;
 void Table(int a, int n){
 
-    if(a==11){
+    if(n>10){
         return;
     }
     int k;
@@ -69,5 +69,4 @@ int main(){
    cout<<"Enter any number :";
    cin>>n;
    Table(n,1);
-
 }
