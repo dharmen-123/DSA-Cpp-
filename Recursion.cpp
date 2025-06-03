@@ -69,4 +69,5 @@ int main(){
    cout<<"Enter any number :";
    cin>>n;
    Table(n,1);
+   
 }
