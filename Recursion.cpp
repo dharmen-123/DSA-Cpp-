@@ -77,7 +77,7 @@
 using namespace std;
 void Power(int a , int b){
 
-
+    
 }
 int main(){
   int p ,b;
