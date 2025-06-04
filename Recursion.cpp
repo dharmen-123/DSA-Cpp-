@@ -76,7 +76,7 @@
 #include<iostream>
 using namespace std;
 void Power(int a , int b){
-
+  // Power program
     
 }
 int main(){
