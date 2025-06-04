@@ -73,3 +73,16 @@
 
 // WAP for power for using recurssion
 
+#include<iostream>
+using namespace std;
+void Power(int a , int b){
+
+
+}
+int main(){
+  int p ,b;
+  cout<<"Enter the base value :";
+  cin>>b;
+  cout<<"Enter the power value :";
+  cin>>p;
+}
