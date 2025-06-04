@@ -85,4 +85,5 @@ int main(){
   cin>>b;
   cout<<"Enter the power value :";
   cin>>p;
+  Power(b,p);
 }
