@@ -73,8 +73,3 @@
 
 // WAP for power for using recurssion
 
-#include<iostream>
-using namespace std;
-int main(){
-
-}
