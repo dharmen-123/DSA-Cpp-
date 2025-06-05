@@ -39,7 +39,7 @@ int part(int arr[], int low, int high){
 
 do{
  while(arr[i]<pvt){
-i++;
+   i++;
  }
 while(arr[j]>pvt){
     j--;
