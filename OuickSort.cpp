@@ -31,10 +31,12 @@
 #include<iostream>
 using namespace std;
 int part(int arr[], int low, int high){
+
   int pvt=arr[low];
   int i=low+1;
   int j=high;
   int temp;
+
 do{
  while(arr[i]<pvt){
 i++;
@@ -57,14 +59,14 @@ void Quicksort(int arr[], int low, int high){
   
  int pivot;
   if(low<high){
-    pivot=part(arr,low , high);
+    pivot=part(arr,low,high);
     Quicksort(arr , low , pivot-1);
     Quicksort(arr , pivot+1 ,high);
 
   }
 }
 int main(){
-    int arr[]={2,5,4,3,7,1,4,8};
+    int arr[]={6,5,4,3,2,1};
     int s=sizeof(arr)/sizeof(arr[0]);
     for (int i = 0; i < s; i++)
     {
