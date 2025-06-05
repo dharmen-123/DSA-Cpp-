@@ -54,6 +54,7 @@ while(arr[j]>pvt){
  arr[low]=arr[j];
  arr[j]=temp;
   
+ return j;
 }
 void Quicksort(int arr[], int low, int high){
   
