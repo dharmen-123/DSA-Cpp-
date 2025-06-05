@@ -54,11 +54,13 @@ while(arr[j]>pvt){
   
 }
 void Quicksort(int arr[], int low, int high){
-  int pivot;
+  
+ int pivot;
   if(low<high){
     pivot=part(arr,low , high);
     Quicksort(arr , low , pivot-1);
     Quicksort(arr , pivot+1 ,high);
+
   }
 }
 int main(){
