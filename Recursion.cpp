@@ -76,14 +76,8 @@
 #include<iostream>
 using namespace std;
 void Power(int a , int b){
-<<<<<<< HEAD
-  
-  // Power program
-  
-=======
 
-    
->>>>>>> parent of 92db15f (commit)
+  
 }
 int main(){
   int p ,b;

@@ -27,6 +27,10 @@
 // and  if two pointer are cross each other then swap is done between 
 // last pointer Q  and pivot element and mid value is obtained
 
+// Time Complexity of Quick Sort 
+// Best case O(nlogn)
+// Average case O(logn)
+// Worst case O(nlogn)
 
 // #include<iostream>
 // using namespace std;
