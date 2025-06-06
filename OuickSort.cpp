@@ -107,7 +107,7 @@ int part(int arr[], int low , int high){
     swp=arr[j];
     arr[j]=arr[low];
     arr[low]=swp;
-   
+   return j;
   }
 void QuickSort(int arr[], int low, int high){
 int pivot;
@@ -133,5 +133,5 @@ int main(){
     cout<<arr[i];
    }
 
-  }
+}
 
