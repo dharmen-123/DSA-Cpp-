@@ -129,5 +129,9 @@ int main(){
     cin>>arr[i];
    }
    QuickSort(arr,0,s-1);
-}
+  for(int i=0;i<s;i++){
+    cout<<arr[i];
+   }
+
+  }
 
