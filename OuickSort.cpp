@@ -81,3 +81,45 @@
 //     }
 // }
 
+// ##################################### PRACTICE ######################
+
+#include<iostream>
+using namespace std;
+int part(int arr[], int low , int high){
+   int pvt=arr[low];
+   int i=low+1;
+   int j=high;
+   int swp;
+  do
+   {
+   while(arr[i]<pvt){
+     i++;
+   } 
+   while(arr[j]>pvt){
+     j--;
+   } 
+   if(i<j){
+    swp=arr[i];
+    arr[i]=arr[j];
+    arr[j]=arr[i];    
+   }
+   } while (i<j);
+     
+}
+void QuickSort(int arr[], int low, int high){
+
+
+}
+
+int main(){
+   int s;
+   cout<<"Enter the size of array :";
+   cin>>s;
+   int arr[s];
+   cout<<"Enter the "<<s<<"Values of Array:\n";
+   for(int i=0;i<s;i++){
+    cin>>arr[i];
+   }
+   QuickSort(arr,0,s-1);
+}
+
