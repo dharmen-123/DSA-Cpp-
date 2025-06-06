@@ -104,10 +104,18 @@ int part(int arr[], int low , int high){
     arr[j]=arr[i];    
    }
    } while (i<j);
-     
-}
+    swp=arr[j];
+    arr[j]=arr[low];
+    arr[low]=swp;
+   
+  }
 void QuickSort(int arr[], int low, int high){
-
+int pivot;
+if(low<high){
+  pivot=part(arr,low, high);
+  QuickSort(arr, low , pivot-1);
+  QuickSort(arr, pivot+1 , high);
+}
 
 }
 
