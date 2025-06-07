@@ -39,12 +39,13 @@
 #include<iostream>
 using namespace std;
 void Bubble(int arr[], int s){
-int swp;  
+int swp, c=0;  
 bool a;   
     for(int i=0;i<s;i++){
         a=false;
         for(int j=0;j<s-i-1;j++){
-          if(arr[j]>arr[j+1]){
+            c++;
+            if(arr[j]>arr[j+1]){
             swp=arr[j];
             arr[j]=arr[j+1];
             arr[j+1]=swp;  
@@ -55,9 +56,11 @@ bool a;
         break;
       }
     }
+    cout<<"Number of Hits : "<<c<<"\n";
+
 }
 int main(){
-    int arr[]={3,5,2,6,7};
+    int arr[]={5,4,1,2,3};
     int s=sizeof(arr)/sizeof(arr[0]);
     Bubble(arr,s);
     for(int i=0;i<s;i++){
