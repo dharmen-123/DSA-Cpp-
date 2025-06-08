@@ -56,8 +56,8 @@
 // else
 //    Q--
 
-
 // If two pointer are not cross each other then swap is done between two pointer 
 // and  if two pointer are cross each other then swap is done between 
 // last pointer Q  and pivot element and mid value is obtained
- 
+
+
