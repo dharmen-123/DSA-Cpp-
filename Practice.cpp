@@ -36,34 +36,46 @@
 
 
 // ################## BUBBLE SORT ############################
+
+// #include<iostream>
+// using namespace std;
+// void Bubble(int arr[], int s){
+// int swp, c=0;  
+// bool a;   
+//     for(int i=0;i<s;i++){
+//         a=false;
+//         for(int j=0;j<s-i-1;j++){
+//             c++;
+//             if(arr[j]>arr[j+1]){
+//             swp=arr[j];
+//             arr[j]=arr[j+1];
+//             arr[j+1]=swp;  
+//            a=true;
+//         }  
+//       }   
+//       if (a==false){
+//         break;
+//       }
+//     }
+//     cout<<"Number of Hits : "<<c<<"\n";
+
+// }
+// int main(){
+//     int arr[]={5,4,1,2,3};
+//     int s=sizeof(arr)/sizeof(arr[0]);
+//     Bubble(arr,s);
+//     for(int i=0;i<s;i++){
+//         cout<<arr[i]<<"\t";
+//     }
+// }
+
+// ############### Insertion Sort #################### 
+
 #include<iostream>
 using namespace std;
-void Bubble(int arr[], int s){
-int swp, c=0;  
-bool a;   
-    for(int i=0;i<s;i++){
-        a=false;
-        for(int j=0;j<s-i-1;j++){
-            c++;
-            if(arr[j]>arr[j+1]){
-            swp=arr[j];
-            arr[j]=arr[j+1];
-            arr[j+1]=swp;  
-           a=true;
-        }  
-      }   
-      if (a==false){
-        break;
-      }
-    }
-    cout<<"Number of Hits : "<<c<<"\n";
-
+void Insertion(){
+  
 }
 int main(){
-    int arr[]={5,4,1,2,3};
-    int s=sizeof(arr)/sizeof(arr[0]);
-    Bubble(arr,s);
-    for(int i=0;i<s;i++){
-        cout<<arr[i]<<"\t";
-    }
+
 }
