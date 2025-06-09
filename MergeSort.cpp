@@ -9,4 +9,18 @@
 // It is not In place algorithm 
 // It also use two pointer when each element is seperate 
 
+#include<iostream>
+using namespace std;
+void MergeSort(int arr[], int low, int high){
 
+
+
+}
+int main(){
+   int arr[]={9,3,4,1,5,6};
+   int s=sizeof(arr)/sizeof(arr[0]);
+   MergeSort(arr, 0, s-1);
+   for(int i=0;i<s;i++){
+    cout<<arr[i]<<" ";
+   }
+}
