@@ -12,10 +12,14 @@
 #include<iostream>
 using namespace std;
 
-// void Merges(int arr[], int low, int mid, int high){
+void Merges(int arr[], int low, int mid, int high){
+ int b[high+1];
+ int i=low;
+ int j=mid+1;
+ int k=mid;
 
 
-// }
+}
 
 void MergeSort(int arr[], int low, int high){
 int mid;
