@@ -11,9 +11,20 @@
 
 #include<iostream>
 using namespace std;
+
+// void Merges(int arr[], int low, int mid, int high){
+
+
+// }
+
 void MergeSort(int arr[], int low, int high){
-
-
+int mid;
+if(low<high){
+    mid = (low+high)/2;
+    MergeSort(arr, low ,mid);
+    MergeSort(arr, mid+1 ,high);
+    Merges(arr,low , mid , high);
+}
 
 }
 int main(){
