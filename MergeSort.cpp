@@ -12,26 +12,6 @@
 #include<iostream>
 using namespace std;
 
-// void Merges(int arr[], int low, int mid, int high){
-//  int b[high+1];
-//  int i=low;
-//  int j=mid+1;
-//  int k=mid;
-
-
-// }
-
-// void MergeSort(int arr[], int low, int high){
-// int mid;
-// if(low<high){
-//     mid = (low+high)/2;
-//     MergeSort(arr, low ,mid);
-//     MergeSort(arr, mid+1 ,high);
-//     Merges(arr,low , mid , high);
-// }
-
-// }
-
 void Merge(int arr[], int low, int mid, int high){
   int b[high+1];
   int i=low;
@@ -71,8 +51,9 @@ void MSort(int arr[], int low, int high){
         Merge(arr, low ,mid , high);
     }
 }
+
 int main(){
-   int arr[]={9,3,4,1,5,6};
+   int arr[]={5,4,3,2,1};
    int s=sizeof(arr)/sizeof(arr[0]);
    MSort(arr, 0, s-1);
    for(int i=0;i<s;i++){
