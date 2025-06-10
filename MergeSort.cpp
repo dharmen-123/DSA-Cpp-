@@ -38,7 +38,7 @@ while(j<=high){
     j++;
     k++;
 }
-for(int i=low;i<high;i++){
+for(int i=low;i<=high;i++){
     arr[i]=b[i];
 }
 }
@@ -53,7 +53,7 @@ void MSort(int arr[], int low, int high){
 }
 
 int main(){
-   int arr[]={5,4,3,2,1};
+   int arr[]={5,4,3,2,1,7,6,2,6,9};
    int s=sizeof(arr)/sizeof(arr[0]);
    MSort(arr, 0, s-1);
    for(int i=0;i<s;i++){
