@@ -35,7 +35,7 @@ using namespace std;
 void Merge(int arr[], int low, int mid, int high){
   int b[high+1];
   int i=low;
-  int j=mid=1;
+  int j=mid+1;
   int k=low;
   while(i<=mid && j<=high){
     if(arr[i]<arr[j]){
