@@ -31,8 +31,26 @@ using namespace std;
 // }
 
 // }
-void Merge(int arr[], int low, int mid, int high){
 
+void Merge(int arr[], int low, int mid, int high){
+  int b[high+1];
+  int i=low;
+  int j=mid=1;
+  int k=low;
+  while(i>=low && j<=high){
+    if(arr[i]<arr[j]){
+     b[k]=arr[i];
+     i++;
+    }
+    else{
+     b[k]=arr[j];
+     j++;
+
+    }
+    k++;
+  }
+
+  
 }
 void MSort(int arr[], int low, int high){
     int mid;
