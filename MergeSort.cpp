@@ -37,7 +37,7 @@ void Merge(int arr[], int low, int mid, int high){
   int i=low;
   int j=mid=1;
   int k=low;
-  while(i>=low && j<=high){
+  while(i<=mid && j<=high){
     if(arr[i]<arr[j]){
      b[k]=arr[i];
      i++;
@@ -45,12 +45,22 @@ void Merge(int arr[], int low, int mid, int high){
     else{
      b[k]=arr[j];
      j++;
-
     }
     k++;
   }
-
-  
+while(i<=mid){
+    b[k]=arr[i];
+    i++;
+    k++;
+}
+while(j<=high){
+    b[k]=arr[j];
+    j++;
+    k++;
+}
+for(int i=low;i<high;i++){
+    arr[i]=b[i];
+}
 }
 void MSort(int arr[], int low, int high){
     int mid;
