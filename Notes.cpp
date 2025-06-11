@@ -61,3 +61,4 @@
 // last pointer Q  and pivot element and mid value is obtained
 
 
+

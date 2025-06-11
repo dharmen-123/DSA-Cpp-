@@ -73,17 +73,33 @@
 
 // WAP for power for using recurssion
 
-#include<iostream>
-using namespace std;
-void Power(int a , int b){
+// #include<iostream>
+// using namespace std;
+// void Power(int a , int b){
 
   
+// }
+// int main(){
+//   int p ,b;
+//   cout<<"Enter the base value :";
+//   cin>>b;
+//   cout<<"Enter the power value :";
+//   cin>>p;
+//   Power(b,p);
+// }
+
+#include<iostream>
+using namespace std;
+void table(int a, int b){
+
+  if(b<10){
+    return ;
+  }
+
 }
 int main(){
-  int p ,b;
-  cout<<"Enter the base value :";
-  cin>>b;
-  cout<<"Enter the power value :";
-  cin>>p;
-  Power(b,p);
+    int a;
+    cout <<"Enter the number for table :";
+    cin>>a;
+    table(a, 1);
 }
