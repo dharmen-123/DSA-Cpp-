@@ -99,8 +99,6 @@ int k;
 k=a*b;
 cout<<k;
 
-
-
 }
 int main(){
     int a;

@@ -128,3 +128,31 @@
 //       cout<<arr[i]<<"\t";
 //     }
 // }
+
+#include<iostream>
+using namespace std;
+void Bubble(int arr[], int s){
+int swp;
+int c=0;
+      for(int i=0;i<s;i++){
+
+       for(int j=0;j<s-1;j++){
+        c++;
+        if(arr[j]>arr[j+1]){
+             swp=arr[j];
+             arr[j]=arr[j+1];
+             arr[j+1]=swp;       
+          }
+      } 
+      }
+      cout<<"Hits: "<<c<<"\n";
+    }
+
+int main(){
+    int arr[]={5,4,3,2,1};
+    int s=sizeof(arr)/sizeof(arr[2]);
+    Bubble(arr, s);
+    for(int i=0;i<s;i++){
+      cout<<arr[i]<<"\t";
+    }
+}
