@@ -90,11 +90,16 @@
 
 #include<iostream>
 using namespace std;
-void table(int a, int b){
 
+void table(int a, int b){
   if(b<10){
     return ;
   }
+int k;
+k=a*b;
+cout<<k;
+
+
 
 }
 int main(){
