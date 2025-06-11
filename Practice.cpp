@@ -129,30 +129,91 @@
 //     }
 // }
 
-#include<iostream>
-using namespace std;
-void Bubble(int arr[], int s){
-int swp;
-int c=0;
-      for(int i=0;i<s;i++){
+// #include<iostream>
+// using namespace std;
+// void Bubble(int arr[], int s){
+// int swp;
+// int c=0;
+// bool b;
+//       for(int i=0;i<s;i++){
+//       b=false;
+//        for(int j=0;j<s-i-1;j++){
+//         c++;
+//         if(arr[j]>arr[j+1]){
+//              swp=arr[j];
+//              arr[j]=arr[j+1];
+//              arr[j+1]=swp;   
+//              b=true;    
+//           }
+//       } 
+//       if(b==false){
+//         break;
+//       }
+//       }
+//       cout<<"Hits: "<<c<<"\n";
+//     }
 
-       for(int j=0;j<s-1;j++){
-        c++;
-        if(arr[j]>arr[j+1]){
-             swp=arr[j];
-             arr[j]=arr[j+1];
-             arr[j+1]=swp;       
-          }
-      } 
-      }
-      cout<<"Hits: "<<c<<"\n";
-    }
+// int main(){
+//     int arr[]={1,2,3,4,5};
+//     int s=sizeof(arr)/sizeof(arr[2]);
+//     Bubble(arr, s);
+//     for(int i=0;i<s;i++){
+//       cout<<arr[i]<<"\t";
+//     }
+// }
 
-int main(){
-    int arr[]={5,4,3,2,1};
-    int s=sizeof(arr)/sizeof(arr[2]);
-    Bubble(arr, s);
-    for(int i=0;i<s;i++){
-      cout<<arr[i]<<"\t";
-    }
-}
+
+// #include<iostream>
+// using namespace std;
+// void Selection(int arr[], int s){
+//    int min;
+//     for(int i=0;i<s-1;i++){
+//        min=i;
+//        for(int j=i+1;j<s;j++){
+//            if(arr[j]<arr[min]){
+//                min=j;
+//            }
+//        }
+//     if(min!=i){
+//         int swp=arr[min];
+//         arr[min]=arr[i];
+//         arr[i]=swp;
+//     }
+//     }
+// }
+
+// int main(){
+//        int arr[]={5,4,3,2,1};
+//     int s=sizeof(arr)/sizeof(arr[2]);
+//     Selection(arr, s);
+//     for(int i=0;i<s;i++){
+//       cout<<arr[i]<<"\t";
+//     }
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// void Insertion(int arr[], int s){
+// int min;
+//    for(int i=1;i<s; i++){
+//     min=i;
+
+//       while(min>0  && arr[min]<arr[min-1] ){
+//          int swp=arr[min];
+//          arr[min]=arr[min-1];
+//          arr[min-1]=swp;
+//          min--;
+//       }
+
+//    }
+
+// }
+// int main(){
+//        int arr[]={4,8,2,4,7};
+//     int s=sizeof(arr)/sizeof(arr[2]);
+//     Insertion(arr, s);
+//     for(int i=0;i<s;i++){
+//       cout<<arr[i]<<"\t";
+//     }
+// }
