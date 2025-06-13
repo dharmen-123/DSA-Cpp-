@@ -273,3 +273,18 @@
 
 // ############## Recursion ##################
 
+#include<iostream>
+using namespace std;
+void Power(int b, int p){
+    if(b==0){
+        return 1;
+    }
+    if(p==0){
+
+
+    }
+int main(){
+    
+}
+}
+
