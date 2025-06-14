@@ -18,7 +18,31 @@
 // 1 Strict /Proper binary tree : 
 // Each node will contain exactly 2 children 
 //Formula:  no. of leaf node = internal node +1
-
+        //      1
+        //     / \
+        //    2   3
 // 2. Complete Binary tree :
 // All the node are completely filled node followed by left possible 
- 
+//         1
+//       /  \
+//      2    3
+//     / \  /
+//    4   5 6
+
+// 3. Full Binary Tree 
+// All Internal Nodes should contain 2 children and all leaf at same source level 
+//         1
+//       /  \
+//      2    3
+//     / \  / \
+//    4   5 6  7
+
+// 4.DEGENRATED Tree 
+//  Types 
+//  a. Left Skewed
+//  b. Right Skewed
+
+// Tree Traversal Order 
+// 1. PreOrder (Root -> Left -> Right)
+// 2. InOrder (Left -> Root -> Right)
+// 3. PostOrder (Left -> Right -> Root)
