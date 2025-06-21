@@ -23,17 +23,53 @@
 
 //#################  Two parameter template  ########################
 
-#include<iostream>
+// #include"iostream"
+// using namespace std;
+// template<class mytype1 ,class mytype2>
+// mytype1 Sum(mytype1 x1, mytype2 x2){
+
+// //   cout<<"Result :"<<x1+x2;
+//      return x1+x2;
+
+// }
+// int main(){
+
+//    cout<<Sum(9.3,3);
+
+// }
+
+// #include"iostream"
+// using namespace std;
+// template<class obj>
+// class job{
+
+//  public:
+//  obj v;
+//  job(obj val){
+//     v=val;
+//     cout<<"Value ="<<v;
+//  }   
+// };
+// int main(){
+
+//    job<float>j(20);
+// }
+
+#include"iostream"
 using namespace std;
-template<class mytype1 ,class mytype2>
-mytype1 Sum(mytype1 x1, mytype2 x2){
+template<class obj1,class obj2>
+class job{
 
-//   cout<<"Result :"<<x1+x2;
-     return x1+x2;
+ obj1 v1;
+ obj2 v2;
+ public:
 
-}
+ job(obj1 val1,obj2 val2){
+    v1=val1;
+    v2=val2;
+    cout<<"Value ="<<v1+v2;
+ }   
+};
 int main(){
-
-   cout<<Sum(9.3,3);
-
+   job<int, float>j(20,10.3);
 }
