@@ -25,12 +25,15 @@
 
 #include<iostream>
 using namespace std;
-template<class mytype>
-void Sum(mytype x1, mytype x2){
+template<class mytype1 ,class mytype2>
+mytype1 Sum(mytype1 x1, mytype2 x2){
 
-     cout<<"Result :"<<x1+x2;
+//   cout<<"Result :"<<x1+x2;
+     return x1+x2;
+
 }
 int main(){
-   Sum(9,3);
+
+   cout<<Sum(9.3,3);
 
 }
