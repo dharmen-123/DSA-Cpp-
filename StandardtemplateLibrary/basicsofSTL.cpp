@@ -59,7 +59,6 @@
 using namespace std;
 template<class obj1,class obj2>
 class job{
-
  obj1 v1;
  obj2 v2;
  public:
@@ -71,5 +70,5 @@ class job{
  }   
 };
 int main(){
-   job<int, float>j(20,10.3);
+   job<int, int>j(20,10.3);
 }
