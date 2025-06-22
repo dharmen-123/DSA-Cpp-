@@ -80,5 +80,5 @@ void Show(mytype a){
    cout<<"This is number :"<<a;
 }
 int main(){
-Show(10)
+Show(10);
 }
