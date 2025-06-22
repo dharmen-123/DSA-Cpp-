@@ -59,9 +59,9 @@
 using namespace std;
 template<class obj1,class obj2>
 class job{
+ public:
  obj1 v1;
  obj2 v2;
- public:
 
  job(obj1 val1,obj2 val2){
     v1=val1;
