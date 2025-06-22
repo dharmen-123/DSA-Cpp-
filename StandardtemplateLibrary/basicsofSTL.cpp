@@ -55,20 +55,27 @@
 //    job<float>j(20);
 // }
 
-#include"iostream"
-using namespace std;
-template<class obj1,class obj2>
-class job{
- public:
- obj1 v1;
- obj2 v2;
+// #include"iostream"
+// using namespace std;
+// template<class obj1,class obj2>
+// class job{
+//  public:
+//  obj1 v1;
+//  obj2 v2;
 
- job(obj1 val1,obj2 val2){
-    v1=val1;
-    v2=val2;
-    cout<<"Value ="<<v1+v2;
- }   
-};
+//  job(obj1 val1,obj2 val2){
+//     v1=val1;
+//     v2=val2;
+//     cout<<"Value ="<<v1+v2;
+//  }   
+// };
+// int main(){
+//    job<int, float>j(20,10.3);
+// }
+
+#include<iostream>
+using namespace std;
+
 int main(){
-   job<int, float>j(20,10.3);
+
 }
