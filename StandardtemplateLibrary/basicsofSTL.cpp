@@ -75,7 +75,10 @@
 
 #include<iostream>
 using namespace std;
-
+template<class mytype>
+void Show(mytype a){
+   cout<<"This is number :"<<a;
+}
 int main(){
-
+Show(10)
 }
