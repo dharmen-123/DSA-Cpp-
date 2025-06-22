@@ -70,5 +70,5 @@ class job{
  }   
 };
 int main(){
-   job<int, int>j(20,10.3);
+   job<int, float>j(20,10.3);
 }
