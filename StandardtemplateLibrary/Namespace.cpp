@@ -3,7 +3,7 @@
 // By default nature of Namespace is the public
 // There is no requirement of object for access the variable outside the class
 // In namespace the variable is access outside the namepsace using Scope resolution operator
-
+// Two namespace name should not be same it should be unique 
 
 // #include<iostream>
 // using namespace std;
@@ -30,6 +30,7 @@ class Bhopal{
     
 }obj;
 }
+// using namespace Hello
 int main(){
   cout<<Hello::a;
   Hello::multiply();
