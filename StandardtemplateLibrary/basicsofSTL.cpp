@@ -6,7 +6,12 @@
 
 // Ambiguity
 // Integer and Float type accept float value or int value both that time ambiguity is create 
- 
+//   ######### STL (Standard Template Library) ########
+//  #### Components of STL ########
+// 1. ITERATOR 
+// 2. Template 
+// 3. Algorithm 
+
 //#################  Functional Template ########################
 
 // #include<iostream>

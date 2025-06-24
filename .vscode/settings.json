@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.dbclient-js": "javascript",
+        "*.wmls": "javascriptlite",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "sstream": "cpp",
+        "cctype": "cpp",
+        "cmath": "cpp"
+    }
+}
