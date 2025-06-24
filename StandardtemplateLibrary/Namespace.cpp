@@ -16,6 +16,7 @@
 // }
 //   ########################################
 
+
 #include<iostream>
 using namespace std;
 namespace Hello{
@@ -26,8 +27,7 @@ void multiply(){
 }
 class Bhopal{
   public:
-  int x=20;
-    
+  int x=20;    
 }obj;
 }
 // using namespace Hello
@@ -35,5 +35,4 @@ int main(){
   cout<<Hello::a;
   Hello::multiply();
   cout<<"\n"<<Hello::obj.x;
-
 }
