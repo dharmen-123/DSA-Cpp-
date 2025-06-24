@@ -11,13 +11,15 @@ for(int i=0;i<a.size();i++){
     cout<<a.at(i)<<"\t";
 }
 cout<<"\n";
-cout<<"value of second array :";
+cout<<"value of second array :\n";
 for(int i=0;i<a2.size();i++){
     cout<<a2.at(i)<<"\t";
 }
 cout<<"\n";
-a2.fill(100);
+// a2.fill(100);
+a.swap(a2);
 for(int i=0;i<a2.size();i++){
     cout<<a2.at(i)<<"\t";
 }
+
 }
