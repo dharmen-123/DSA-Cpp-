@@ -44,3 +44,22 @@ int main(){
 // begin take the starting point and end take the last point 
 // Sort function take three parameter 
 // starting point , end point , operation perform 
+// string has the resize function it shrik the size of string
+// resize function does not expand the size 
+
+// size function give the actual size of data 
+// sizeof() function it give the byte of data 
+
+// find() function return the indexing of value 
+
+// example : s="Bhopal";
+//     s.find("op");
+// j="345345"
+// back() function It return the last value of string 
+// s.back()
+// front() function It return the first value of string 
+// s.front()
+// + Operator concatenate the two string 
+
+// append() function it add the next data in first 
+// j.append(s) 
