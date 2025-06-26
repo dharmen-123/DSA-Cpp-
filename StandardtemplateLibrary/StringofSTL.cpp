@@ -25,20 +25,19 @@
 
 // #####################
 
-#include<iostream>
-using namespace std;
-#include<algorithm>
-#include<string>
-int main(){
+// #include<iostream>
+// using namespace std;
+// #include<algorithm>
+// #include<string>
+// int main(){
   
-    string a(5,'hello');
-    cout<<a;
+//     string a(5,'hello');
+//     cout<<a;
 
-    string j="17429475";
-    sort(j.begin(),j.end(),greater<int>());
-    cout<<j;
-   
-}
+//     string j="17429475";
+//     sort(j.begin(),j.end(),greater<int>());
+//     cout<<j;
+// }
 
 // In sort function there are two pointer begin() and end()
 // begin take the starting point and end take the last point 
@@ -63,3 +62,24 @@ int main(){
 
 // append() function it add the next data in first 
 // j.append(s) 
+
+// insert() function it add the string at th specific position
+// j.insert(2,'hello')
+
+// erase() function it delete the specific number of character from the given indexing 
+// j.erase(2,3)
+
+//  ############## STRING QUESTIONS #######################
+
+#include<iostream>
+using namespace std;
+#include<string>
+
+int main(){
+
+  string s="Cybrom";
+  for(int i=s.size();i<0;i--){
+       cout<<s;
+  }
+}
+
