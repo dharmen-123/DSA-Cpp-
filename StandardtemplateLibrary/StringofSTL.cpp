@@ -71,15 +71,29 @@
 
 //  ############## STRING QUESTIONS #######################
 
+////// ############# Reverse the String ###############
+
+// #include<iostream>
+// using namespace std;
+// #include<string>
+// #include<algorithm>
+
+// int main(){
+
+//   string s="Cybrom";
+//   reverse(s.begin(),s.end());
+//   cout<<s;
+// }
+
+
 #include<iostream>
 using namespace std;
 #include<string>
+#include<algorithm>
 
 int main(){
 
-  string s="Cybrom";
-  for(int i=s.size();i<0;i--){
-       cout<<s;
-  }
-}
+  string s="cpp string exercies";
+  
 
+}
