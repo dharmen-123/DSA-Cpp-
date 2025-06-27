@@ -87,13 +87,15 @@
 
 
 #include<iostream>
-using namespace std;
+using namespace std;  
 #include<string>
 #include<algorithm>
 
 int main(){
 
-  string s="cpp string exercies";
-  
+  // string s="cpp string exercies";
+   string s = "Python";
+  //  swap(s.begin(),s.end());
+   cout<<s;
 
 }
