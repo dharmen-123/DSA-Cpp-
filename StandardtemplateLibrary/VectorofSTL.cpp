@@ -52,3 +52,8 @@ int main(){
  cout<<"After clear :"<<p.size()<<endl;
 
 }
+
+// push_back - It insert the value from the last on array 
+// clear - It make the array empty but the object is present
+// resize -It shrink the array
+// pop_back- It delete the value from the last of array
