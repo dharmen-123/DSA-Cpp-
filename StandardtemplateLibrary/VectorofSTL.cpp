@@ -37,7 +37,18 @@
 
 #include<iostream>
 using namespace std;
-
+#include<vector>
 int main(){
+
+ vector<int>p(2,6);
+ p.push_back(5);
+ p.push_back(8);
+ cout<<p[0]<<endl;
+ cout<<p[1]<<endl;
+ cout<<p.size()<<endl;
+ p.resize(3);
+ cout<<"After resize :"<<p.size()<<endl;
+ p.clear();
+ cout<<"After clear :"<<p.size()<<endl;
 
 }
