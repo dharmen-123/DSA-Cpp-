@@ -87,42 +87,55 @@
 
 ////// ############# Anagram the String ###############
 
-#include<iostream>
-using namespace std;  
-#include<string>
+// #include<iostream>
+// using namespace std;  
+// #include<string>
 
-int main(){
-  string s1="listen";
-  string s2="silent";
-  if(s1.size()==s2.size()){
-  int a[26]={0};
-  for(int i=0;s1[i]!='\0';i++){
-      a[s1[i]-'a']++;
-  }
-  for(int i=0;s2[i]!='\0';i++){
-      a[s2[i]-'a']--;
-  }
-  bool t=true;
-  for(int i=0;i<26;i++){
-    if(a[i]!=0){
-       t=false;
-       break;
-    }
-    else{
-      t=true;
-    }
-  }
-  if(t){
-    cout<<"It is anagram";
-  }
-  else{
-    cout<<"It is not anagram";
-  }
-}
-else{
-    cout<<"It is not anagram string";
-}
+// int main(){
+//   string s1="listen";
+//   string s2="silent";
+//   if(s1.size()==s2.size()){
+//   int a[26]={0};
+//   for(int i=0;s1[i]!='\0';i++){
+//       a[s1[i]-'a']++;
+//   }
+//   for(int i=0;s2[i]!='\0';i++){
+//       a[s2[i]-'a']--;
+//   }
+//   bool t=true;
+//   for(int i=0;i<26;i++){
+//     if(a[i]!=0){
+//        t=false;
+//        break;
+//     }
+//     else{
+//       t=true;
+//     }
+//   }
+//   if(t){
+//     cout<<"It is anagram";
+//   }
+//   else{
+//     cout<<"It is not anagram";
+//   }
+// }
+// else{
+//     cout<<"It is not anagram string";
+// }
+// }
 
-}
 
+////// ############# Replace each letter with next lette in String ###############
+
+// #include<iostream>
+// using namespace std;
+// #include<string>
+// int main(){
+//      string s="cybrom";
+//      cout<<"Before Replace :"<<s;
+//      for(int i=0;i<s.size();i++){
+//         s[i]=s[i]+1;
+//      }
+//      cout<<"\nAfter Replace :"<<s;
+// }
 
