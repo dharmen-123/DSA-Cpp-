@@ -85,17 +85,44 @@
 //   cout<<s;
 // }
 
+////// ############# Anagram the String ###############
 
 #include<iostream>
 using namespace std;  
 #include<string>
-#include<algorithm>
 
 int main(){
-
-  // string s="cpp string exercies";
-   string s = "Python";
-  //  swap(s.begin(),s.end());
-   cout<<s;
+  string s1="listen";
+  string s2="silent";
+  if(s1.size()==s2.size()){
+  int a[26]={0};
+  for(int i=0;s1[i]!='\0';i++){
+      a[s1[i]-'a']++;
+  }
+  for(int i=0;s2[i]!='\0';i++){
+      a[s2[i]-'a']--;
+  }
+  bool t=true;
+  for(int i=0;i<26;i++){
+    if(a[i]!=0){
+       t=false;
+       break;
+    }
+    else{
+      t=true;
+    }
+  }
+  if(t){
+    cout<<"It is anagram";
+  }
+  else{
+    cout<<"It is not anagram";
+  }
+}
+else{
+    cout<<"It is not anagram string";
+}
 
 }
+
+
