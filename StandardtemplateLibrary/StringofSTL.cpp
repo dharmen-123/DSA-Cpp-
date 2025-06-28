@@ -90,7 +90,6 @@
 // #include<iostream>
 // using namespace std;  
 // #include<string>
-
 // int main(){
 //   string s1="listen";
 //   string s2="silent";
@@ -139,3 +138,15 @@
 //      cout<<"\nAfter Replace :"<<s;
 // }
 
+////// ############ Count the Vowel in String #########
+
+#include<iostream>
+using namespace std;
+#include<string>
+int main(){
+   string s="smile";
+   char v[10]="aeiou";
+    
+   
+
+}
