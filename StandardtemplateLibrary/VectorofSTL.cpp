@@ -57,3 +57,4 @@ int main(){
 // clear - It make the array empty but the object is present
 // resize -It shrink the array
 // pop_back- It delete the value from the last of array
+// max_size - Maximum size of array in vector

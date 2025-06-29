@@ -17,22 +17,22 @@
 //   ########################################
 
 
-#include<iostream>
-using namespace std;
-namespace Hello{
-    int a=100;
-    int b=200;
-void multiply(){
-    cout<<"\nMultiply :"<<a*b;
-}
-class Bhopal{
-  public:
-  int x=20;    
-}obj;
-}
-// using namespace Hello
-int main(){
-  cout<<Hello::a;
-  Hello::multiply();
-  cout<<"\n"<<Hello::obj.x;
-}
+// #include<iostream>
+// using namespace std;
+// namespace Hello{
+//     int a=100;
+//     int b=200;
+// void multiply(){
+//     cout<<"\nMultiply :"<<a*b;
+// }
+// class Bhopal{
+//   public:
+//   int x=20;    
+// }obj;
+// }
+// // using namespace Hello
+// int main(){
+//   cout<<Hello::a;
+//   Hello::multiply();
+//   cout<<"\n"<<Hello::obj.x;
+// }
