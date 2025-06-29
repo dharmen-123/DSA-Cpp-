@@ -140,13 +140,18 @@
 
 ////// ############ Count the Vowel in String #########
 
-#include<iostream>
-using namespace std;
-#include<string>
-int main(){
-   string s="smile";
-   char v[10]="aeiou";
-    
-   
+// #include<iostream>
+// using namespace std;
+// #include<string>
+// int main(){
+//    string s="smile";
+//     int c=0;
+//    for(int i=0;i<s.size();i++){
+//       if(s[i]=='a'||s[i]=='e' ||s[i]=='i'||s[i]=='o'||s[i]=='u'){
+//           c++;
+//       }
+//    }
 
-}
+//    cout<<"Vowels :"<<c;
+// }
+
