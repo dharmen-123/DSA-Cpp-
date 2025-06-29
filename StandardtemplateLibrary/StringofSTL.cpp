@@ -155,3 +155,15 @@
 //    cout<<"Vowels :"<<c;
 // }
 
+#include<iostream>
+using namespace std;
+
+int main(){
+     string s="w3source from 2008";
+     for(int i=0;s[i]!='\0';i++){
+      //   cout<<s[i]<<"\t";
+      if(s[i]){
+         
+      }
+     }
+}
