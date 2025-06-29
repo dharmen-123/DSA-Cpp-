@@ -160,10 +160,12 @@ using namespace std;
 
 int main(){
      string s="w3source from 2008";
+     int sum=0;
      for(int i=0;s[i]!='\0';i++){
       //   cout<<s[i]<<"\t";
-      if(s[i]){
-         
+      if(isdigit(s[i])){
+        sum=sum+s[i];
       }
      }
+     cout<<"The Sum of number in String :"<<sum;
 }
