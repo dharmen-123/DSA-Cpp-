@@ -155,6 +155,8 @@
 //    cout<<"Vowels :"<<c;
 // }
 
+////  ############ Count the Number in String ################### 
+
 #include<iostream>
 using namespace std;
 #include<string>
@@ -164,9 +166,10 @@ int main(){
      for(int i=0;s[i]!='\0';i++){
         // cout<<s[i]<<"\t";
       if(isdigit(s[i])){
-         a=int(s[i]);
+         a=s[i]-'0';
         sum=sum+a;
       }
      }
      cout<<"The Sum of number in String :"<<sum;
 }
+
