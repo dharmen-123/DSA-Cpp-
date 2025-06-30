@@ -35,26 +35,38 @@
 
 ////# push_back() function it is use to insert the value in vector array at last position last
 
-#include<iostream>
-using namespace std;
-#include<vector>
-int main(){
+// #include<iostream>
+// using namespace std;
+// #include<vector>
+// int main(){
 
- vector<int>p(2,6);
- p.push_back(5);
- p.push_back(8);
- cout<<p[0]<<endl;
- cout<<p[1]<<endl;
- cout<<p.size()<<endl;
- p.resize(3);
- cout<<"After resize :"<<p.size()<<endl;
- p.clear();
- cout<<"After clear :"<<p.size()<<endl;
+//  vector<int>p(2,6);
+//  p.push_back(5);
+//  p.push_back(8);
+//  cout<<p[0]<<endl;
+//  cout<<p[1]<<endl;
+//  cout<<p.size()<<endl;
+//  p.resize(3);
+//  cout<<"After resize :"<<p.size()<<endl;
+//  p.clear();
+//  cout<<"After clear :"<<p.size()<<endl;
 
-}
+// }
 
 // push_back - It insert the value from the last on array 
 // clear - It make the array empty but the object is present
 // resize -It shrink the array
 // pop_back- It delete the value from the last of array
 // max_size - Maximum size of array in vector
+
+
+#include<iostream>
+using namespace std;
+# include<vector>
+int main(){
+
+
+    vector<int>v{4,2,6};
+    cout<<v.size()<<endl;
+    cout<<v.capacity();
+}
