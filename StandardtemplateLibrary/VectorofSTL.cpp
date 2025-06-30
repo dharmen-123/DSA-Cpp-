@@ -68,5 +68,13 @@ int main(){
 
     vector<int>v{4,2,6};
     cout<<v.size()<<endl;
+    cout<<v.capacity()<<endl;
+    v.push_back(7);
+    cout<<v.size()<<endl;
     cout<<v.capacity();
+    v.push_back(8);
 }
+
+// capacity() it create double memory according dynamic entry
+// It define the how much space is expand 
+// Size define the space is occupied by the values
