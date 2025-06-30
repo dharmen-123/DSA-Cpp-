@@ -157,14 +157,15 @@
 
 #include<iostream>
 using namespace std;
-
+#include<string>
 int main(){
      string s="w3source from 2008";
-     int sum=0;
+     int sum=0,a;
      for(int i=0;s[i]!='\0';i++){
-      //   cout<<s[i]<<"\t";
+        // cout<<s[i]<<"\t";
       if(isdigit(s[i])){
-        sum=sum+s[i];
+         a=int(s[i]);
+        sum=sum+a;
       }
      }
      cout<<"The Sum of number in String :"<<sum;
