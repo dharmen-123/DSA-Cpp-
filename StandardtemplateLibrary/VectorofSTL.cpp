@@ -98,28 +98,45 @@
 // }
 
 
-//  ######### INSERTION At specific position ###############
 
 // In buil sort function use which algo 
+
+// #include<iostream>
+// using namespace std;
+// #include<algorithm>
+// #include<vector>
+
+// int main(){
+//  vector<int>v{4,6,1,7,2};
+//    sort(v.begin(),v.end());
+//    for(auto k:v){
+//     cout<<k<<"\t";
+//    }
+//    cout<<endl;
+//    sort(v.begin(),v.end(),greater<int>());
+//   for(auto k:v){
+//      cout<<k<<"\t";
+//    }
+// }
+
+// less<int>  --> Comparator function 
+// by default it take less 
+
+//  ######### INSERTION At specific position ###############
 
 #include<iostream>
 using namespace std;
 #include<algorithm>
 #include<vector>
-
 int main(){
- vector<int>v{4,6,1,7,2};
-   sort(v.begin(),v.end());
-   for(auto k:v){
-    cout<<k<<"\t";
-   }
-   cout<<endl;
-   sort(v.begin(),v.end(),greater<int>());
-  for(auto k:v){
-     cout<<k<<"\t";
-   }
 
+vector<int>v{4,1,3,5,6};
+cout<<v.size()<<endl;
+cout<<v.capacity()<<endl;
+v.insert(v.begin(),12);
+cout<<v.size()<<endl;
+cout<<v.capacity()<<endl;
+for(auto a:v){
+    cout<<a<<"\t";
 }
-
-// less<int>  --> Comparator function 
-// by default it take less 
+}
