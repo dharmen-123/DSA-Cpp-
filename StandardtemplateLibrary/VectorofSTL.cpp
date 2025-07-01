@@ -80,20 +80,46 @@
 // It define the how much space is expand 
 // Size define the space is occupied by the values
 
+//  #################### Missing Value Find ##########################
+
+// #include<iostream>
+// using namespace std;
+// #include<vector>
+
+// int main(){
+//   vector<int>v={1,2,3,5,6,7};
+//   int a;
+//   for(int i=1;i<v.size();i++){
+//       a=v[i]-v[i-1];
+//       if(a!=1){
+//         cout<<"Missing number is "<<v[i]-1<<endl;
+//       }       
+// }
+// }
+
+
+//  ######### INSERTION At specific position ###############
+
+// In buil sort function use which algo 
+
 #include<iostream>
 using namespace std;
+#include<algorithm>
 #include<vector>
 
 int main(){
-  vector<int>v={1,2,3,5,6,7};
-  int a;
-//   cout<<v.size();
-  for(int i=1;i<v.size();i++){
-      a=v[i]-v[i-1];
-      if(a!=1){
-        cout<<"Missing number is "<<v[i]-1<<endl;
-      }       
+ vector<int>v{4,6,1,7,2};
+   sort(v.begin(),v.end());
+   for(auto k:v){
+    cout<<k<<"\t";
+   }
+   cout<<endl;
+   sort(v.begin(),v.end(),greater<int>());
+  for(auto k:v){
+     cout<<k<<"\t";
+   }
+
 }
 
-
-}
+// less<int>  --> Comparator function 
+// by default it take less 
