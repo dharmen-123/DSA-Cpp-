@@ -82,20 +82,20 @@
 
 //  #################### Missing Value Find ##########################
 
-// #include<iostream>
-// using namespace std;
-// #include<vector>
+#include<iostream>
+using namespace std;
+#include<vector>
 
-// int main(){
-//   vector<int>v={1,2,3,5,6,7};
-//   int a;
-//   for(int i=1;i<v.size();i++){
-//       a=v[i]-v[i-1];
-//       if(a!=1){
-//         cout<<"Missing number is "<<v[i]-1<<endl;
-//       }       
-// }
-// }
+int main(){
+  vector<int>v={1,2,3,5,6,7};
+  int a;
+  for(int i=1;i<v.size();i++){
+      a=v[i]-v[i-1];
+      if(a!=1){
+        cout<<"Missing number is "<<v[i]-1<<endl;
+      }       
+}
+}
 
 
 
@@ -124,19 +124,35 @@
 
 //  ######### INSERTION At specific position ###############
 
-#include<iostream>
-using namespace std;
-#include<algorithm>
-#include<vector>
-int main(){
+// #include<iostream>
+// using namespace std;
+// #include<algorithm>
+// #include<vector>
+// int main(){
 
-vector<int>v{4,1,3,5,6};
-cout<<v.size()<<endl;
-cout<<v.capacity()<<endl;
-v.insert(v.begin(),12);
-cout<<v.size()<<endl;
-cout<<v.capacity()<<endl;
-for(auto a:v){
-    cout<<a<<"\t";
-}
-}
+// vector<int>v{4,1,3,5,6};
+// cout<<v.size()<<endl;
+// cout<<v.capacity()<<endl;
+// v.insert(v.begin()+1,12);
+// cout<<v.size()<<endl;
+// cout<<v.capacity()<<endl;
+// for(auto a:v){
+//     cout<<a<<"\t";
+// }
+// }
+
+//  ######### ERASE At specific position ###############
+
+// #include<iostream>
+// using namespace std;
+// #include<algorithm>
+// #include<vector>
+// #include<iterator>
+// int main(){
+
+//     vector<int>v{3,1,5,2,6};
+//     v.insert(v.begin()+2,10);
+//  vector<int>::iterator it=v.begin();
+//  v.erase(it+1);
+   
+// }
