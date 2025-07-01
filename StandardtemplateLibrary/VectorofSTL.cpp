@@ -60,21 +60,40 @@
 // max_size - Maximum size of array in vector
 
 
-#include<iostream>
-using namespace std;
-# include<vector>
-int main(){
+// #include<iostream>
+// using namespace std;
+// # include<vector>
+// int main(){
 
 
-    vector<int>v{4,2,6};
-    cout<<v.size()<<endl;
-    cout<<v.capacity()<<endl;
-    v.push_back(7);
-    cout<<v.size()<<endl;
-    cout<<v.capacity();
-    v.push_back(8);
-}
+//     vector<int>v{4,2,6};
+//     cout<<v.size()<<endl;
+//     cout<<v.capacity()<<endl;
+//     v.push_back(7);
+//     cout<<v.size()<<endl;
+//     cout<<v.capacity();
+//     v.push_back(8);
+
+// }
 
 // capacity() it create double memory according dynamic entry
 // It define the how much space is expand 
 // Size define the space is occupied by the values
+
+#include<iostream>
+using namespace std;
+#include<vector>
+
+int main(){
+  vector<int>v={1,2,3,5,6,7};
+  int a;
+//   cout<<v.size();
+  for(int i=1;i<v.size();i++){
+      a=v[i]-v[i-1];
+      if(a!=1){
+        cout<<"Missing number is "<<v[i]-1<<endl;
+      }       
+}
+
+
+}
