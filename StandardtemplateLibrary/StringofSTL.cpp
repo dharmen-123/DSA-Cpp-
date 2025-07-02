@@ -71,7 +71,7 @@
 
 //  ############## STRING QUESTIONS #######################
 
-////// ############# Reverse the String ###############
+////// ############# Q.1 Reverse the String ###############
 
 // #include<iostream>
 // using namespace std;
@@ -89,7 +89,7 @@
 //   cout<<s1;
 // }
 
-////// ############# Anagram the String ###############
+////// ############# Q.2 Anagram the String ###############
 
 // #include<iostream>
 // using namespace std;  
@@ -128,7 +128,7 @@
 // }
 
 
-////// ############# Replace each letter with next lette in String ###############
+////// ############# Q.3 Replace each letter with next lette in String ###############
 
 // #include<iostream>
 // using namespace std;
@@ -142,7 +142,7 @@
 //      cout<<"\nAfter Replace :"<<s;
 // }
 
-////// ############ Count the Vowel in String #########
+////// ############ Q.4 Count the Vowel in String #########
 
 // #include<iostream>
 // using namespace std;
@@ -159,7 +159,7 @@
 //    cout<<"Vowels :"<<c;
 // }
 
-////  ############ Count the Number in String ################### 
+////  ############ Q.5 Count the Number in String ################### 
 
 // #include<iostream>
 // using namespace std;
@@ -177,7 +177,7 @@
 //      cout<<"The Sum of number in String :"<<sum;
 // }
 
-  //  ###################### String ####################
+  //  ###################### Q.6 Check the string is pallindrome or not ####################
 
 // #include<iostream>
 // using namespace std;
@@ -199,7 +199,7 @@
 
 // }
   
-//  ################ Add Dash Between Two odd number in String ##############
+//  ################ Q.7 Add Dash Between Two odd number in String ##############
 
 // #include<iostream>
 // using namespace std;
@@ -215,5 +215,25 @@
 //   }
 //   cout<<s2;
 // }
+
+//  ################ Q.8 Toggle cash String ##############
+
+// #include<iostream>
+// using namespace std;
+// #include<string>
+// int main(){
+//     string a="Python";
+//     string b;
+//     for(int i=0;i<a.size();i++){
+//           if(a[i]<98){
+//             b+=a[i]+32;
+//           } 
+//           else{
+//             b+=a[i]-32;
+//           }
+//     }
+//      cout<<b;
+//   }
+
 
 
