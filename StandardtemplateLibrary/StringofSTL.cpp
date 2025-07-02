@@ -81,8 +81,12 @@
 // int main(){
 
 //   string s="Cybrom";
-//   reverse(s.begin(),s.end());
-//   cout<<s;
+//   string s1;
+//   // reverse(s.begin(),s.end());
+//   for(int i=s.size()-1;i>=0;i--){
+//           s1+=s[i];
+//       }
+//   cout<<s1;
 // }
 
 ////// ############# Anagram the String ###############
@@ -195,20 +199,21 @@
 
 // }
   
-#include<iostream>
-using namespace std;
-#include<string>
-int main(){
-  string s="1345789";
-  string s2;
-  for(int i=0;i<s.size();i++){
-      s2+=s[i];
-     if(s[i]%2!=0 && s[i+1]%2!=0){
-        s2+='-';
-     }
-  }
-  cout<<s2;
+//  ################ Add Dash Between Two odd number in String ##############
 
-}
+// #include<iostream>
+// using namespace std;
+// #include<string>
+// int main(){
+//   string s="1345789";
+//   string s2;
+//   for(int i=0;i<s.size();i++){
+//       s2+=s[i];
+//      if(s[i]%2!=0 && s[i+1]%2!=0){
+//         s2+='-';
+//      }
+//   }
+//   cout<<s2;
+// }
 
 
