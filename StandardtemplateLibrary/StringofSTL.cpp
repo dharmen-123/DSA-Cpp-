@@ -3,7 +3,6 @@
 // String is a class not data type
 // Algo is always is apply in class
 
-
 // char is terminate after space 
 // char take 1 byte space 
 // string by default take 32 byte 
