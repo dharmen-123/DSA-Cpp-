@@ -252,10 +252,12 @@ int main(){
        }
        else{
          b+=s[i];
-       }
-         
+       }    
     }
     cout<<b;
 }
+
+
+
 
 
