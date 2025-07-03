@@ -236,4 +236,26 @@
 //   }
 
 
+#include<iostream>
+using namespace std;
+#include<string>
+int main(){
+
+    string s="cpp string exercies";
+    string b;
+    for(int i=0;i<s.size();i++){
+        if(i==0){
+          b+=s[i]-32;
+        } 
+       else if(s[i] == 32 ){
+          b+=s[i+1]-32;      
+       }
+       else{
+         b+=s[i];
+       }
+         
+    }
+    cout<<b;
+}
+
 
