@@ -234,7 +234,7 @@
 //      cout<<b;
 //   }
 
-//  ########## Convert the First letter of Each Word in String #############
+//  ##########Q.9 Convert the First letter of Each Word in String #############
 
 // #include<iostream>
 // using namespace std;
@@ -259,7 +259,7 @@
 //     cout<<b;
 // }
 
-//  ########## Convert the First letter of Each Word in String #############
+//  ##########Q.9 Convert the First letter of Each Word in String #############
 
 // #include<iostream>
 // using namespace std;
@@ -278,6 +278,30 @@
 //       cout<<s1;
 // }
 
+//  ##########Q.10 Count the word in given String #############
 
+// #include<iostream>
+// using namespace std;
+// #include<string>
+// int main(){
+//    string s="cpp is the world Fastest programming language";
+//     int c=0;
+//    for(int i=0;i<s.size();i++){
+//       if(s[i]==' '){
+//         c+=1;
+//       }
+//    }
+//    c+=1;
+//    cout<<"NUmber of words in string :"<<c;
+// }
 
+//  ########## Find the largest word in the given String #############
 
+#include<iostream>
+using namespace std;
+#include<string>
+int main(){
+
+  string s="cpp is the world Fastest programming language";
+  
+}
