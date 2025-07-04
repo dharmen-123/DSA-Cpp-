@@ -78,10 +78,8 @@
 // #include<algorithm>
 
 // int main(){
-
 //   string s="Cybrom";
 //   string s1;
-//   // reverse(s.begin(),s.end());
 //   for(int i=s.size()-1;i>=0;i--){
 //           s1+=s[i];
 //       }
@@ -302,6 +300,7 @@ using namespace std;
 #include<string>
 int main(){
 
-  string s="cpp is the world Fastest programming language";
-  
+    string s="cpp is the world Fastest programming language";
+    
+
 }

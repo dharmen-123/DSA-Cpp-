@@ -8,6 +8,7 @@
         "cwctype": "cpp",
         "sstream": "cpp",
         "cctype": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "array": "cpp"
     }
 }
