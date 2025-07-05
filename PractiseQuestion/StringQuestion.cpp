@@ -275,8 +275,34 @@
 #include<iostream>
 using namespace std;
 #include<string>
+bool isomorphic(string s, string t){
+   int n1[256]={-1};
+    int n2[256]={-1};
+
+    if(s.size()!=t.size()){
+      return false;
+    }
+    else{
+      for(int i=0;i<s.size();i++){
+         if(n1[s[i]]!=n2[t[i]]){
+            return false;
+            break;
+         }
+      }
+      return true;
+    }
+}
 int main(){
 
-    string s=""; 
+    string s="add",t="zovo";
+    bool c=isomorphic(s,t);
+    if (c){
+      cout<<"Isomorphic";
+    }
+    else{
+      cout<<"NOT Isomorphic";
 
+    }
+     
+ 
 }
