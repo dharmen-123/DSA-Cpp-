@@ -107,30 +107,29 @@
 
   //  ###################### Q.6 Check the string is pallindrome or not ####################
 
-// #include<iostream>
-// using namespace std;
-// #include<string>
-// #include<algorithm>
-// int main(){
-
-//      string s1;
-//      cout<<"Enter the string for check pallindrome:";
-//      getline(cin,s1);
-//      string s2=s1;
-//      reverse(s1.begin(),s1.end());
-//	    for(int i=0;i<s1.size();i++){
-//		char store=str[i];
-//		str[i]=str[j];
-//		str[j]=store;
-//		j--;
-//	}
-//      if(s1==s2){
-//       cout<<"True";
-//      }
-//      else{
+//  #include<iostream>
+//  using namespace std;
+//  #include<string>
+//  #include<algorithm>
+//  int main(){
+//       string s1;
+//       cout<<"Enter the string for check pallindrome:";
+//       getline(cin,s1);
+//       string s2=s1;     
+//       int j=s1.size()-1;
+// ////////      reverse(s1.begin(),s1.end());
+//     for(int i=0;i<j;i++){
+// 		char store=s1[i];
+// 		s1[i]=s1[j];
+// 		s1[j]=store;
+// 		j--;
+// 	}
+//       if(s1==s2){
+//        cout<<"True";
+//       }
+//       else{
 //       cout<<"False";
 //      }
-
 // }
   
 //  ################ Q.7 Add Dash Between Two odd number in String ##############
@@ -237,7 +236,7 @@ using namespace std;
 #include<string>
 int main(){
 
-    string s="cpp is the world Fastest programming language";
+    string s="Cpp is the world fastest programming language";
     string b, str;
     
     for(int i=0;i<s.size();i++){
@@ -257,6 +256,7 @@ int main(){
       if(s[i]!=' '){
         str.push_back(s[i]);
         if(i+1==s.size() && str.size()>b.size()){
+            
             b=str;
         }
       }
@@ -269,5 +269,6 @@ int main(){
   }
     
   cout<<"\nFinal Output :"<<b;
+//   cout<<s.size();
     
 }
