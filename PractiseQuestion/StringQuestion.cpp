@@ -231,44 +231,52 @@
 
 //  ########## Find the largest word in the given String #############
 
+// #include<iostream>
+// using namespace std;
+// #include<string>
+// int main(){
+
+//     string s="Cpp is the world fastest programming language";
+//     string b, str;
+    
+//     for(int i=0;i<s.size();i++){
+//         if(s[i]!=' '){
+//            b.push_back(s[i]);
+//         }
+//         else{
+//             break;
+//         }
+//     }
+//   cout<<"backup"<<endl;
+//   for(int i=0;i<b.size();i++){
+//     cout<<b[i];
+//   } 
+//   for(int i=0;i<s.size();i++){
+//       if(s[i]!=' '){
+//         str.push_back(s[i]);
+//         if(i+1==s.size() && str.size()>b.size()){ 
+//             b=str;
+//         }
+//       }
+//       else{
+//           if(str.size()>b.size()){
+//             b=str;
+//           }
+//           str.clear();
+//       }
+//   }
+    
+//   cout<<"\nFinal Output :"<<b;
+// //   cout<<s.size();
+    
+// }
+
+////  ################### Isomorphic String ###########################
 #include<iostream>
 using namespace std;
 #include<string>
 int main(){
 
-    string s="Cpp is the world fastest programming language";
-    string b, str;
-    
-    for(int i=0;i<s.size();i++){
-        if(s[i]!=' '){
-           b.push_back(s[i]);
-        }
-        else{
-            break;
-        }
-    }
-  cout<<"backup"<<endl;
-  for(int i=0;i<b.size();i++){
-    cout<<b[i];
-  } 
-  for(int i=0;i<s.size();i++){
+    string s=""; 
 
-      if(s[i]!=' '){
-        str.push_back(s[i]);
-        if(i+1==s.size() && str.size()>b.size()){
-            
-            b=str;
-        }
-      }
-      else{
-          if(str.size()>b.size()){
-            b=str;
-          }
-          str.clear();
-      }
-  }
-    
-  cout<<"\nFinal Output :"<<b;
-//   cout<<s.size();
-    
 }
