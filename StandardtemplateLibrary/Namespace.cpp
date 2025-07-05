@@ -31,10 +31,10 @@ class Bhopal{
 
 }obj;
 }
-using namespace Hello;
+// using namespace Hello
 int main(){
-  cout<<a;
-  multiply();
-  cout<<"\n"<<obj.x;
+  cout<<Hello::a;
+  Hello::multiply();
+  cout<<"\n"<<Hello::obj.x;
 
 }
