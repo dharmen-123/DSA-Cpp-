@@ -25,10 +25,9 @@ using namespace std;
 
 int main(){
       
-    vector<int>p{1,3,2,4,6};
-    vector<int>c{7,5,3,8,1,2,2,1};
+    vector<int>p{1,3,1,2,4,2,1,6};
     for(int i=0;i<p.size();i++){
-        
+         
     }
 
 

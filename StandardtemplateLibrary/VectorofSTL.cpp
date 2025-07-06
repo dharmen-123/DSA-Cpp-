@@ -83,7 +83,7 @@
 
 
 
-// In buil sort function use which algo 
+// In build sort function use which algo 
 
 // #include<iostream>
 // using namespace std;
