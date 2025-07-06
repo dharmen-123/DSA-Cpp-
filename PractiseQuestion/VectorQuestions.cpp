@@ -60,3 +60,26 @@
 //     cout<<removeElement(nums,val)<<endl;
 // }
 
+
+#include<iostream>
+using namespace std;
+#include<vector>
+#include<algorithm>
+double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+     float sum=0;    
+     for(int i=0;i<nums2.size();i++){
+            nums1.push_back(nums2[i]);
+        }
+         sort(nums1.begin(),nums1.end());
+     for(auto x:nums1){
+        sum+=x;
+     } 
+       return sum/nums1.size();
+}
+
+int main(){
+    vector<int>nums1{1,3};
+    vector<int>nums2{2};    
+    cout<<findMedianSortedArrays(nums1,nums2);
+
+}
