@@ -7,8 +7,7 @@
 // #include<vector>
 // int main(){
 //   vector<int>v={1,2,3,5,6,7};
-//   int a;
-   
+//   int a; 
 //   for(int i=1;i<v.size();i++){
 //       a=v[i]-v[i-1];
 //       if(a!=1){
