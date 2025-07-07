@@ -60,6 +60,7 @@
 //     cout<<removeElement(nums,val)<<endl;
 // }
 
+/////// #################### find Median Sorted Arrays ############
 
 #include<iostream>
 using namespace std;
@@ -83,3 +84,36 @@ int main(){
     cout<<findMedianSortedArrays(nums1,nums2);
 
 }
+
+
+
+
+// ############ Remove the duplicate from the sorted array leetcode Q.26 #####
+// #include<iostream>
+// using namespace std;
+// #include<vector>
+// #include<algorithm>
+
+// int removeDuplicates(vector<int>& nums) {
+//     vector<int>v; 
+//     int k=0;
+//     for(int i=0;i<nums.size();i++){
+//          if(nums[i]!=nums[i+1]){
+//             k++;
+//            v.push_back(nums[i]);
+//          }
+//          else{
+//             v.push_back('_');
+//          }
+//     }   
+//       nums.clear();
+//     for(int i=0;i<v.size();i++){
+//          nums.push_back(v[i]);
+//       }
+//        sort(nums.begin(),nums.end());
+//       return k;
+//     }
+// int main(){
+//     vector<int>nums{0,0,1,1,1,2,2,3,3,4};
+//     cout<<removeDuplicates(nums);
+// }
