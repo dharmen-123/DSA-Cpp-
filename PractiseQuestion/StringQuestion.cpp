@@ -294,7 +294,7 @@ bool isomorphic(string s, string t){
 }
 int main(){
 
-    string s="add",t="zovo";
+    string s="add",t="zoo";
     bool c=isomorphic(s,t);
     if (c){
       cout<<"Isomorphic";

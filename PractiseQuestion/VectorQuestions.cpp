@@ -67,7 +67,7 @@ using namespace std;
 #include<vector>
 #include<algorithm>
 double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
-     float sum=0;    
+     double sum=0;    
      for(int i=0;i<nums2.size();i++){
             nums1.push_back(nums2[i]);
         }
