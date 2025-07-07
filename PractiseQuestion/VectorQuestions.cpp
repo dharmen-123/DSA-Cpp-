@@ -77,7 +77,6 @@ double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
      } 
        return sum/nums1.size();
 }
-
 int main(){
     vector<int>nums1{1,3};
     vector<int>nums2{2};    
