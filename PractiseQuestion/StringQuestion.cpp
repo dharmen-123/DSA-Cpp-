@@ -301,8 +301,31 @@ int main(){
     }
     else{
       cout<<"NOT Isomorphic";
-
     }
-     
- 
 }
+
+
+
+// #include<iostream>
+// #include <climits> 
+// using namespace std;
+// int reverse(int x){
+//         long sum=0;
+//         bool c=false;
+//          if(x<0){
+//           c=true;  
+//           x=-x;
+//         }
+//         while(x>0){
+//         int y=x%10;
+//             sum=sum*10+y;
+//             x=x/10;   
+//         }
+//         if(c){
+//             sum=-sum;
+//         }
+//         return sum;
+// }
+// int main(){
+//   cout<<reverse(1534236469);   
+// }
