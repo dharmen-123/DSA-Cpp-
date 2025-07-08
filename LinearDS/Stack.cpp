@@ -44,7 +44,7 @@ int main(){
     cout<<S.tops()<<endl;
     S.pop();
     S.pop();
-    // S.push(24);
+    S.push(24);
     cout<<S.tops()<<endl;
 
 }
