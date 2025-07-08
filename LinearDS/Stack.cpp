@@ -19,11 +19,11 @@ class Stackdata{
        top++;
        arr[top]=v;
     }
-int Tops(){
+int tops(){
     if(top==-1){
          cout<<"\nStact is underflow\n";
     }
-    return 0;
+    return arr[top];
 }
 void pop(){
      if(top==-1){
@@ -39,4 +39,12 @@ int main(){
     cin>>s;
     Stackdata S(s);
     S.push(10);
+    S.push(5);
+    S.push(18);
+    cout<<S.tops()<<endl;
+    S.pop();
+    S.pop();
+    // S.push(24);
+    cout<<S.tops()<<endl;
+
 }
