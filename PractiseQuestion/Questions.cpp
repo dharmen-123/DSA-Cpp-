@@ -43,11 +43,19 @@
 
 
 #include<iostream>
-#include<cmath>
+// #include<cmath>
+#include <bits/stdc++.h>
 using namespace std;
+vector<int> productExceptSelf(vector<int>& nums) {
+    vector<int>result; 
+    for(int i=0;i<nums.size();i++){
+        
+     }   
 
-int main(){
-   
+}
+    int main(){
+      vector<int>nums={1,2,3,4};
+      productExceptSelf(nums);
 
     return 0;
 }
