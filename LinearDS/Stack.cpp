@@ -1,4 +1,18 @@
 // ################# STACK ############################
+// Linear data Structure 
+// LIFO last in frist out
+// |    |5
+// |    |4   n-1  6-1
+// |    |3
+// |    |2
+// |    |1
+// |    |0
+// top=-1+1
+// Insrtion and deletion at one side
+// push
+// pop 
+// top
+// empty
 
 
 // #include<iostream>
@@ -46,6 +60,33 @@
 //     S.push(24);
 //     cout<<S.tops()<<endl;
 // }
+
+
+#include<iostream>
+using namespace std;
+class Stackdata{
+ public:
+ int *arr;
+ int n,top;
+
+ Stackdata(int v){
+    n=v;
+    arr = new int[n];
+    top =-1;
+ }
+void push(int a){
+    if(top==n-1){
+       cout<<"Stack is overflow :\n";
+    }
+}
+
+
+};
+
+
+int main(){
+
+}
 
 //////  ################# Stack STL inbuild Template #########################
 
