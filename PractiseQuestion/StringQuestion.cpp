@@ -272,37 +272,37 @@
 // }
 
 ////  ################### Isomorphic String ###########################
-#include<iostream>
-using namespace std;
-#include<string>
-bool isomorphic(string s, string t){
-   int n1[256]={-1};
-    int n2[256]={-1};
+// #include<iostream>
+// using namespace std;
+// #include<string>
+// bool isomorphic(string s, string t){
+//    int n1[256]={-1};
+//     int n2[256]={-1};
 
-    if(s.size()!=t.size()){
-      return false;
-    }
-    else{
-      for(int i=0;i<s.size();i++){
-         if(n1[s[i]]!=n2[t[i]]){
-            return false;
-            break;
-         }
-      }
-      return true;
-    }
-}
-int main(){
+//     if(s.size()!=t.size()){
+//       return false;
+//     }
+//     else{
+//       for(int i=0;i<s.size();i++){
+//          if(n1[s[i]]!=n2[t[i]]){
+//             return false;
+//             break;
+//          }
+//       }
+//       return true;
+//     }
+// }
+// int main(){
 
-    string s="add",t="zoo";
-    bool c=isomorphic(s,t);
-    if (c){
-      cout<<"Isomorphic";
-    }
-    else{
-      cout<<"NOT Isomorphic";
-    }
-}
+//     string s="add",t="zoo";
+//     bool c=isomorphic(s,t);
+//     if (c){
+//       cout<<"Isomorphic";
+//     }
+//     else{
+//       cout<<"NOT Isomorphic";
+//     }
+// }
 
 
 
@@ -328,4 +328,28 @@ int main(){
 // }
 // int main(){
 //   cout<<reverse(1534236469);   
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// #include<bits/stdc++.h>
+
+// string largestNumber(vector<int>& nums) {
+//            vector<string>s;
+//            for(int i=0;i<nums.size();i++){
+//               s.push_back(to_string(nums[i]));
+//            }
+//            sort(s.begin(),s.end(),greater<int>());
+//            string r;
+//            for(auto x:s){
+//                r+=x;
+//            }
+//        return r;
+//     }
+// int main(){
+    
+// vector<int>nums{3,30,34,5,9};
+//   cout<<"Output is :";
+//   cout<<largestNumber(nums);
 // }

@@ -67,3 +67,27 @@
 
 // erase() function it delete the specific number of character from the given indexing 
 // j.erase(2,3)
+
+
+#include<iostream>
+using namespace std;
+#include<bits/stdc++.h>
+
+string largestNumber(vector<int>& nums) {
+           vector<string>s;
+           for(int i=0;i<nums.size();i++){
+              s.push_back(to_string(nums[i]));
+           }
+           sort(s.begin(),s.end(),greater<int>());
+           string r;
+           for(auto x:s){
+               r+=x;
+           }
+       return r;
+    }
+int main(){
+    
+vector<int>nums{3,30,34,5,9};
+  cout<<"Output is :";
+  cout<<largestNumber(nums);
+}
