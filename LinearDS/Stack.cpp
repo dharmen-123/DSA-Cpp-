@@ -32,7 +32,6 @@
 //       top--;
 //    }
 // };
-
 // int main(){
 //     int s;
 //     cout<<"Enter the size of arrray :";
@@ -48,6 +47,7 @@
 //     cout<<S.tops()<<endl;
 // }
 
+//////  ################# Stack STL inbuild Template #########################
 
 // #include<iostream>
 // using namespace std;
@@ -68,17 +68,14 @@
 //   st.pop();
 //  }
 //   // cout<<st.top()<<endl;
- 
 // }
 
-// Write a program to find out the minimum value in the stack 
+////// Write a program to find out the minimum value in the stack ############# 
 
 // #include<iostream>
 // using namespace std;
 // #include<stack>
-
 // int main(){
-
 //   stack<int>st;
 //  st.push(3);
 //  st.push(4);
@@ -97,36 +94,34 @@
 //  cout<<min;
 // }
 
+////// ############## Reverse the String Using stack ################## 
 
+// #include<iostream>
+// using namespace std;
+// #include<stack>
+// #include<string>
+// int main(){
+//  string str="SKY IS BLUE";
+//  string s1;
+//  cout<<"str="<<str.size()<<"\n";
+//  stack<string>s;
 
-#include<iostream>
-using namespace std;
-#include<stack>
-#include<string>
-
-int main(){
- string str="SKY IS BLUE";
- string s1;
- cout<<"str="<<str.size()<<"\n";
- stack<string>s;
-
-  for(int i=0;i<str.size();i++){
-    if(str[i]!=' '){
-        s1+=str[i];
-          if(i==str.size()-1){
-          s.push(s1);
-        }
-    }
-    else{
-       s.push(s1);
-       s1.erase();
-    }
-  }
-  cout<<"stack="<<s.size()<<"\n";
-   while (!s.empty())
- {
-    cout<<s.top()<<" ";
-    s.pop();
-}
-
-}
+//   for(int i=0;i<str.size();i++){
+//     if(str[i]!=' '){
+//         s1+=str[i];
+//           if(i==str.size()-1){
+//           s.push(s1);
+//         }
+//     }
+//     else{
+//        s.push(s1);
+//        s1.erase();
+//     }
+//   }
+//   cout<<"stack="<<s.size()<<"\n";
+//    while (!s.empty())
+//  {
+//     cout<<s.top()<<" ";
+//     s.pop();
+// }
+// }
