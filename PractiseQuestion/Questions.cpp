@@ -43,23 +43,22 @@
 
 //////  ###################### leetcode Q.    ##############
 
-#include<iostream>
-// #include<cmath>
-#include <bits/stdc++.h>
-using namespace std;
-vector<int> productExceptSelf(vector<int>& nums) {
-    vector<int>result; 
-    for(int i=0;i<nums.size();i++){
+// #include<iostream>
+// #include <bits/stdc++.h>
+// using namespace std;
+// vector<int> productExceptSelf(vector<int>& nums) {
+//     vector<int>result; 
+//     for(int i=0;i<nums.size();i++){
             
-     }   
+//      }   
 
-}
-    int main(){
-      vector<int>nums={1,2,3,4};
-    productExceptSelf(nums);
+// }
+//     int main(){
+//       vector<int>nums={1,2,3,4};
+//     productExceptSelf(nums);
 
-    return 0;
-}
+//     return 0;
+// }
 
 //////  ###################### leetcode Q.215    ##############
 
@@ -130,14 +129,44 @@ vector<int> productExceptSelf(vector<int>& nums) {
 
 //////  ###################### leetcode Q.169    ##############
 
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// int majorityElement(vector<int>& nums) {
+ 
+  
+// }
+// int main(){
+//     vector<int>nums{2,2,1,1,1,2,2};
+//     cout<<majorityElement(nums);
+// }
+
+////  Q.29, Q.378
+
+//////  ###################### leetcode Q.169    ##############
+
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-int majorityElement(vector<int>& nums) {
- 
-  
-}
+    int hIndex(vector<int>& citations) {
+         sort(citations.begin(), citations.end(), greater<int>());
+         for(auto x:citations){
+          cout<<x<<"\t";
+         }
+        int h = 0;
+        for (int i = 0; i < citations.size();i++) {
+            if (citations[i] > i + 1) {
+                h = i + 1;  
+            } else {
+                break;
+            }
+        }
+        return h;
+
+    }
+
 int main(){
-    vector<int>nums{2,2,1,1,1,2,2};
-    cout<<majorityElement(nums);
+    
+    vector<int>nums{1,3,1};
+    cout << "\nH-Index: " <<hIndex(nums) << endl;
 }
