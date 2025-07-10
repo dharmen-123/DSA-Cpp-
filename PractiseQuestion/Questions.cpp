@@ -41,21 +41,49 @@
 //     return 0;
 // }
 
+//////  ###################### leetcode Q.    ##############
+
+// #include<iostream>
+// // #include<cmath>
+// #include <bits/stdc++.h>
+// using namespace std;
+// vector<int> productExceptSelf(vector<int>& nums) {
+//     vector<int>result; 
+//     for(int i=0;i<nums.size();i++){
+        
+//      }   
+
+// }
+//     int main(){
+//       vector<int>nums={1,2,3,4};
+//       productExceptSelf(nums);
+
+//     return 0;
+// }
+
+//////  ###################### leetcode Q.215    ##############
+
+// #include<iostream>
+// using namespace std;
+// #include<bits/stdc++.h>
+//     int findKthLargest(vector<int>& nums, int k) {
+//             sort(nums.begin(),nums.end());
+//             int n=nums.size();
+//             return nums[n-k];
+//     }
+// int main(){
+//    vector<int>nums{3,2,1,5,6,4};
+//    int k=2;
+//    cout<<"\nKth largest elements :"<<findKthLargest(nums,k);    
+// }
+
+
+//////  ###################### leetcode Q.    ##############
 
 #include<iostream>
-// #include<cmath>
-#include <bits/stdc++.h>
 using namespace std;
-vector<int> productExceptSelf(vector<int>& nums) {
-    vector<int>result; 
-    for(int i=0;i<nums.size();i++){
-        
-     }   
+#include<bits/stdc++.h>
 
-}
-    int main(){
-      vector<int>nums={1,2,3,4};
-      productExceptSelf(nums);
-
-    return 0;
+int main(){
+    
 }
