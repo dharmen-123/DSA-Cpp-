@@ -43,23 +43,23 @@
 
 //////  ###################### leetcode Q.    ##############
 
-// #include<iostream>
-// // #include<cmath>
-// #include <bits/stdc++.h>
-// using namespace std;
-// vector<int> productExceptSelf(vector<int>& nums) {
-//     vector<int>result; 
-//     for(int i=0;i<nums.size();i++){
-        
-//      }   
+#include<iostream>
+// #include<cmath>
+#include <bits/stdc++.h>
+using namespace std;
+vector<int> productExceptSelf(vector<int>& nums) {
+    vector<int>result; 
+    for(int i=0;i<nums.size();i++){
+            
+     }   
 
-// }
-//     int main(){
-//       vector<int>nums={1,2,3,4};
-//       productExceptSelf(nums);
+}
+    int main(){
+      vector<int>nums={1,2,3,4};
+    productExceptSelf(nums);
 
-//     return 0;
-// }
+    return 0;
+}
 
 //////  ###################### leetcode Q.215    ##############
 
@@ -80,25 +80,64 @@
 
 //////  ###################### leetcode Q.217    ##############
 
+// #include<iostream>
+// using namespace std;
+// #include<bits/stdc++.h>
+//  bool containsDuplicate(vector<int>& nums) {
+//         sort(nums.begin(),nums.end());
+//         bool k=false;
+//           for(int i=0;i<nums.size()-1;i++){
+//                if( nums[i]==nums[i+1]){
+//                    k=true;
+//                }
+//           }
+//           if(k){
+//             return true;
+//           }
+//           else{
+//             return false;
+//           }
+//     }
+// int main(){
+//    vector<int>nums{3,2,1,5,1,4};
+//    cout<<containsDuplicate(nums);   
+// }
+
+//////  ###################### leetcode Q.179    ##############
+
+// #include<iostream>
+// using namespace std;
+// #include<bits/stdc++.h>
+
+// string largestNumber(vector<int>& nums) {
+//            vector<string>s;
+//            for(int i=0;i<nums.size();i++){
+//               s.push_back(to_string(nums[i]));
+//            }
+//            sort(s.begin(),s.end(),greater<int>());
+//            string r;
+//            for(auto x:s){
+//                r+=x;
+//            }
+//        return r;
+//     }
+// int main(){
+    
+// vector<int>nums{3,30,34,5,9};
+//   cout<<"Output is :";
+//   cout<<largestNumber(nums);
+// }
+
+//////  ###################### leetcode Q.169    ##############
+
 #include<iostream>
-using namespace std;
 #include<bits/stdc++.h>
- bool containsDuplicate(vector<int>& nums) {
-        sort(nums.begin(),nums.end());
-        bool k=false;
-          for(int i=0;i<nums.size()-1;i++){
-               if( nums[i]==nums[i+1]){
-                   k=true;
-               }
-          }
-          if(k){
-            return true;
-          }
-          else{
-            return false;
-          }
-    }
+using namespace std;
+int majorityElement(vector<int>& nums) {
+ 
+  
+}
 int main(){
-   vector<int>nums{3,2,1,5,1,4};
-   cout<<containsDuplicate(nums);   
+    vector<int>nums{2,2,1,1,1,2,2};
+    cout<<majorityElement(nums);
 }
