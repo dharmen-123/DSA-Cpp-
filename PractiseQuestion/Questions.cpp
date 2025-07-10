@@ -78,12 +78,27 @@
 // }
 
 
-//////  ###################### leetcode Q.    ##############
+//////  ###################### leetcode Q.217    ##############
 
 #include<iostream>
 using namespace std;
 #include<bits/stdc++.h>
-
+ bool containsDuplicate(vector<int>& nums) {
+        sort(nums.begin(),nums.end());
+        bool k=false;
+          for(int i=0;i<nums.size()-1;i++){
+               if( nums[i]==nums[i+1]){
+                   k=true;
+               }
+          }
+          if(k){
+            return true;
+          }
+          else{
+            return false;
+          }
+    }
 int main(){
-    
+   vector<int>nums{3,2,1,5,1,4};
+   cout<<containsDuplicate(nums);   
 }
