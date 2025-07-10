@@ -141,32 +141,32 @@
 //     cout<<majorityElement(nums);
 // }
 
-////  Q.29, Q.378
+////  Q.29, Q.378  ,Q.1859
 
-//////  ###################### leetcode Q.169    ##############
+//////  ###################### leetcode Q.274    ##############
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-    int hIndex(vector<int>& citations) {
-         sort(citations.begin(), citations.end(), greater<int>());
-         for(auto x:citations){
-          cout<<x<<"\t";
-         }
-        int h = 0;
-        for (int i = 0; i < citations.size();i++) {
-            if (citations[i] > i + 1) {
-                h = i + 1;  
-            } else {
-                break;
-            }
-        }
-        return h;
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//     int hIndex(vector<int>& citations) {
+//          sort(citations.begin(), citations.end(), greater<int>());
+//          for(auto x:citations){
+//           cout<<x<<"\t";
+//          }
+//         int h = 0;
+//         for (int i = 0; i < citations.size();i++) {
+//             if (citations[i] > i + 1) {
+//                 h = i + 1;  
+//             } else {
+//                 break;
+//             }
+//         }
+//         return h;
 
-    }
+//     }
 
-int main(){
+// int main(){
     
-    vector<int>nums{1,3,1};
-    cout << "\nH-Index: " <<hIndex(nums) << endl;
-}
+//     vector<int>nums{1,3,1};
+//     cout << "\nH-Index: " <<hIndex(nums) << endl;
+// }
