@@ -170,3 +170,27 @@
 //     vector<int>nums{1,3,1};
 //     cout << "\nH-Index: " <<hIndex(nums) << endl;
 // }
+
+
+
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+    string removeDuplicateLetters(string s) {
+           string a="";
+           sort(s.begin(),s.end());
+            for(int i=0;i<s.size()-1;i++){
+                if(s[i]!=s[i+1]){
+                   a+=s[i];
+                }
+              
+            }
+            return a;
+    }
+
+int main(){
+
+    string s="bcabc";
+    cout<<removeDuplicateLetters(s);
+}
