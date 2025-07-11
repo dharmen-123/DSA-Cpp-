@@ -180,7 +180,7 @@ using namespace std;
     string removeDuplicateLetters(string s) {
            string a="";
            sort(s.begin(),s.end());
-            for(int i=0;i<s.size()-1;i++){
+            for(int i=0;i<s.size();i++){
                 if(s[i]!=s[i+1]){
                    a+=s[i];
                 }
