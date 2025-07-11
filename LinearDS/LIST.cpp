@@ -53,16 +53,3 @@
 
 // }
 
-// ############################## Q.    #################
- 
-// #include<iostream>
-// #include<bits/stdc++.h>
-// using namespace std;
-// ListNode* sortList(ListNode* head) {
-        
-
-// }
-// int main(){
-
-
-// }
