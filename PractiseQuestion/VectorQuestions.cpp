@@ -135,7 +135,6 @@ using namespace std;
           }
           sort(num.begin(),num.end());
     }
-
 int main(){
     // vector<int>nums1{1,2,3,0,0,0};
     vector<int>nums1{1};
