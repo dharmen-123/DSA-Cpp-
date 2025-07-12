@@ -117,35 +117,83 @@
 //     cout<<removeDuplicates(nums);
 // }
 
-////  ####################### Q.   ##############################
+////  ####################### Q.  88 ##############################
 
-#include<iostream>
-#include<bits/stdc++.h>
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+//           vector<int>num;
+//           for(int i=0;i<m;i++){
+//             if(nums1[i]!=0){
+//              num.push_back(nums1[i]);
+//           }
+//           }
+//           for(int j=0;j<n;j++){
+//              num.push_back(nums2[j]);
+//           }
+
+//           sort(num.begin(),num.end());
+//           for(int i=0;i<m+n;i++){
+//             cout<<num[i]<<" ";
+//           }
+//         }
+// int main(){
+//     vector<int>nums1{1,2,3,0,0,0};
+//     // vector<int>nums1{1};
+//     int m = 3;
+//     // int m = 1;
+//     vector<int>nums2{2,5,6};
+//     // vector<int>nums2{};
+//     int  n = 3;
+//     // int  n = 0;
+//     merge(nums1,m,nums2,n);
+// }
+
+
+
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//     void rotate(vector<int>& nums, int k) {
+//        vector<int>arr;
+//             for(int i=nums.size()-1;i>k;i--){
+//                  arr.push_back(nums[i]);
+//             }
+//            for(int i=0;i<nums.size()-k;i++){
+//                 arr.push_back(nums[i]);
+//             }
+//     }
+
+// int main(){
+//       // vector<int>nums{1,2,3,4,5,6,7};
+//       vector<int>nums{-1,-100,3,99};
+//       int k = 2;
+//       rotate(nums,k);
+// }
+
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
-    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
-          vector<int>num;
-          for(int i=0;i<m;i++){
-            if(nums1[i]!=0){
-             num.push_back(nums1[i]);
-          }
-          }
-          for(int j=0;j<n;j++){
-             num.push_back(nums2[j]);
-          }
 
-          sort(num.begin(),num.end());
-          for(int i=0;i<m+n;i++){
-            cout<<num[i]<<" ";
-          }
-        }
-int main(){
-    vector<int>nums1{1,2,3,0,0,0};
-    // vector<int>nums1{1};
-    int m = 3;
-    // int m = 1;
-    vector<int>nums2{2,5,6};
-    // vector<int>nums2{};
-    int  n = 3;
-    // int  n = 0;
-    merge(nums1,m,nums2,n);
+void rotate(vector<int>& nums, int k) {
+    int n = nums.size();
+    k = k % n; // In case k > n
+    reverse(nums.begin(), nums.end());
+    reverse(nums.begin(), nums.begin() + k);
+    reverse(nums.begin() + k, nums.end());
+    
+    for (int num : nums) {
+        cout << num << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+    vector<int> nums{1, 2, 3, 4, 5, 6, 7};
+    int k = 3;
+    rotate(nums, k);
+    
 }
