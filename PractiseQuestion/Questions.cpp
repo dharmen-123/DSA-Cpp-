@@ -172,25 +172,54 @@
 // }
 
 
+ ////// ############## Q. 316 ##############
 
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//     string removeDuplicateLetters(string s) {
+//            string a="";
+//            sort(s.begin(),s.end());
+//             for(int i=0;i<s.size();i++){
+//                 if(s[i]!=s[i+1]){
+//                    a+=s[i];
+//                 }              
+//             }
+//             return a;
+//     }
+// int main(){
+//     string s="bcabc";
+//     cout<<removeDuplicateLetters(s);
+// }
+
+
+//////// ################ Q.1903 #############
 
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-    string removeDuplicateLetters(string s) {
-           string a="";
-           sort(s.begin(),s.end());
-            for(int i=0;i<s.size();i++){
-                if(s[i]!=s[i+1]){
-                   a+=s[i];
-                }
-              
+string largestOddNumber(string num) {
+    int n=num.size();
+     if((num[n-1]-'0')%2==0){
+    char a='0';
+    for(int i=0;i<n;i++){
+        if(isdigit(num[i])){
+            if((num[i]-'0')%2!=0 && (num[i]-'0')>(a-'0')){
+                  a=num[i]; 
             }
-            return a;
+        }
+    }    
+    return (a =='0')? "" : string(1,a);  
     }
-
+    else if((num[n-1]-'0')==0){
+        
+    }
+    else{
+        return num;
+    }
+}
 int main(){
-
-    string s="bcabc";
-    cout<<removeDuplicateLetters(s);
+     string s="52";
+    //  cout<<int('2');
+     cout<<largestOddNumber(s);
 }
