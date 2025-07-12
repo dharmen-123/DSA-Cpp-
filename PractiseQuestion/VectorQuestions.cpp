@@ -180,9 +180,17 @@ using namespace std;
 
 void rotate(vector<int>& nums, int k) {
     int n = nums.size();
-    k = k % n; // In case k > n
+    k = k % n; 
     reverse(nums.begin(), nums.end());
+    for (int num : nums) {
+        cout << num << " ";
+    }
+    cout<<"\n";
     reverse(nums.begin(), nums.begin() + k);
+    for (int num : nums) {
+        cout << num << " ";
+    }
+    cout<<"\n";
     reverse(nums.begin() + k, nums.end());
     
     for (int num : nums) {
@@ -193,7 +201,9 @@ void rotate(vector<int>& nums, int k) {
 
 int main() {
     vector<int> nums{1, 2, 3, 4, 5, 6, 7};
+      // vector<int>nums{-1,-100,3,99};
     int k = 3;
     rotate(nums, k);
     
+
 }
