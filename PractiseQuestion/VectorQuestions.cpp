@@ -214,3 +214,19 @@
 //   cout<<findMin(nums);
 //   }
 
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+vector<vector<int>> merge(vector<vector<int>>& intervals) {
+        sort(intervals.begin(),intervals.end());
+        for(int i=0;i<intervals.size();i++){
+          for(int j=0;j<intervals.size()-1;j++){
+          cout<<intervals[i][j]<<" ";
+        }}
+    }
+int main(){
+    vector<vector<int>>intervals{{1,3},{2,6},{8,10},{15,18}};
+    merge(intervals);
+}
