@@ -195,31 +195,31 @@
 
 //////// ################ Q.1903 #############
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-string largestOddNumber(string num) {
-    int n=num.size();
-     if((num[n-1]-'0')%2==0){
-    char a='0';
-    for(int i=0;i<n;i++){
-        if(isdigit(num[i])){
-            if((num[i]-'0')%2!=0 && (num[i]-'0')>(a-'0')){
-                  a=num[i]; 
-            }
-        }
-    }    
-    return (a =='0')? "" : string(1,a);  
-    }
-    else if((num[n-1]-'0')==0){
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// string largestOddNumber(string num) {
+//     int n=num.size();
+//      if((num[n-1]-'0')%2==0){
+//     char a='0';
+//     for(int i=0;i<n;i++){
+//         if(isdigit(num[i])){
+//             if((num[i]-'0')%2!=0 && (num[i]-'0')>(a-'0')){
+//                   a=num[i]; 
+//             }
+//         }
+//     }    
+//     return (a =='0')? "" : string(1,a);  
+//     }
+//     else if((num[n-1]-'0')==0){
         
-    }
-    else{
-        return num;
-    }
-}
-int main(){
-     string s="52";
-    //  cout<<int('2');
-     cout<<largestOddNumber(s);
-}
+//     }
+//     else{
+//         return num;
+//     }
+// }
+// int main(){
+//      string s="52";
+//     //  cout<<int('2');
+//      cout<<largestOddNumber(s);
+// }
