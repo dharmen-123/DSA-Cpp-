@@ -37,15 +37,22 @@ int main(){
   d.push_back(5);
   d.push_front(7);
   d.push_back(9);
+  d.push_back(12);
 
-  for(auto &q:d){
-    cout<<++q<<" ";
-  }
-  cout<<endl;
+/// Change in address
+  // for(auto &q:d){
+  //   cout<<++q<<" ";
+  // }
+ // cout<<endl;
   for(auto p:d){
     cout<<p<<" ";
   }
-  
+  cout<<endl;
+  d.pop_back();
+  d.pop_front();
+    for(auto p:d){
+    cout<<p<<" ";
+  }
 }
 
 //##############  auto ########
