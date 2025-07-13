@@ -53,6 +53,8 @@ int main(){
     for(auto p:d){
     cout<<p<<" ";
   }
+  ///// Iterator
+  
 }
 
 //##############  auto ########
