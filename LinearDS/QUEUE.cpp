@@ -38,13 +38,14 @@ int main(){
   d.push_front(7);
   d.push_back(9);
 
-  for(auto p:d){
-    cout<<p<<" ";
-  }
   for(auto &q:d){
     cout<<++q<<" ";
   }
-
+  cout<<endl;
+  for(auto p:d){
+    cout<<p<<" ";
+  }
+  
 }
 
 //##############  auto ########
