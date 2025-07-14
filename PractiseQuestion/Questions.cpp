@@ -109,16 +109,12 @@
 // #include<bits/stdc++.h>
 
 // string largestNumber(vector<int>& nums) {
-//            vector<string>s;
+//                  string s="";
 //            for(int i=0;i<nums.size();i++){
-//               s.push_back(to_string(nums[i]));
+//               s+=to_string(nums[i]);
 //            }
 //            sort(s.begin(),s.end(),greater<int>());
-//            string r;
-//            for(auto x:s){
-//                r+=x;
-//            }
-//        return r;
+//            return s; 
 //     }
 // int main(){
     
