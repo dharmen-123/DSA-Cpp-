@@ -233,21 +233,22 @@
 // }
 
 
-#include <iostream>
-#include <algorithm>
-using namespace std;
-#include <vector>
+// #include <iostream>
+// #include <algorithm>
+// using namespace std;
+// #include <vector>
 
-int main() {
-    vector<int> v = {1, 1, 2, 2, 3, 3, 3, 4, 5, 5};
-    auto new_end = unique(v.begin(), v.end());
-    for (int num : v) {
-        cout << num << " ";
-    }     
-    v.erase(new_end, v.end());
-    cout<<"\n";
-    for (int num : v) {
-        cout << num << " ";
-    }
-    return 0;
-}
+// int main() {
+//     vector<int> v = {1, 1, 2, 2, 3, 3, 3, 4, 5, 5};
+    // auto new_end = unique(v.begin(), v.end());
+    // for (int num : v) {
+    //     cout << num << " ";
+    // }     
+    // v.erase(new_end, v.end());
+    // cout<<"\n";
+    // for (int num : v) {
+    //     cout << num << " ";
+    // }
+//     return 0;
+
+// }

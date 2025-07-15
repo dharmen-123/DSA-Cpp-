@@ -226,7 +226,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 bool uniqueOccurrences(vector<int>& arr) {
-    map<int, int>m;
+    map<int,int>m;
     vector<int>c;
     for(int i=0;i<arr.size();i++){
         m[arr[i]]++;
@@ -234,16 +234,16 @@ bool uniqueOccurrences(vector<int>& arr) {
     for(auto p:m){
         c.push_back(p.second);
     }
- for(auto a:c){
-    cout<<a<<" ";
- }
- 
- cout<<"\n";
-          return true;
-
+    sort(c.begin(),c.end());
+      for(int i=0;i<c.size()-1;i++){
+         if(c[i]==c[i+1]){
+            return false;
+             break;
+         }
+    }
+        return true;
 }
 int main(){
   vector<int>arr{1,2,2,1,1,3};
   cout<<uniqueOccurrences(arr);
-
 }
