@@ -244,6 +244,6 @@ bool uniqueOccurrences(vector<int>& arr) {
         return true;
 }
 int main(){
-  vector<int>arr{1,2,2,1,1,3};
+  vector<int>arr{-3,0,1,-3,1,1,1,-3,10,0};
   cout<<uniqueOccurrences(arr);
 }
