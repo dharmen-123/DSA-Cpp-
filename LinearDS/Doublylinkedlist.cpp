@@ -1,10 +1,10 @@
 //   ############ Doubly linked list ###################
 
+// This is bidirections linked list
 
 #include <iostream>
 #include <list>
 using namespace std;
-// This is bidirections linked list
 int main()
 {
     list<int> lis{1, 2, 3,0};
@@ -13,32 +13,29 @@ int main()
     {
         cout << i << " ";
     }
-
-    lis.push_back(40);//time O(n)
-
-    cout << "\n After Push_pack" << endl;
+    lis.push_back(40);     //time O(n)
+    cout << "\nAfter Push_back" << endl;
     for (auto i : lis)
     {
         cout << i << " ";
     }
     lis.push_front(90);
-
-    cout << "\n After Push_front" << endl;
+    cout << "\nAfter Push_front" << endl;
     for (auto i : lis)
     {
         cout << i << " ";
     }
-
     lis.pop_back();
     lis.pop_front();
 
-    cout << "\n After pop_back" << endl;
+    cout << "\nAfter pop_back" << endl;
     for (auto i : lis)
     {
         cout << i << " ";
     }
 
     lis.reverse();
+    // lis.sort();
     cout << "\n After reverse" << endl;
     for (auto i : lis)
     {
@@ -51,7 +48,6 @@ int main()
     {
         cout << i << " ";
     }
-
     cout<<"\nLambda";
     cout<<[](int a,int b){return a>b;}(5,40);
 
