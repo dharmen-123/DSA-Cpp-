@@ -48,8 +48,8 @@ int main()
     {
         cout << i << " ";
     }
-    cout<<"\nLambda";
-    cout<<[](int a,int b){return a>b;}(5,40);
+    // cout<<"\nLambda";
+    // cout<<[](int a,int b){return a>b;}(5,40);
 
     //  lis.remove_if([](int a,int b){return a>b;}(5,40));
     // Lambda function (anonimas)  it's the single line functions 
