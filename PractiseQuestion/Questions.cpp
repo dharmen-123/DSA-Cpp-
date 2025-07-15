@@ -227,12 +227,18 @@
 using namespace std;
 bool uniqueOccurrences(vector<int>& arr) {
     map<int, int>m;
+    vector<int>c;
     for(int i=0;i<arr.size();i++){
         m[arr[i]]++;
     } 
     for(auto p:m){
-    cout<<p.first<<"="<<p.second<<"\n";
+        c.push_back(p.second);
+    }
+ for(auto a:c){
+    cout<<a<<" ";
  }
+ 
+ cout<<"\n";
           return true;
 
 }

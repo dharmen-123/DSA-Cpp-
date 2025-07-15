@@ -119,37 +119,37 @@
 
 ////  ####################### Q.  88 ##############################
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
              
-      // vector<int>num;
-          // for(int i=0;i<m;i++){
-          //   if(nums1[i]!=0){
-          //    num.push_back(nums1[i]);
-          // }
-          // }
-          // for(int j=0;j<n;j++){
-          //    num.push_back(nums2[j]);
-          // }
+//       // vector<int>num;
+//           // for(int i=0;i<m;i++){
+//           //   if(nums1[i]!=0){
+//           //    num.push_back(nums1[i]);
+//           // }
+//           // }
+//           // for(int j=0;j<n;j++){
+//           //    num.push_back(nums2[j]);
+//           // }
 
-          // sort(num.begin(),num.end());
-          // for(int i=0;i<m+n;i++){
-          //   cout<<num[i]<<" ";
-          // }
-        }
-int main(){
-    vector<int>nums1{1,2,3,0,0,0};
-    // vector<int>nums1{1};
-    int m = 3;
-    // int m = 1;
-    vector<int>nums2{2,5,6};
-    // vector<int>nums2{};
-    int  n = 3;
-    // int  n = 0;
-    merge(nums1,m,nums2,n);
-}
+//           // sort(num.begin(),num.end());
+//           // for(int i=0;i<m+n;i++){
+//           //   cout<<num[i]<<" ";
+//           // }
+//         }
+// int main(){
+//     vector<int>nums1{1,2,3,0,0,0};
+//     // vector<int>nums1{1};
+//     int m = 3;
+//     // int m = 1;
+//     vector<int>nums2{2,5,6};
+//     // vector<int>nums2{};
+//     int  n = 3;
+//     // int  n = 0;
+//     merge(nums1,m,nums2,n);
+// }
 
 
 
@@ -231,3 +231,23 @@ int main(){
 //     vector<vector<int>>intervals{{1,3},{2,6},{8,10},{15,18}};
 //     merge(intervals);
 // }
+
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+#include <vector>
+
+int main() {
+    vector<int> v = {1, 1, 2, 2, 3, 3, 3, 4, 5, 5};
+    auto new_end = unique(v.begin(), v.end());
+    for (int num : v) {
+        cout << num << " ";
+    }     
+    v.erase(new_end, v.end());
+    cout<<"\n";
+    for (int num : v) {
+        cout << num << " ";
+    }
+    return 0;
+}
