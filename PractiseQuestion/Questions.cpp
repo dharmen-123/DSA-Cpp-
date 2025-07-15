@@ -220,30 +220,30 @@
 //      cout<<largestOddNumber(s);
 // }
 
-//////   ################## Q. 1207 ###################
+//////   ######## uniqueOccurrences  Q. 1207 ###################
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-bool uniqueOccurrences(vector<int>& arr) {
-    map<int,int>m;
-    vector<int>c;
-    for(int i=0;i<arr.size();i++){
-        m[arr[i]]++;
-    } 
-    for(auto p:m){
-        c.push_back(p.second);
-    }
-    sort(c.begin(),c.end());
-      for(int i=0;i<c.size()-1;i++){
-         if(c[i]==c[i+1]){
-            return false;
-             break;
-         }
-    }
-        return true;
-}
-int main(){
-  vector<int>arr{-3,0,1,-3,1,1,1,-3,10,0};
-  cout<<uniqueOccurrences(arr);
-}
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// bool uniqueOccurrences(vector<int>& arr) {
+//     map<int,int>m;
+//     vector<int>c;
+//     for(int i=0;i<arr.size();i++){
+//         m[arr[i]]++;
+//     } 
+//     for(auto p:m){
+//         c.push_back(p.second);
+//     }
+//     sort(c.begin(),c.end());
+//       for(int i=0;i<c.size()-1;i++){
+//          if(c[i]==c[i+1]){
+//             return false;
+//              break;
+//          }
+//     }
+//         return true;
+// }
+// int main(){
+//   vector<int>arr{-3,0,1,-3,1,1,1,-3,10,0};
+//   cout<<uniqueOccurrences(arr);
+// }
