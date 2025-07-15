@@ -219,3 +219,25 @@
 //     //  cout<<int('2');
 //      cout<<largestOddNumber(s);
 // }
+
+//////   ################## Q. 1207 ###################
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+bool uniqueOccurrences(vector<int>& arr) {
+    map<int, int>m;
+    for(int i=0;i<arr.size();i++){
+        m[arr[i]]++;
+    } 
+    for(auto p:m){
+    cout<<p.first<<"="<<p.second<<"\n";
+ }
+          return true;
+
+}
+int main(){
+  vector<int>arr{1,2,2,1,1,3};
+  cout<<uniqueOccurrences(arr);
+
+}
