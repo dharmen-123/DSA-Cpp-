@@ -137,7 +137,7 @@
 //     cout<<majorityElement(nums);
 // }
 
-////  Q.29, Q.378  ,Q.1859 , Q.55 ,Q.316 , Q.56
+////   Q.378  ,Q.1859 , Q.55 ,Q.316 , Q.56, Q.315
 
 //////  ###################### leetcode Q.274    ##############
 
@@ -250,43 +250,69 @@
 
 // ###################### Remove all zeros in end #########
 
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// void pushZerosToEnd(vector<int>& arr) {
+//         int temp;
+//     for(int i=1;i<arr.size();i++){
+//         if(arr[i-1]==0){
+//              temp=arr[i-1];
+//              arr[i-1]=arr[i];
+//              arr[i]=temp;
+//         }
+//     }   
+//       for(auto p:arr){
+//         cout<<p<<" ";
+//      }
+//     // vector<int>num;   
+//     // int n=arr.size();
+//     // int c=0;
+//     //  for(int i=0;i<n;i++){
+//     //     if(arr[i]!=0){
+//     //        num.push_back(arr[i]);
+//     //     }
+//     //     else{
+//     //         c++;
+//     //     }
+//     //  }
+//     //  while(c>0){
+//     //     num.push_back(0);
+//     //      c--;
+//     //  }
+//     //  arr.clear();
+//     //  for(auto p:num){
+//     //     arr.push_back(p);
+//     //  }
+
+// }
+
+// int main(){
+//      vector<int>arr{1, 2, 0, 4, 3, 0, 5, 0};
+//      pushZerosToEnd(arr);     
+// }
+
+////// ###################### Remove all zeros in end #########
+
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
 void pushZerosToEnd(vector<int>& arr) {
-        int temp;
-    for(int i=0;i<arr.size()-1;i++){
-        if(arr[i]==0){
-             temp=arr[i];
-             arr[i]=arr[i+1];
-             arr[i+1]=temp;
+      int index=0;        
+       for(int i=0;i<arr.size();i++){
+        if(arr[i]!=0){
+            arr[index++]=arr[i];   
         }
+    }   
+    while(index<arr.size()){
+        arr[index++]=0;
     }
-    // vector<int>num;   
-    // int n=arr.size();
-    // int c=0;
-    //  for(int i=0;i<n;i++){
-    //     if(arr[i]!=0){
-    //        num.push_back(arr[i]);
-    //     }
-    //     else{
-    //         c++;
-    //     }
-    //  }
-    //  while(c>0){
-    //     num.push_back(0);
-    //      c--;
-    //  }
-    //  arr.clear();
-    //  for(auto p:num){
-    //     arr.push_back(p);
-    //  }
-     for(auto p:arr){
+      for(auto p:arr){
         cout<<p<<" ";
      }
 }
 
 int main(){
      vector<int>arr{1, 2, 0, 4, 3, 0, 5, 0};
-     pushZerosToEnd(arr);     
+     pushZerosToEnd(arr);  
 }
