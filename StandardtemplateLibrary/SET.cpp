@@ -49,18 +49,18 @@
 // auto p =s.find(data);
 
 
-#include<iostream>
-#include<bits/stdc++.h>
-#include<unordered_set>
-using namespace std;
+// #include<iostream>
+// #include<bits/stdc++.h>
+// #include<unordered_set>
+// using namespace std;
 
-int main(){
-   unordered_set<string>s1{"pen","pencil","eraser","alphabet","watch"};
-    //   set<string>s1{"pen","pencil","eraser","alphabet","watch"};      
-   for(auto a:s1){
-     cout<<a<<"\n";
-   }
-}
+// int main(){
+//    unordered_set<string>s1{"pen","pencil","eraser","alphabet","watch"};
+//     //   set<string>s1{"pen","pencil","eraser","alphabet","watch"};      
+//    for(auto a:s1){
+//      cout<<a<<"\n";
+//    }
+// }
 
 
 
@@ -72,4 +72,3 @@ int main(){
 
 //    ######## Multiset #########
 // multiset is used to allow the duplicacy and maintain the order 
-

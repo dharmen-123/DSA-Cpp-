@@ -1,16 +1,13 @@
- vector<int>v; int k=0;
-    for(int i=0;i<nums.size();i++){
-         if(nums[i]!=nums[i+1]){
-            k++;
-           v.push_back(nums[i]);
-         }
-         else{
-            v.push_back('_');
-         }
-    }   
-      nums.clear();
-    for(int i=0;i<v.size();i++){
-         nums.push_back(v[i]);
-      }
-       sort(nums.begin(),nums.end());
-      return k;
+include<iostream>
+using namespace std;
+#include<vector>
+int main(){
+  vector<int>v={1,2,3,5,6,7};
+  int a; 
+  for(int i=1;i<v.size();i++){
+      a=v[i]-v[i-1];
+      if(a!=1){
+        cout<<"Missing number is "<<v[i]-1<<endl;
+      }       
+}
+}
