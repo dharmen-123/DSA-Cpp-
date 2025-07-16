@@ -254,10 +254,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 void pushZerosToEnd(vector<int>& arr) {
-    for(int i=0;i<arr.size();i++){
         int temp;
-        if(arr[i+1]==0){
-             
+    for(int i=0;i<arr.size()-1;i++){
+        if(arr[i]==0){
+             temp=arr[i];
+             arr[i]=arr[i+1];
+             arr[i+1]=temp;
         }
     }
     // vector<int>num;   
