@@ -248,3 +248,43 @@
 //   cout<<uniqueOccurrences(arr);
 // }
 
+// ###################### Remove all zeros in end #########
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+void pushZerosToEnd(vector<int>& arr) {
+    for(int i=0;i<arr.size();i++){
+        int temp;
+        if(arr[i+1]==0){
+             
+        }
+    }
+    // vector<int>num;   
+    // int n=arr.size();
+    // int c=0;
+    //  for(int i=0;i<n;i++){
+    //     if(arr[i]!=0){
+    //        num.push_back(arr[i]);
+    //     }
+    //     else{
+    //         c++;
+    //     }
+    //  }
+    //  while(c>0){
+    //     num.push_back(0);
+    //      c--;
+    //  }
+    //  arr.clear();
+    //  for(auto p:num){
+    //     arr.push_back(p);
+    //  }
+     for(auto p:arr){
+        cout<<p<<" ";
+     }
+}
+
+int main(){
+     vector<int>arr{1, 2, 0, 4, 3, 0, 5, 0};
+     pushZerosToEnd(arr);     
+}
