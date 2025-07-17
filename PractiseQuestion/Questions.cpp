@@ -317,16 +317,60 @@
 //      pushZerosToEnd(arr);  
 // }
 
+//// ################### Q.53 ###############################
+
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// int maxSubArray(vector<int>& nums) {
+// //    int max=INT_MIN;
+//    int max=0;
+//    int n=nums.size();
+//    int sum=0;
+//    for(int i=0;i<n;i++){
+//      sum=sum+nums[i];
+//      if(sum>max){
+//         max=sum;
+//      }
+//      if(sum<0){
+//         sum=0;
+//      }
+//    }
+//     return max;
+// }
+// int main(){
+//     vector<int>nums{-2,1,-3,4,-1,2,1,-5,4};
+//     // vector<int>nums{5,4,-1,7,8};
+//     cout<<maxSubArray(nums);
+// }
 
 
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-int maxSubArray(vector<int>& nums) {
- 
-    
+int myAtoi(string s) {
+   int a = 0;
+    int sign = 1;
+    bool started = false;
+
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] == '-' && !started) {
+            sign = -1;
+            started = true;
+        } else if (isdigit(s[i])) {
+            a = a * 10 + (s[i] - '0');
+            started = true;
+        } else if (started) {
+            break; 
+        }
+        else{
+            return 0;
+        }
+    }
+    return a * sign;
+
 }
 int main(){
-    vector<int>nums{-2,1,-3,4,-1,2,1,-5,4};
-    cout<<maxSubArray(nums);
+    string s="words and 987";
+    cout<<myAtoi(s);
 }
