@@ -363,6 +363,9 @@ int myAtoi(string s) {
         } else if (started) {
             break; 
         }
+         else if(s[i] == ' '){
+            continue;
+         }
         else{
             return 0;
         }
@@ -371,6 +374,6 @@ int myAtoi(string s) {
 
 }
 int main(){
-    string s="words and 987";
+    string s="  -042";
     cout<<myAtoi(s);
 }
