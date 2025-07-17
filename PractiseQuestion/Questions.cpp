@@ -295,25 +295,35 @@
 
 ////// ###################### Remove all zeros in end #########
 
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// void pushZerosToEnd(vector<int>& arr) {
+//       int index=0;        
+//        for(int i=0;i<arr.size();i++){
+//         if(arr[i]!=0){
+//             arr[index++]=arr[i];   
+//         }
+//     }   
+//     while(index<arr.size()){
+//         arr[index++]=0;
+//     }
+//       for(auto p:arr){
+//         cout<<p<<" ";
+//      }
+// }
+// int main(){
+//      vector<int>arr{1, 2, 0, 4, 3, 0, 5, 0};
+//      pushZerosToEnd(arr);  
+// }
+
+
+
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-void pushZerosToEnd(vector<int>& arr) {
-      int index=0;        
-       for(int i=0;i<arr.size();i++){
-        if(arr[i]!=0){
-            arr[index++]=arr[i];   
-        }
-    }   
-    while(index<arr.size()){
-        arr[index++]=0;
-    }
-      for(auto p:arr){
-        cout<<p<<" ";
-     }
-}
+
 
 int main(){
-     vector<int>arr{1, 2, 0, 4, 3, 0, 5, 0};
-     pushZerosToEnd(arr);  
+
 }
