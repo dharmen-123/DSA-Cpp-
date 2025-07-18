@@ -346,34 +346,66 @@
 
 // ############################# Q. 8 ######################### 
 
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// int myAtoi(string s) {
+//    int a = 0;
+//     int sign = 1;
+//     bool started = false;
+
+//     for (int i = 0; i < s.size(); i++) {
+//         if (s[i] == '-' && !started) {
+//             sign = -1;
+//             started = true;
+//         } else if (isdigit(s[i])) {
+//             a = a * 10 + (s[i] - '0');
+//             started = true;
+//         } else if (started) {
+//             break; 
+//         }
+//          else if(s[i] == ' '){
+//             continue;
+//          }
+//         else{
+//             return 0;
+//         }
+//     }
+//     return a * sign;
+// }
+// int main(){
+//     string s="  -042";
+//     cout<<myAtoi(s);
+// }
+
+
+
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-int myAtoi(string s) {
-   int a = 0;
-    int sign = 1;
-    bool started = false;
-
-    for (int i = 0; i < s.size(); i++) {
-        if (s[i] == '-' && !started) {
-            sign = -1;
-            started = true;
-        } else if (isdigit(s[i])) {
-            a = a * 10 + (s[i] - '0');
-            started = true;
-        } else if (started) {
-            break; 
+ void backtrack(vector<string>& result, string current, int open, int close, int n) {
+        if (current.length() == 2 * n) {
+            result.push_back(current);
+            return;
         }
-         else if(s[i] == ' '){
-            continue;
-         }
-        else{
-            return 0;
+
+        if (open < n) {
+            backtrack(result, current + '(', open + 1, close, n);
+        }
+
+        if (close < open) {
+            backtrack(result, current + ')', open, close + 1, n);
         }
     }
-    return a * sign;
-}
+
+    vector<string>generateParenthesis(int n) {
+        vector<string> result;
+        backtrack(result, "", 0, 0, n);
+        return result;
+    }
+
+
 int main(){
-    string s="  -042";
-    cout<<myAtoi(s);
+    int n=3;
+    generateParenthesis(n);
 }
