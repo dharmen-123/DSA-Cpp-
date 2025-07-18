@@ -354,29 +354,29 @@
 //   cout<<largestNumber(nums);
 // }
 
+// // ######################### Q.   ###########################
 
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//     string orderlyQueue(string s, int k) {
+//        queue<char>q;
+//       int n=s.size();
+//       for(int i=0;i<n;i++){
+//         q.push(s[i]);
+//       }
+//       q.push('A');
+//     // while (!q.empty())
+//     // {
+//     //   cout<<q.front();
+//     //   q.pop();
+//     // }
+//     cout<<"\n";
+//         return "a" ;
+//     }
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-    string orderlyQueue(string s, int k) {
-       queue<char>q;
-      int n=s.size();
-      for(int i=0;i<n;i++){
-        q.push(s[i]);
-      }
-      q.push('A');
-    // while (!q.empty())
-    // {
-    //   cout<<q.front();
-    //   q.pop();
-    // }
-    cout<<"\n";
-        return "a" ;
-    }
-
-int main(){
-  string s = "cba";
-  int k = 1;
-   cout<<orderlyQueue(s,k);
-}
+// int main(){
+//   string s = "cba";
+//   int k = 1;
+//    cout<<orderlyQueue(s,k);
+// }
