@@ -73,32 +73,32 @@
 //    ######## Multiset #########
 // multiset is used to allow the duplicacy and maintain the order 
 
-#include<iostream>
-#include<bits/stdc++.h>
-#include<set>
-using namespace std;
+// #include<iostream>
+// #include<bits/stdc++.h>
+// #include<set>
+// using namespace std;
 
-int main(){
-  unordered_multiset<int>s;
-  s.insert(20);
-  s.insert(75);
-  s.insert(64);
-  s.insert(100);
-  s.insert(24);
-  s.insert(75);
-  for(auto a:s){
-    cout<<a<<"\n";
-}
-//  s.clear();
-// s.erase(683);
-auto p=s.find(43);
-if(p!=s.end()){
-    cout<<"found\n";
-}
-else{
-    cout<<"Not found\n";
-}
-  for(auto a:s){
-    cout<<a<<"\n";
-}
-}
+// int main(){
+//   unordered_multiset<int>s;
+//   s.insert(20);
+//   s.insert(75);
+//   s.insert(64);
+//   s.insert(100);
+//   s.insert(24);
+//   s.insert(75);
+//   for(auto a:s){
+//     cout<<a<<"\n";
+// }
+// //  s.clear();
+// // s.erase(683);
+// auto p=s.find(43);
+// if(p!=s.end()){
+//     cout<<"found\n";
+// }
+// else{
+//     cout<<"Not found\n";
+// }
+//   for(auto a:s){
+//     cout<<a<<"\n";
+// }
+// }
