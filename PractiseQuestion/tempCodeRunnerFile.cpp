@@ -1,13 +1,31 @@
 include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
-#include<vector>
-int main(){
-  vector<int>v={1,2,3,5,6,7};
-  int a; 
-  for(int i=1;i<v.size();i++){
-      a=v[i]-v[i-1];
-      if(a!=1){
-        cout<<"Missing number is "<<v[i]-1<<endl;
-      }       
+int myAtoi(string s) {
+   int a = 0;
+    int sign = 1;
+    bool started = false;
+
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] == '-' && !started) {
+            sign = -1;
+            started = true;
+        } else if (isdigit(s[i])) {
+            a = a * 10 + (s[i] - '0');
+            started = true;
+        } else if (started) {
+            break; 
+        }
+         else if(s[i] == ' '){
+            continue;
+         }
+        else{
+            return 0;
+        }
+    }
+    return a * sign;
 }
+int main(){
+    string s="  -042";
+    cout<<myAtoi(s);
 }
