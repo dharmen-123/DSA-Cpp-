@@ -412,23 +412,50 @@
 
 // ###########################  Q.1 ###################
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-    vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> mp; // key: number, value: index
-        for (int i = 0; i < nums.size(); ++i) {
-            int complement = target - nums[i];
-            if (mp.count(complement)) {
-                return {mp[complement], i};
-            }
-            mp[nums[i]] = i;
-        }
-        return {}; // if no solution found
-    }
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// vector<int> twoSum(vector<int>& nums, int target){
+//          for(int i=0;i<nums.size()-1;i++){
+//             for(int j=i+1;j<nums.size();j++){
+//               if((nums[i]+nums[j])== target){
+//                   nums.clear();
+//                   nums.push_back(i);
+//                   nums.push_back(j);
+//                   break;
+//             }
+//          }
+//       }
+//          for(auto a:nums){
+//             cout<<a<<" ";
+//          }
+//          return nums;
+//  }
+// int main(){
+//    vector<int>nums{2,5,5,11};
+//    int t=10;
+//    twoSum(nums,t);
+// }
 
-int main(){
-   vector<int>nums{2,5,5,11};
-   int t=10;
-   twoSum(nums,t);
-}
+// ###########################  Q.1 ###################
+
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//     vector<int> twoSum(vector<int> &nums, int target) {
+//         for (int i = 0; i < nums.size(); i++) {
+//             for (int j = i + 1; j < nums.size(); j++) {
+//                 if (nums[j] == target - nums[i]) {
+//                     cout<<i<<" "<<j;
+//                   return {i, j};
+//                 }
+//             }
+//         }
+//         return {};
+//     }
+
+// int main(){
+//     vector<int>nums{2,5,5,11};
+//    int t=10;
+//    twoSum(nums,t);
+// }
