@@ -409,3 +409,28 @@
 //     int n=3;
 //     generateParenthesis(n);
 // }
+
+// ###########################  Q.1 ###################
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+vector<int> twoSum(vector<int>& nums, int target){
+         for(int i=0;i<nums.size()-1;i++){
+            if((nums[i]+nums[i+1])== target){
+                  nums.clear();
+                  nums.push_back(i);
+                  nums.push_back(i+1);
+                  break;
+            }
+         }
+         for(auto a:nums){
+            cout<<a<<" ";
+         }
+         return nums;
+ }
+int main(){
+   vector<int>nums{3,2,3};
+   int t=6;
+   twoSum(nums,t);
+}
