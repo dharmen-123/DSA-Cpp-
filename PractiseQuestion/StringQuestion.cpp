@@ -398,7 +398,6 @@ int romanToInt(string s) {
         for(int i=0;i<s.size();i++){
           sum=sum+mp[s[i]];
         }
-
      return sum;
 }
 int main(){
