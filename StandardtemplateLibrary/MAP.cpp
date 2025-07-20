@@ -63,48 +63,48 @@
 
 
 
-// #include<iostream>
-// #include<bits/stdc++.h>
-// #include<map>
-// using namespace std;
-
-// int main(){
-//   map<int,string>d;
-//   d[0]="DS";
-//   d[1]="JAVA";
-//   d[2]="DS";
-//   d[3]="DS";
-//   d[4]="DJANGO";
-//   d[5]="JAVA";
-// //   cout<<d.size();
-// int count=0, ans=0;
-// for(int i=0;i<d.size();i++){
-  
-// }
-
-// }
-
-
-
-
 #include<iostream>
 #include<bits/stdc++.h>
+#include<map>
 using namespace std;
 
 int main(){
- map<string, int>mp;
- int n;
- string s;
- cout<<"Enter the course :";
- cin>>n;
+  map<int,string>d;
+  d[0]="DS";
+  d[1]="JAVA";
+  d[2]="DS";
+  d[3]="DS";
+  d[4]="DJANGO";
+  d[5]="JAVA";
+//   cout<<d.size();
+// int count=0, ans=0;
 
- for(int i=0;i<n;i++){
-    cout<<"Enter the course name:";
-    cin>>s;
-    mp[s]++;
- }
- for(auto p:mp){
-    cout<<p.first<<"="<<p.second<<"\n";
- }
- 
+for(auto i=d.begin();i!=d.end();i++){
+   cout<<i->first<<"="<<i->second<<endl;
 }
+}
+
+
+
+
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//  map<string, int>mp;
+//  int n;
+//  string s;
+//  cout<<"Enter the course :";
+//  cin>>n;
+
+//  for(int i=0;i<n;i++){
+//     cout<<"Enter the course name:";
+//     cin>>s;
+//     mp[s]++;
+//  }
+//  for(auto p:mp){
+//     cout<<p.first<<"="<<p.second<<"\n";
+//  }
+ 
+// }
