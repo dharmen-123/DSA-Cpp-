@@ -273,18 +273,22 @@
 
 // ############## Recursion ##################
 
-#include<iostream>
-using namespace std;
-void Power(int b, int p){
-    if(b==0){
-        return 1;
-    }
-    if(p==0){
+// #include<iostream>
+// using namespace std;
+// void Power(int b, int p){
+//     if(b==0){
+//         return 1;
+//     }
+//     if(p==0){
 
 
-    }
-int main(){
+//     }
+// int main(){
     
-}
-}
+// }
+// }
 
+
+//    Solve question 
+
+// Q.7 , Q,12, Q,13
