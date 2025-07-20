@@ -63,26 +63,26 @@
 
 
 
-#include<iostream>
-#include<bits/stdc++.h>
-#include<map>
-using namespace std;
+// #include<iostream>
+// #include<bits/stdc++.h>
+// #include<map>
+// using namespace std;
 
-int main(){
-  map<int,string>d;
-  d[0]="DS";
-  d[1]="JAVA";
-  d[2]="DS";
-  d[3]="DS";
-  d[4]="DJANGO";
-  d[5]="JAVA";
-//   cout<<d.size();
-// int count=0, ans=0;
+// int main(){
+//   map<int,string>d;
+//   d[0]="DS";
+//   d[1]="JAVA";
+//   d[2]="DS";
+//   d[3]="DS";
+//   d[4]="DJANGO";
+//   d[5]="JAVA";
+// //   cout<<d.size();
+// // int count=0, ans=0;
 
-for(auto i=d.begin();i!=d.end();i++){
-   cout<<i->first<<"="<<i->second<<endl;
-}
-}
+// for(auto i=d.begin();i!=d.end();i++){
+//    cout<<i->first<<"="<<i->second<<endl;
+// }
+// }
 
 
 
@@ -108,3 +108,5 @@ for(auto i=d.begin();i!=d.end();i++){
 //  }
  
 // }
+
+
