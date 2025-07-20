@@ -435,30 +435,58 @@
 //        cout<<romanToInt(s);
 // }
 
-// // ################  Q.14 ##################
+////// ################ Q.12 ###################
 
 // #include<iostream>
 // #include<bits/stdc++.h>
 // using namespace std;
+// string intToRoman(int num) {
+//     int values[] = {1000, 900, 500, 400, 100, 90,
+//                      50,  40,  10,   9,   5,  4, 1};
+//     string symbols[] = {"M", "CM", "D", "CD", "C", "XC",
+//                       "L", "XL", "X", "IX", "V", "IV", "I"};
+//        string r="";
+//        for(int i=0;i<13;i++){
+//             while(num>=values[i]){
+//               r+=symbols[i];
+//               num-=values[i];
+//             }
+//        }     
+//        return r; 
 
-//   string intToRoman(int num) {    
-//     map<int ,string,greater<int>>mp{
-//           {1000, "M"}, {900, "CM"}, {500, "D"}, {400, "CD"},
-//         {100, "C"},  {90, "XC"},  {50, "L"},  {40, "XL"},
-//         {10, "X"},   {9, "IX"},   {5, "V"},   {4, "IV"}, {1, "I"}
-//     };
-//     string r="";
-//     for(auto i=mp.begin();i!=mp.end();i++){
-//          while(num>=i->first){
-//             r+=i->second;
-//             num-=i->first;
+  ////// ############### 2nd way
+       // //    map<int ,string,greater<int>>mp{
+       // //           {1000, "M"}, {900, "CM"}, {500, "D"}, {400, "CD"},
+       // //         {100, "C"},  {90, "XC"},  {50, "L"},  {40, "XL"},
+       // //         {10, "X"},   {9, "IX"},   {5, "V"},   {4, "IV"}, {1, "I"}
+       // //     };
+       // //     string r="";
+       // //     for(auto i=mp.begin();i!=mp.end();i++){
+       // //          while(num>=i->first){
+       // //             r+=i->second;
+       // //             num-=i->first;
+       // //          }
+       // //     }
+       // //       return r;
 
-//          }
-//     }
-//       return r;
 // }
 // int main(){
 //   int num = 3749;
 //   cout<<intToRoman(num);
-
 // }
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+string kthLargestNumber(vector<string>& nums, int k) {
+        sort(nums.begin(),nums.end());
+        for(auto a:nums){
+          cout<<a<<" ";
+        }
+     return "a";
+}
+int main(){
+   vector<string>nums{"3","6","7","10"};
+   int k=4;
+   cout<<kthLargestNumber(nums,k);
+}
