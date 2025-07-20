@@ -479,14 +479,24 @@
 #include<bits/stdc++.h>
 using namespace std;
 string kthLargestNumber(vector<string>& nums, int k) {
-        sort(nums.begin(),nums.end());
-        for(auto a:nums){
-          cout<<a<<" ";
-        }
-     return "a";
+    vector<int>v;
+    int n=nums.size();
+      for(int i=0;i<nums.size();i++){
+          int a;
+          a=stoi(nums[i]);
+          v.push_back(a);
+      }
+        sort(v.begin(),v.end());
+       nums.clear();
+        for(int i=0;i<v.size();i++){
+          string a;
+          a=to_string(v[i]);
+          nums.push_back(a);
+      }
+     return nums[n-k];
 }
 int main(){
-   vector<string>nums{"3","6","7","10"};
-   int k=4;
+   vector<string>nums{"2","21","12","1"};
+   int k=3;
    cout<<kthLargestNumber(nums,k);
 }
