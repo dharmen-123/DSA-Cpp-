@@ -396,10 +396,37 @@
 //           {'D', 500},
 //           {'M', 1000}
 //         };
+// // I can be placed before V (5) and X (10) to make 4 and 9. 
+// // X can be placed before L (50) and C (100) to make 40 and 90. 
+// // C can be placed before D (500) and M (1000) to make 400 and 900.
 //         int sum=0;
 //         for(int i=0;i<s.size();i++){
+//           if(s[i]=='I' && (s[i+1]=='V' || s[i+1]=='X')){
+//             sum=sum+(mp[s[i+1]]-mp[s[i]]);
+//             i++;
+//           }
+//           else if(s[i]=='X' && (s[i+1]=='L' || s[i+1]=='C')){
+//             sum=sum+(mp[s[i+1]]-mp[s[i]]);
+//             i++;
+//           }
+//           else if(s[i]=='C' && (s[i+1]=='D' || s[i+1]=='M')){
+//             sum=sum+(mp[s[i+1]]-mp[s[i]]);
+//             i++;
+//           }
+//           else{
 //           sum=sum+mp[s[i]];
 //         }
+//       }
+//        // ################ 2nd way ##############
+//         //      for (int i = 0; i < s.size(); ++i) {
+//         //     if (i + 1 < s.size() && mp[s[i]] < mp[s[i + 1]]) {
+//         //         sum += mp[s[i + 1]] - mp[s[i]];
+//         //         ++i;
+//         //     } else {
+//         //         sum += mp[s[i]];
+//         //     }
+//         // }
+
 //      return sum;
 // }
 // int main(){
