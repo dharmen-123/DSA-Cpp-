@@ -262,15 +262,43 @@
 
 // int main() {
 //     vector<int> v = {1, 1, 2, 2, 3, 3, 3, 4, 5, 5};
-    // auto new_end = unique(v.begin(), v.end());
-    // for (int num : v) {
-    //     cout << num << " ";
-    // }     
-    // v.erase(new_end, v.end());
-    // cout<<"\n";
-    // for (int num : v) {
-    //     cout << num << " ";
-    // }
+//     auto new_end = unique(v.begin(), v.end());
+//     for (int num : v) {
+//         cout << num << " ";
+//     }     
+//     v.erase(new_end, v.end());
+//     cout<<"\n";
+//     for (int num : v) {
+//         cout << num << " ";
+//     }
 //     return 0;
-
 // }
+
+////// ###################### Q.- 3SUM ######################
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+vector<vector<int>> threeSum(vector<int>& nums) {
+         vector<vector<int>>v;
+             for(int i=0;i<nums.size()-2;i++){
+                for(int j=i+1;j<nums.size()-1;j++){
+                   if((nums[i]+nums[j]+nums[j+1])==0){
+                    v.push_back({nums[i],nums[j],nums[j+1]});
+                   }
+             }
+            }
+            sort(v.begin(),v.end());
+            reverse(v.begin(),v.end());
+            for(auto row:v){
+                for(auto col :row){
+                    cout<<col<<" ";
+                }
+                cout<<endl;
+            }
+            return v;
+}
+int main(){
+     vector<int>nums{-1,0,1,2,-1,-4};
+      threeSum(nums);
+}

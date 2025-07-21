@@ -53,3 +53,4 @@ int main(){
     Node* next=head->next;
     cout<<head->data<<" "<<next->data;
 }
+
