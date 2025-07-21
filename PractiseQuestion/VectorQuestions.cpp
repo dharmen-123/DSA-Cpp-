@@ -276,29 +276,119 @@
 
 ////// ###################### Q.- 3SUM ######################
 
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// vector<vector<int>> threeSum(vector<int>& nums) {
+//          vector<vector<int>>v;
+//          vector<int>temp;
+//              for(int i=0;i<nums.size()-2;i++){
+//                for(int j=i+1;j<nums.size()-1;j++){
+//                   for(int k=j+1;k<nums.size();k++){
+//                    if((nums[i]+nums[j]+nums[k])==0){
+//                     temp={nums[i],nums[j],nums[k]};
+//                     sort(temp.begin(),temp.end());
+//                     v.push_back(temp);
+//                     temp.clear();
+//                    }
+//                  }
+//                }
+//             }
+//             sort(v.begin(),v.end());
+//             auto dup=unique(v.begin(),v.end());
+//             v.erase(dup,v.end());
+//             for(auto row:v){
+//                 for(auto col :row){
+//                     cout<<col<<" ";
+//                 }
+//                 cout<<endl;
+//             }
+//             return v;
+// }
+// int main(){
+//     //  vector<int>nums{-1,0,1,2,-1,-4};
+//      vector<int>nums{-2,0,1,1,2};
+//       threeSum(nums);
+// }
+
+// #include <iostream>
+// #include <vector>
+// #include <algorithm>
+// using namespace std;
+
+// vector<vector<int>> threeSum(vector<int>& nums) {
+//     vector<vector<int>> v;
+//     sort(nums.begin(), nums.end());  
+//     for (int i = 0; i < nums.size() - 2; i++) {
+//         if (i > 0 && nums[i] == nums[i - 1]) continue;  
+//         int left = i + 1;
+//         int right = nums.size() - 1;
+//         while (left < right) {
+//             int total = nums[i] + nums[left] + nums[right];
+//             if (total == 0) {
+//                 v.push_back({nums[i], nums[left], nums[right]});
+//                 while (left < right && nums[left] == nums[left + 1]) left++;  // Skip duplicates
+//                 while (left < right && nums[right] == nums[right - 1]) right--;
+//                 left++;
+//                 right--;
+//             } else if (total < 0) {
+//                 left++;
+//             } else {
+//                 right--;
+//             }
+//         }
+//     }
+//     return v;
+// }
+// int main() {
+//     vector<int> nums{0,0,0,0};
+//     vector<vector<int>> result = threeSum(nums);
+
+//     for (auto& row : result) {
+//         for (int col : row) {
+//             cout << col << " ";
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+
+
+//////  ################### Q. 16  ###################
+
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-vector<vector<int>> threeSum(vector<int>& nums) {
-         vector<vector<int>>v;
-             for(int i=0;i<nums.size()-2;i++){
-                for(int j=i+1;j<nums.size()-1;j++){
-                   if((nums[i]+nums[j]+nums[j+1])==0){
-                    v.push_back({nums[i],nums[j],nums[j+1]});
-                   }
-             }
-            }
-            sort(v.begin(),v.end());
-            reverse(v.begin(),v.end());
-            for(auto row:v){
-                for(auto col :row){
-                    cout<<col<<" ";
-                }
-                cout<<endl;
-            }
-            return v;
-}
+   int threeSumClosest(vector<int>& nums, int target) {
+        int close=INT_MAX;
+        int result=0;
+        sort(nums.begin(),nums.end());
+        cout<<close<<endl;
+           for(int i=0;i<nums.size()-2;i++){
+              int left=i+1;
+              int right=nums.size()-1;
+              while(left<right){
+                  int total=nums[i]+nums[left]+nums[right];
+                  int diff=abs(total-target);
+                  if(diff<close){
+                    close=diff;
+                    result=total;
+                  } 
+                  else if(total<target){
+                    left++;
+                  }
+                  else{
+                    right--;
+                  }
+        }
+    }
+        return result;   
+    }
+
 int main(){
-     vector<int>nums{-1,0,1,2,-1,-4};
-      threeSum(nums);
+    vector<int>nums{-1,2,1,-4};
+    int target=1;
+    cout<<threeSumClosest(nums,target);
+
 }
