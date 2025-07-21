@@ -392,3 +392,24 @@
 //     cout<<threeSumClosest(nums,target);
 
 // }
+
+ // // // ############### Q.  ######################
+
+ #include<iostream>
+ #include<bits/stdc++.h>
+ using namespace std;
+vector<int> subarraySum(vector<int> &arr, int target) {
+      int sum=0;
+    for(int i=0;i<arr.size();i++){
+        int j=i+1;
+        while(sum<=target){
+            
+        }
+    }
+         
+} 
+ int main(){
+    vector<int>arr{1, 2, 3, 7, 5}; 
+    int target = 12;
+
+ }
