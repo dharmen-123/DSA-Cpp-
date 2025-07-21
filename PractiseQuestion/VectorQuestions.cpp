@@ -400,16 +400,34 @@
  using namespace std;
 vector<int> subarraySum(vector<int> &arr, int target) {
       int sum=0;
-    for(int i=0;i<arr.size();i++){
+      vector<int>v;
+    for(int i=0;i<arr.size()-1;i++){
+        sum=0;
         int j=i+1;
-        while(sum<=target){
-            
+        sum=sum+arr[i];
+        while(j<arr.size()){
+            if(sum<target){
+            sum =sum+arr[j];
+            j++;
+            }
+        }
+        if(sum==target){
+            v.push_back(i+1);
+            v.push_back(j);
+            break;
         }
     }
+    if(sum!=target){
+     v.push_back(-1);
+    }
+    for(auto a:v){
+        cout<<a<<" ";
+    }
+    return v;
          
 } 
  int main(){
-    vector<int>arr{1, 2, 3, 7, 5}; 
-    int target = 12;
-
+    vector<int>arr{36, 34 ,12 ,11, 47 ,18 ,36, 1 ,41, 45}; 
+    int target = 196;
+     subarraySum(arr, target);
  }
