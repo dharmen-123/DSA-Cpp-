@@ -399,23 +399,31 @@
  #include<bits/stdc++.h>
  using namespace std;
 vector<int> subarraySum(vector<int> &arr, int target) {
-      int sum=0;
+      int sum=0 ,a=0;
       vector<int>v;
     for(int i=0;i<arr.size()-1;i++){
         sum=0;
         int j=i+1;
         sum=sum+arr[i];
+        if(arr[i]==target){
+         v.push_back(i+1);
+         v.push_back(i+1);
+         break;
+        }else{
         while(j<arr.size()){
             if(sum<target){
             sum =sum+arr[j];
-            j++;
+             a=j;
             }
+            j++;
         }
         if(sum==target){
+            // cout<<sum;
             v.push_back(i+1);
-            v.push_back(j);
+            v.push_back(a+1);
             break;
         }
+    }
     }
     if(sum!=target){
      v.push_back(-1);
@@ -427,7 +435,7 @@ vector<int> subarraySum(vector<int> &arr, int target) {
          
 } 
  int main(){
-    vector<int>arr{36, 34 ,12 ,11, 47 ,18 ,36, 1 ,41, 45}; 
-    int target = 196;
+    vector<int>arr{19, 23 ,15 ,6, 6, 2, 28, 2}; 
+    int target = 2;
      subarraySum(arr, target);
  }
