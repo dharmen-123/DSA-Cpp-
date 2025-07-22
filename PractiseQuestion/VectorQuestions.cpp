@@ -393,49 +393,99 @@
 
 // }
 
- // // // ############### Q.  ######################
+ // // // ############### Q.GFG 1  ######################
 
- #include<iostream>
- #include<bits/stdc++.h>
- using namespace std;
-vector<int> subarraySum(vector<int> &arr, int target) {
-      int sum=0 ,a=0;
-      vector<int>v;
-    for(int i=0;i<arr.size()-1;i++){
-        sum=0;
-        int j=i+1;
-        sum=sum+arr[i];
-        if(arr[i]==target){
-         v.push_back(i+1);
-         v.push_back(i+1);
-         break;
-        }else{
-        while(j<arr.size()){
-            if(sum<target){
-            sum =sum+arr[j];
-             a=j;
+//  #include<iostream>
+//  #include<bits/stdc++.h>
+//  using namespace std;
+// vector<int> subarraySum(vector<int> &arr, int target) {
+//       int sum=0 ,a=0;
+//       vector<int>v;
+//     for(int i=0;i<arr.size()-1;i++){
+//         sum=0;
+//         int j=i+1;
+//         sum=sum+arr[i];
+//         if(arr[i]==target){
+//          v.push_back(i+1);
+//          v.push_back(i+1);
+//          break;
+//         }else{
+//         while(j<arr.size()){
+//             if(sum<target){
+//             sum =sum+arr[j];
+//              a=j;
+//             }
+//             j++;
+//         }
+//         if(sum==target){
+//             // cout<<sum;
+//             v.push_back(i+1);
+//             v.push_back(a+1);
+//             break;
+//         }
+//     }
+//     }
+//     if(sum!=target){
+//      v.push_back(-1);
+//     }
+//     for(auto a:v){
+//         cout<<a<<" ";
+//     }
+//     return v;
+         
+// } 
+//  int main(){
+//     vector<int>arr{19, 23 ,15 ,6, 6, 2, 28, 2}; 
+//     int target = 2;
+//      subarraySum(arr, target);
+//  }
+
+ // // // ####################### Q . 18 ##############
+
+ #include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+vector<vector<int>> fourSum(vector<int>& nums , int target) {
+    vector<vector<int>> v;
+    sort(nums.begin(), nums.end());
+
+    int n = nums.size();
+    for (int i = 0; i < n - 3; i++) {
+        if (i > 0 && nums[i] == nums[i - 1]) continue;
+        for (int j = i + 1; j < n - 2; j++) {
+            if (j > i + 1 && nums[j] == nums[j - 1]) continue;
+
+            int left = j + 1, right = n - 1;
+            while (left < right) {
+                long long total = (long long)nums[i] + nums[j] + nums[left] + nums[right];
+                if (total == target) {
+                    v.push_back({nums[i], nums[j], nums[left], nums[right]});
+                    while (left < right && nums[left] == nums[left + 1]) left++;
+                    while (left < right && nums[right] == nums[right - 1]) right--;
+                    left++;
+                    right--;
+                } else if (total < target) {
+                    left++;
+                } else {
+                    right--;
+                }
             }
-            j++;
         }
-        if(sum==target){
-            // cout<<sum;
-            v.push_back(i+1);
-            v.push_back(a+1);
-            break;
-        }
-    }
-    }
-    if(sum!=target){
-     v.push_back(-1);
-    }
-    for(auto a:v){
-        cout<<a<<" ";
     }
     return v;
-         
-} 
- int main(){
-    vector<int>arr{19, 23 ,15 ,6, 6, 2, 28, 2}; 
-    int target = 2;
-     subarraySum(arr, target);
- }
+}
+int main() {
+    vector<int> nums{1,0,-1,0,-2,2};
+    int target=0;
+    vector<vector<int>> result = fourSum(nums, target);
+    for (auto& row : result) {
+        for (int col : row) {
+            cout << col << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
