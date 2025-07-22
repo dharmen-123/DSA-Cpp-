@@ -459,3 +459,20 @@
 //    int t=10;
 //    twoSum(nums,t);
 // }
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+string largestNumber(vector<int>& nums){
+           string s="";
+           for(int i=0;i<nums.size();i++){
+              s+=to_string(nums[i]);
+              s+=',';
+           }
+           sort(s.begin(),s.end(),greater<int>());
+           return s; 
+}
+int main(){
+    vector<int>nums{3,30,34,5,9};
+    cout<<largestNumber(nums);
+}
