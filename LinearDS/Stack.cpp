@@ -62,31 +62,27 @@
 // }
 
 
-#include<iostream>
-using namespace std;
-class Stackdata{
- public:
- int *arr;
- int n,top;
+// #include<iostream>
+// using namespace std;
+// class Stackdata{
+//  public:
+//  int *arr;
+//  int n,top;
 
- Stackdata(int v){
-    n=v;
-    arr = new int[n];
-    top =-1;
- }
-void push(int a){
-    if(top==n-1){
-       cout<<"Stack is overflow :\n";
-    }
-}
+//  Stackdata(int v){
+//     n=v;
+//     arr = new int[n];
+//     top =-1;
+//  }
+// void push(int a){
+//     if(top==n-1){
+//        cout<<"Stack is overflow :\n";
+//     }
+// }
+// };
+// int main(){
 
-
-};
-
-
-int main(){
-
-}
+// }
 
 //////  ################# Stack STL inbuild Template #########################
 
@@ -166,3 +162,38 @@ int main(){
 //     s.pop();
 // }
 // }
+
+ // // // ##################### Valid parenthesis ###################
+
+ #include<iostream>
+ #include<bits/stdc++.h>
+ using namespace std;
+     bool isBalanced(string& k) {
+        stack<char>st;
+        char a;
+        for(int i=0;i<k.size();i++){
+         if(k[i] == '{' || k[i] == '(' || k[i] == '['){
+              st.push(k[i]);
+         }
+         else{
+             a=st.top();
+             if(a=='{' || a=='(' || a=='['){
+                st.pop();
+             }
+         }
+        }
+      //   while(!st.empty()){
+      //    cout<<st.top();
+      //    st.pop();
+      //   }
+        if(st.empty()){
+         return true;
+        }
+        else{
+         return false;
+        }
+    }
+ int main(){
+    string k= "([{]})" ;
+    cout<<isBalanced(k);
+ }
