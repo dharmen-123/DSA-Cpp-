@@ -177,15 +177,15 @@
          }
          else{
              a=st.top();
-             if(a=='{' || a=='(' || a=='['){
-                st.pop();
-             }
+             if(k[i]==')') if(a=='(') st.pop();
+             else if(k[i]==')') if(a=='{') st.pop();
+             else   if(a=='[') st.pop();
          }
         }
-      //   while(!st.empty()){
-      //    cout<<st.top();
-      //    st.pop();
-      //   }
+        while(!st.empty()){
+         cout<<st.top();
+         st.pop();
+        }
         if(st.empty()){
          return true;
         }
