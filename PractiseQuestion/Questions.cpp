@@ -464,13 +464,17 @@
 #include<bits/stdc++.h>
 using namespace std;
 string largestNumber(vector<int>& nums){
-           string s="";
-           for(int i=0;i<nums.size();i++){
-              s+=to_string(nums[i]);
-              s+=',';
-           }
-           sort(s.begin(),s.end(),greater<int>());
-           return s; 
+        vector<string> strNums;
+        for (int num : nums)
+            strNums.push_back(to_string(num));
+        sort(strNums.begin(), strNums.end(), [](string& a, string& b) {
+            return a + b > b + a;
+        });
+        string s = "";
+        for (string& str : strNums)
+            s += str;
+        if (s[0] == '0') return "0"; 
+        return s;
 }
 int main(){
     vector<int>nums{3,30,34,5,9};
