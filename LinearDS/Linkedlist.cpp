@@ -74,7 +74,9 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
           int sum=carry;
           if(temp1) sum+=temp1->data;
           if(temp2) sum+=temp2->data;
-         ListNode* newNode= new ListNode(sum%10);
+         ListNode* newNode= new ListNode(sum % 10);
+         cur->next = newNode;
+         cur = cur->next;
          carry=sum/10;
          if(temp1) temp1=temp1->next;
          if(temp2) temp2=temp2->next;
@@ -98,5 +100,11 @@ int main() {
     l2->next->next = new ListNode(4);
 
     ListNode* result = addTwoNumbers(l1, l2);
+     while (result) {
+        cout << result->data;
+        if (result->next) cout << " -> ";
+        result = result->next;
+    }
+    cout << endl;
 
 }
