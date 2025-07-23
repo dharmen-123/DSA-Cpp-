@@ -475,32 +475,36 @@
 //   cout<<intToRoman(num);
 // }
 
-// ##################### Q.  ######################
- 
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-string kthLargestNumber(vector<string>& nums, int k) {
-    vector<int>v;
-    int n=nums.size();
-      for(int i=0;i<nums.size();i++){
-          int a;
-          a=stoi(nums[i]);
-          v.push_back(a);
-      }
-        sort(v.begin(),v.end());
-       nums.clear();
-        for(int i=0;i<v.size();i++){
-          string a;
-          a=to_string(v[i]);
-          nums.push_back(a);
-      }
-     return nums[n-k];
-}
-int main(){
-   vector<string>nums{"2","21","12","1"};
-   int k=3;
-   cout<<kthLargestNumber(nums,k);
+string longestPalindrome(string s) {
+    int start = 0, maxLength = 1;
+
+    for (int i = 0; i < s.size(); i++) {
+        int low = i - 1, high = i + 1;
+        while (low >= 0 && high < s.size() && s[low] == s[high]) {
+            if (high - low + 1 > maxLength) {
+                start = low;
+                maxLength = high - low + 1;
+            }
+            low--; high++;
+        }
+        low = i, high = i + 1;
+        while (low >= 0 && high < s.size() && s[low] == s[high]) {
+            if (high - low + 1 > maxLength) {
+                start = low;
+                maxLength = high - low + 1;
+            }
+            low--; high++;
+        }
+    }
+    return s.substr(start, maxLength);
 }
 
+
+int main(){
+    string s="abcdaabbaaefggfe";
+    cout<<longestPalindrome(s);
+}
 
