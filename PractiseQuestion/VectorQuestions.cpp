@@ -442,48 +442,75 @@
 
  // // // ####################### Q . 18 ##############
 
- #include <iostream>
-#include <vector>
-#include <algorithm>
+//  #include <iostream>
+// #include <vector>
+// #include <algorithm>
+// using namespace std;
+
+// vector<vector<int>> fourSum(vector<int>& nums , int target) {
+//     vector<vector<int>> v;
+//     sort(nums.begin(), nums.end());  
+//     for (int i = 0; i < nums.size() - 3; i++) {
+//         if (i > 0 && nums[i] == nums[i - 1]) continue;  
+//     for (int j = i+1; j < nums.size() - 2; j++) {
+//         if (j > i+1 && nums[j] == nums[j - 1]) continue;  
+//         int left = j + 1;
+//         int right = nums.size() - 1;
+//         while (left < right) {
+//             long long total =(long long)nums[i] + nums[j] + nums[left]+nums[right];
+//             if (total == target) {
+//                 v.push_back({nums[i], nums[j], nums[left],nums[right]});
+//                 while (left < right && nums[left] == nums[left + 1]) left++;  // Skip duplicates
+//                 while (left < right && nums[right] == nums[right - 1]) right--;
+//                 left++;
+//                 right--;
+//             } else if (total < target) {
+//                 left++;
+//             } else {
+//                 right--;
+//             }
+//         }
+//     }
+//     }
+//     return v;
+// }
+// int main() {
+//     vector<int> nums{1,0,-1,0,-2,2};
+//     int target=0;
+//     vector<vector<int>> result = fourSum(nums, target);
+//     for (auto& row : result) {
+//         for (int col : row) {
+//             cout << col << " ";
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+// // //  ############# Q. 1985 ################
+#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
+   string kthLargestNumber(vector<string>& nums, int k) {
+            vector<int>v;
+    int n=nums.size();
+      for(int i=0;i<nums.size();i++){
+          int a;
+          a=stoi(nums[i]);
+          v.push_back(a);
+      }
+        sort(v.begin(),v.end());
+       nums.clear();
+        for(int i=0;i<v.size();i++){
+          string a;
+          a=to_string(v[i]);
+          nums.push_back(a);
+      }
+     return nums[n-k];
+    }
 
-vector<vector<int>> fourSum(vector<int>& nums , int target) {
-    vector<vector<int>> v;
-    sort(nums.begin(), nums.end());  
-    for (int i = 0; i < nums.size() - 3; i++) {
-        if (i > 0 && nums[i] == nums[i - 1]) continue;  
-    for (int j = i+1; j < nums.size() - 2; j++) {
-        if (j > i+1 && nums[j] == nums[j - 1]) continue;  
-        int left = j + 1;
-        int right = nums.size() - 1;
-        while (left < right) {
-            long long total =(long long)nums[i] + nums[j] + nums[left]+nums[right];
-            if (total == target) {
-                v.push_back({nums[i], nums[j], nums[left],nums[right]});
-                while (left < right && nums[left] == nums[left + 1]) left++;  // Skip duplicates
-                while (left < right && nums[right] == nums[right - 1]) right--;
-                left++;
-                right--;
-            } else if (total < target) {
-                left++;
-            } else {
-                right--;
-            }
-        }
-    }
-    }
-    return v;
+int main(){
+    vector<string>nums{"3","6","7","10"};
+    int k=4;
+    cout<<kthLargestNumber(nums,k);
 }
-int main() {
-    vector<int> nums{1,0,-1,0,-2,2};
-    int target=0;
-    vector<vector<int>> result = fourSum(nums, target);
-    for (auto& row : result) {
-        for (int col : row) {
-            cout << col << " ";
-        }
-        cout << endl;
-    }
-    return 0;
-}
-

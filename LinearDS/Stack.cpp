@@ -171,20 +171,21 @@
      bool isBalanced(string& k) {
         stack<char>st;
         char a;
-        for(int i=0;i<k.size();i++){
+        for(int i=0;i<k.length();i++){
          if(k[i] == '{' || k[i] == '(' || k[i] == '['){
               st.push(k[i]);
          }
          else{
+            if(st.empty()) return false;
              a=st.top();
-             if(k[i]==')') if(a=='(') st.pop();
-             else if(k[i]==')') if(a=='{') st.pop();
-             else   if(a=='[') st.pop();
+             if((k[i]==')' && a=='(') ||
+             (k[i]=='}' && a=='{') ||
+             (k[i]==']' && a=='['))
+              st.pop();
+             else{
+               return false;
+             }
          }
-        }
-        while(!st.empty()){
-         cout<<st.top();
-         st.pop();
         }
         if(st.empty()){
          return true;
@@ -194,6 +195,11 @@
         }
     }
  int main(){
-    string k= "([{]})" ;
+    string k= "{)]}" ;
     cout<<isBalanced(k);
  }
+
+       //   while(!st.empty()){
+      //    cout<<st.top();
+      //    st.pop();
+      //   }
