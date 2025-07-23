@@ -6,7 +6,7 @@
 // using namespace std;
 // #include<vector>
 // int main(){
-//   vector<int>v={2,3};
+//   vector<int>v={2,3,5};
 //   int a; 
 //   for(int i=1;i<v.size();i++){
 //       a=v[i]-v[i-1];
@@ -26,16 +26,15 @@
 //         if(arr[0]!=1){
 //             return 1;
 //         }
-//         for(int i=0;i<arr.size();i++){
+//         for(int i=1;i<arr.size();i++){
 //           if((arr[i]-arr[i-1])!=1){
 //                return arr[i-1]+1;
 //           }
-//         }        
-        
-//         return arr.back()+1;
+//         }          
+//         return  arr.back()+1;
 //     }
 // int main(){
-//   vector<int>arr={1,2,3,5};
+//   vector<int>arr={2,3,4,5};
 //   cout<<missingNum(arr);
 // }
 
@@ -237,23 +236,7 @@
 //   cout<<findMin(nums);
 //   }
 
-
-// #include<iostream>
-// #include<bits/stdc++.h>
-// using namespace std;
-
-// vector<vector<int>> merge(vector<vector<int>>& intervals) {
-//         sort(intervals.begin(),intervals.end());
-//         for(int i=0;i<intervals.size();i++){
-//           for(int j=0;j<intervals.size()-1;j++){
-//           cout<<intervals[i][j]<<" ";
-//         }}
-//     }
-// int main(){
-//     vector<vector<int>>intervals{{1,3},{2,6},{8,10},{15,18}};
-//     merge(intervals);
-// }
-
+// // // ############# Remove duplicate element from sorted array using inbuild method 
 
 // #include <iostream>
 // #include <algorithm>
@@ -488,27 +471,27 @@
 // }
 
 // // //  ############# Q. 1985 ################
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-   string kthLargestNumber(vector <string>& nums, int k) {
-    vector<long long>v;
-    int n=nums.size();
-      for(int i=0;i<nums.size();i++){
-        long long a=stoll(nums[i]);
-          v.push_back(a);
-      }
-        sort(v.begin(),v.end());
-       nums.clear();
-        for(int i=0;i<v.size();i++){
-          string a=to_string(v[i]);
-          nums.push_back(a);
-      }
-     return nums[n-k];
-    }
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//    string kthLargestNumber(vector <string>& nums, int k) {
+//     vector<long long>v;
+//     int n=nums.size();
+//       for(int i=0;i<nums.size();i++){
+//         long long a=stoll(nums[i]);
+//           v.push_back(a);
+//       }
+//         sort(v.begin(),v.end());
+//        nums.clear();
+//         for(int i=0;i<v.size();i++){
+//           string a=to_string(v[i]);
+//           nums.push_back(a);
+//       }
+//      return nums[n-k];
+//     }
 
-int main(){
-    vector<string>nums{"683339452288515879","7846081062003424420","4805719838","4840666580043","83598933472122816064","522940572025909479","615832818268861533","65439878015","499305616484085","97704358112880133","23861207501102","919346676","60618091901581","5914766072","426842450882100996","914353682223943129","97","241413975523149135","8594929955620533","55257775478129","528","5110809","7930848872563942788","758","4","38272299275037314530","9567700","28449892665","2846386557790827231","53222591365177739","703029","3280920242869904137","87236929298425799136","3103886291279"};
-    int k=3;
-    cout<<kthLargestNumber(nums,k);
-}
+// int main(){
+//     vector<string>nums{"683339452288515879","7846081062003424420","4805719838","4840666580043","83598933472122816064","522940572025909479","615832818268861533","65439878015","499305616484085","97704358112880133","23861207501102","919346676","60618091901581","5914766072","426842450882100996","914353682223943129","97","241413975523149135","8594929955620533","55257775478129","528","5110809","7930848872563942788","758","4","38272299275037314530","9567700","28449892665","2846386557790827231","53222591365177739","703029","3280920242869904137","87236929298425799136","3103886291279"};
+//     int k=3;
+//     cout<<kthLargestNumber(nums,k);
+// }
