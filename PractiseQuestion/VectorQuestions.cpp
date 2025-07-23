@@ -497,3 +497,14 @@
 //     int k=3;
 //     cout<<kthLargestNumber(nums,k);
 // }
+
+  // ################# Split an array into two equal Sum subarrays  ########## 
+
+  #include<iostream>
+  #include<bits/stdc++.h>
+  using namespace std;
+  
+  
+  int main(){
+  
+  }
