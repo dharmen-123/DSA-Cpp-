@@ -289,10 +289,12 @@
 //             return v;
 // }
 // int main(){
-//     //  vector<int>nums{-1,0,1,2,-1,-4};
+//      vector<int>nums{-1,0,1,2,-1,-4};
 //      vector<int>nums{-2,0,1,1,2};
 //       threeSum(nums);
 // }
+
+////// ################## 2nd Way Q.-3SUM ######################
 
 // #include <iostream>
 // #include <vector>
