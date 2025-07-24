@@ -503,8 +503,25 @@
   #include<iostream>
   #include<bits/stdc++.h>
   using namespace std;
-  
-  
+  vector<int> MaxMinvalue(vector<int> & arr){
+         sort(arr.begin(),arr.end());
+         int min=0,max=0 ;
+         int n=arr.size();
+         if(n<4)
+             return arr;
+         for(int i=0;i<4;i++){
+            min+=arr[i];
+         }
+         reverse(arr.begin(),arr.end());
+        for(int i=0;i<4;i++){
+            max+=arr[i];
+         }
+         cout<<"Maximum value: "<<max<<endl;
+         cout<<"Minimum value: "<<min<<endl;
+
+
+  }    
   int main(){
-  
-  }
+       vector<int>arr{4,6,2,3,5};
+       MaxMinvalue(arr);
+      }
