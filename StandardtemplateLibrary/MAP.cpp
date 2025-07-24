@@ -121,7 +121,7 @@ int main(){
    for(int i=0;i<v.size();i++){
       m[v[i]]++;
    }
-//    for(auto a:m){
-//     cout<<a<<" ";
-//    }
+  for(auto p:m){
+    cout<<p.first<<"="<<p.second<<"\n";
+ }
 }
