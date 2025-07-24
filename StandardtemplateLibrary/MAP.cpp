@@ -115,7 +115,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 int main(){
-
+    map<string,int>m;
+    vector<string>v{"pen","copy","pen","copy","eraser"};
+   for(int i=0;i<v.size();i++){
+      m[v[i]]++;
+   }
+//    for(auto a:m){
+//     cout<<a<<" ";
+//    }
 }
