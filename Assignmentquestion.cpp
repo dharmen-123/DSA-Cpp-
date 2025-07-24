@@ -83,8 +83,29 @@
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
+vector<vector<int>>Split(vector<int>& arr){
+    vector<int>v;
+      int sum=0,p;
+      for(auto a:arr){
+        sum+=a;
+      }
+      p=sum/2;
+      if(p%2==0){
+           sum=0;
+         for(int i=0;i<arr.size();i++){
+             if(sum!=p){
+                sum+=arr[i];
+                v.push_back(arr[i]);
+            } }
+        
+      }
+      else{
+        cout<<"Not Possible";
+      }
 
-
+}
 int main(){
-
+//    vector<int>arr{1 , 2 , 3 , 4 , 5 , 5 };
+   vector<int>arr{4,3,2,1 };
+   Split(arr);
 }
