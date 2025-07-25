@@ -84,20 +84,23 @@ using namespace std;
         for(int i=0;i<s.length();i++){
             if(s[i]!='.'){
                 w+=s[i];
-                if(i==s.length()-1){
+                if(i==s.length()-1 && s[i]!='.'){
                    st.push(w);
                    w.clear();
                 }
             }
+            else if(i==0 && s[i]=='.'){
+                    i++;
+                    continue;
+            }
             else{
                 st.push(w);
+                st.push(".");
                 w.clear();
             }
         }  
-        while (!st.empty())
-        {
+        while (!st.empty()){
             w+=st.top();
-            w+='.';
             st.pop();
         }
           
@@ -105,6 +108,6 @@ using namespace std;
     }
 
 int main(){
-      string s="i.like.this.program.very.much";
+      string s=".i.like.this.program.very.much.";
      cout<<reverseWords(s);
 }
