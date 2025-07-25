@@ -288,9 +288,41 @@
 // }
 // }
 
+ //// // ###### Q. 75 ###########
+
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//     void sortColors(vector<int>& nums) {
+//         // sort(nums.begin(),nums.end());
+//         int low=0, mid=0 ;
+//         int high=nums.size()-1;
+//         while(mid<=high){
+//             if(nums[mid]==0){
+//                 swap(nums[mid],nums[low]);
+//                 low++;  mid++;
+//             }
+//             else if(nums[mid]==1){
+//                 mid++;
+//             }
+//             else{
+//                 swap(nums[mid],nums[high]);
+//                 high--;
+//             }
+//         }
+//         for(auto a:nums){
+//             cout<<a<<" ";
+//         }
+
+//     }
+// int main(){
+//     vector<int>nums{1,2,0};
+//     sortColors(nums);
+// }
 
 //    question Pending ? 
 
 // Q.7 , Q,12, Q,13  Q.15 ,Q.55 ,Q.56  Q.2091 
+
 
 
