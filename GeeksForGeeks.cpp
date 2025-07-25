@@ -69,9 +69,42 @@
 //         }
 //        return true;  
 //     }
-
 // int main(){
 //    string s1 = "geeks", s2 = "kseeg";
 //    cout<<areAnagrams(s1,s2);
 // }
 
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+    string reverseWords(string &s) {
+        stack<string>st;
+        string w="";
+        for(int i=0;i<s.length();i++){
+            if(s[i]!='.'){
+                w+=s[i];
+                if(i==s.length()-1){
+                   st.push(w);
+                   w.clear();
+                }
+            }
+            else{
+                st.push(w);
+                w.clear();
+            }
+        }  
+        while (!st.empty())
+        {
+            w+=st.top();
+            w+='.';
+            st.pop();
+        }
+          
+     return w;
+    }
+
+int main(){
+      string s="i.like.this.program.very.much";
+     cout<<reverseWords(s);
+}
