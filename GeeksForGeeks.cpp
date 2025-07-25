@@ -90,20 +90,21 @@ using namespace std;
                 }
             }
             else if(i==0 && s[i]=='.'){
-                    i++;
-                    continue;
+                    
             }
             else{
                 st.push(w);
                 st.push(".");
+                if(i==s.length()-1 && s[i]=='.'){
+                       st.pop();
+                }
                 w.clear();
             }
         }  
         while (!st.empty()){
             w+=st.top();
             st.pop();
-        }
-          
+        }   
      return w;
     }
 
