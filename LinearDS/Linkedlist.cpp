@@ -58,72 +58,74 @@
 // // //  ################# DELETION FROM THE HEAD of the list #########
 // // //  ################# DELETION FROM THE LAST of the list #########
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-struct Node{
-    int data;
-    Node* next;
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// struct Node{
+//     int data;
+//     Node* next;
 
-    Node(int data1,Node* next1){
-         data=data1;
-         next=next1;
-    }
-    Node(int data1){
-    data=data1;
-    next=NULL;
-   }
-};
-Node* ArrtoLL(vector<int>& arr){
-     Node* head=new Node(arr[0]);
-     Node* move=head;
-     for(int i=1;i<arr.size();i++){
-        Node* temp = new Node(arr[i]);
-        move->next=temp;
-        move=temp;
-     }
-     return head;
-}
-void show(Node* head){
-     while(head!=NULL){
-        cout<<head->data<<" ";
-         head=head->next;
-     }
-     cout<<endl;
-}
-//////<------------- Delete from the head ---------------->
+//     Node(int data1,Node* next1){
+//          data=data1;
+//          next=next1;
+//     }
+//     Node(int data1){
+//     data=data1;
+//     next=NULL;
+//    }
+// };
+// Node* ArrtoLL(vector<int>& arr){
+//      Node* head=new Node(arr[0]);
+//      Node* move=head;
+//      for(int i=1;i<arr.size();i++){
+//         Node* temp = new Node(arr[i]);
+//         move->next=temp;
+//         move=temp;
+//      }
+//      return head;
+// }
+// void show(Node* head){
+//      while(head!=NULL){
+//         cout<<head->data<<" ";
+//          head=head->next;
+//      }
+//      cout<<endl;
+// }
+// //////<------------- Delete from the head ---------------->
 
-Node* Deletehead(Node* head){
-    if(head==NULL) return head;
-    Node* temp=head;
-    head=head->next;
-    delete temp;
+// Node* Deletehead(Node* head){
+//     if(head==NULL) return head;
+//     Node* temp=head;
+//     head=head->next;
+//     delete temp;
 
-    return head;
-}
+//     return head;
+// }
 
-//////<------------- Delete from the last ----------------> 
+// //////<------------- Delete from the last ----------------> 
 
-Node* DeleteLast(Node* head){
-    if(head==NULL || head->next==NULL) return NULL;
-    Node* temp=head;
-    while(temp->next->next!=NULL){
-        temp=temp->next;
-    }
-    delete temp->next;
-    temp->next=nullptr;
+// Node* DeleteLast(Node* head){
+//     if(head==NULL || head->next==NULL) return NULL;
+//     Node* temp=head;
+//     while(temp->next->next!=NULL){
+//         temp=temp->next;
+//     }
+//     delete temp->next;
+//     temp->next=nullptr;
    
-   return head;
-}
+//    return head;
+// }
 
-int main(){
-   vector<int>arr{2,4,1,6};
-   Node* head =ArrtoLL(arr);
-   show(head);
-//    head=Deletehead(head);
-   head=DeleteLast(head); 
-   show(head);
-}
+// int main(){
+//    vector<int>arr{2,4,1,6};
+//    Node* head =ArrtoLL(arr);
+//    show(head);
+// //    head=Deletehead(head);
+//    head=DeleteLast(head); 
+//    show(head);
+// }
+
+// // // Delete from the Kth position of the list ######
 
 // // // ##################  Q. 19 #######################
 
