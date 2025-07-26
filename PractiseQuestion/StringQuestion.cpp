@@ -508,3 +508,16 @@
 //     cout<<longestPalindrome(s);
 // }
 
+// // // ############### Arrange String #####################
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+    string sortSentence(string s) {
+          
+    }
+
+int main(){
+  string s = "is2 sentence4 This1 a3";
+
+}
