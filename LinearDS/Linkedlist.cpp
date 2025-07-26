@@ -127,6 +127,49 @@
 
 // // // Delete from the Kth position of the list ######
 
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+struct Node{
+    int data;
+    Node* next;
+
+    Node(int data1,Node* next1){
+         data=data1;
+         next=next1;
+    }
+    Node(int data1){
+    data=data1;
+    next=NULL;
+   }
+};
+Node* ArrtoLL(vector<int>& arr){
+     Node* head=new Node(arr[0]);
+     Node* move=head;
+     for(int i=1;i<arr.size();i++){
+        Node* temp = new Node(arr[i]);
+        move->next=temp;
+        move=temp;
+     }
+     return head;
+}
+void show(Node* head){
+     while(head!=NULL){
+        cout<<head->data<<" ";
+         head=head->next;
+     }
+     cout<<endl;
+}
+
+
+int main(){
+   vector<int>arr{2,4,1,6};
+   Node* head =ArrtoLL(arr);
+   show(head);
+
+}
+
+
 // // // ##################  Q. 19 #######################
 
 // #include<iostream>
