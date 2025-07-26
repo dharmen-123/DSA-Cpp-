@@ -121,7 +121,7 @@ int main(){
    Node* head =ArrtoLL(arr);
    show(head);
 //    head=Deletehead(head);
-   head=DeleteLast(head);
+   head=DeleteLast(head); 
    show(head);
 }
 
