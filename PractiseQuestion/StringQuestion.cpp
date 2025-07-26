@@ -508,16 +508,41 @@
 //     cout<<longestPalindrome(s);
 // }
 
-// // // ############### Arrange String #####################
+// // // ############### Q. 1859 Arrange String #####################
 
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-    string sortSentence(string s) {
-          
-    }
+  string sortSentence(string s) {
+    int c=0 ,a; 
+    string w="";
+    for(int i=0;i<s.length();i++){
+         if(isdigit(s[i])){
+           c++;
+         }
+     }
+    vector<string>v(c,"A");
+       for(int j=0;j<s.length();j++){
+             if(s[j]!=' '){
+                 if(isdigit(s[j])){
+                     a=s[j]-'0';
+                     v[a-1]=w;
+                     w.clear();
+                    }
+                  else{
+                    w+=s[j];
+                  }                                 
+             }
 
+       }
+      for(int i=0;i<v.size();i++){
+          w+=v[i];
+          if(i!=v.size()-1)
+               w+=' ';
+      }
+      return w;    
+  }
 int main(){
-  string s = "is2 sentence4 This1 a3";
-
+  string s = "Myself2 Me1 I4 and3";
+  cout<<sortSentence(s);
 }
