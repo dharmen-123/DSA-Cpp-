@@ -69,11 +69,11 @@ int main(){
 }
 
 // // SELECTION SORT  Conditions
-// Time Complexity   O(n)
+// Time Complexity   O(n)^2
 // Space Complexity --> O(1)
 // Stable --> It is not Stable Sort algorithm
 // Inplace --> It is Inplace 
 // Approach --> Subtract and Conquer Approach
 // Optimise --> Not optimise
 
-// It is an odd one example because it time complexity in every case O(n)
+// It is an odd one example because it time complexity in every case O(n)^2
