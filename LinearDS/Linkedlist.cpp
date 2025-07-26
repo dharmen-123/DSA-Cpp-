@@ -19,7 +19,6 @@
 // //    cout<<y.data<<" "<<y.next;
 // }
 
-
 // #include<iostream>
 // #include<bits/stdc++.h>
 // using namespace std;
@@ -102,4 +101,76 @@
 //         result = result->next;
 //     }
 //     cout << endl;
+// }
+
+// // //  ################# DELETION FROM THE HEAD of the list #########
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+struct Node{
+    int data;
+    Node* next;
+
+    Node(int data1,Node* next1){
+         data=data1;
+         next=next1;
+    }
+    Node(int data1){
+    data=data1;
+    next=NULL;
+   }
+};
+Node* ArrtoLL(vector<int>& arr){
+     Node* head=new Node(arr[0]);
+     Node* move=head;
+     for(int i=1;i<arr.size();i++){
+        Node* temp = new Node(arr[i]);
+        move->next=temp;
+        move=temp;
+     }
+     return head;
+}
+void show(Node* head){
+     while(head!=NULL){
+        cout<<head->data<<" ";
+         head=head->next;
+     }
+     cout<<endl;
+}
+Node* Deletehead(Node* head){
+    if(head==NULL) return head;
+    Node* temp=head;
+    head=head->next;
+    delete temp;
+
+    return head;
+}
+int main(){
+   vector<int>arr{2,4,1,6};
+   Node* head =ArrtoLL(arr);
+   show(head);
+   head=Deletehead(head);
+   show(head);
+}
+
+// // // ##################  Q. 19 #######################
+
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// struct ListNode{
+//     int val;
+//     ListNode *next;
+//     ListNode() : val(0), next(nullptr) {}
+//     ListNode(int x) : val(x), next(nullptr) {}
+//     ListNode(int x, ListNode *next) : val(x), next(next) {}
+
+// };
+// ListNode* removeNthFromEnd(ListNode* head, int n) {
+                   
+
+// }
+// int main(){
+
 // }
