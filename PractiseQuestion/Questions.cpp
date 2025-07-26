@@ -409,32 +409,6 @@
 //     generateParenthesis(n);
 // }
 
-// ###########################  Q.1 ###################
-
-// #include<iostream>
-// #include<bits/stdc++.h>
-// using namespace std;
-// vector<int> twoSum(vector<int>& nums, int target){
-//          for(int i=0;i<nums.size()-1;i++){
-//             for(int j=i+1;j<nums.size();j++){
-//               if((nums[i]+nums[j])== target){
-//                   nums.clear();
-//                   nums.push_back(i);
-//                   nums.push_back(j);
-//                   break;
-//             }
-//          }
-//       }
-//          for(auto a:nums){
-//             cout<<a<<" ";
-//          }
-//          return nums;
-//  }
-// int main(){
-//    vector<int>nums{2,5,5,11};
-//    int t=10;
-//    twoSum(nums,t);
-// }
 
 // ###########################  Q.1 ###################
 
