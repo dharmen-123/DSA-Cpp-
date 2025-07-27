@@ -115,34 +115,34 @@
 
 //////  ##################### Minimuze the height II ##########
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-    int getMinDiff(vector<int> &arr, int k) {
-        int n=arr.size();
-        for(int i=0;i<n;i++){
-            if(k>=arr[i]){
-                arr[i]=arr[i]+k;
-            }
-            else{
-                arr[i]=arr[i]-k;
-            }
-        }
-        for(auto a:arr){
-            cout<<a<<" ";
-        }
-        cout<<endl;
-        sort(arr.begin(),arr.end());
-                for(auto a:arr){
-            cout<<a<<" ";
-        }
-        cout<<endl;
-        int d=arr[n-1]-arr[0];
-     return d;
-    }
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//     int getMinDiff(vector<int> &arr, int k) {
+//         int n=arr.size();
+//         for(int i=0;i<n;i++){
+//             if(k>=arr[i]){
+//                 arr[i]=arr[i]+k;
+//             }
+//             else{
+//                 arr[i]=arr[i]-k;
+//             }
+//         }
+//         for(auto a:arr){
+//             cout<<a<<" ";
+//         }
+//         cout<<endl;
+//         sort(arr.begin(),arr.end());
+//                 for(auto a:arr){
+//             cout<<a<<" ";
+//         }
+//         cout<<endl;
+//         int d=arr[n-1]-arr[0];
+//      return d;
+//     }
 
-int main(){
-   vector<int>arr{1,8,10,6,4,6,9,1};
-   int k=7;
-   cout<<getMinDiff(arr,k);
-}
+// int main(){
+//    vector<int>arr{1,8,10,6,4,6,9,1};
+//    int k=7;
+//    cout<<getMinDiff(arr,k);
+// }
