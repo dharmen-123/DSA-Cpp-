@@ -310,7 +310,7 @@ Node* deleteElement(Node* head, int val){
           else{
             curr=curr->next;
           }
-      }
+     }
     return head;
 }
 int main(){
