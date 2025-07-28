@@ -321,7 +321,8 @@
 //    show(head);
 // }
 
-
+    // // // ##### Show linked list data ##############
+    
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
@@ -348,6 +349,5 @@ int main(){
        cout<<li->data<<" ";
        li=li->next;
     }
-    
     
 }
