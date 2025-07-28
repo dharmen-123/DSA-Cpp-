@@ -325,8 +325,29 @@
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-
+struct Node{
+    int data;
+    Node* next;
+    Node(int d1,Node* n1){
+     data=d1;
+     next=n1;
+    }
+    Node(int d1){
+     data=d1;
+     next=NULL;
+    }
+};
 
 int main(){
-
+   Node* li=new Node(2);
+    li->next=new Node(3);
+    li->next->next=new Node(7);
+    li->next->next->next=new Node(9);
+    while (li!=NULL)
+    {
+       cout<<li->data<<" ";
+       li=li->next;
+    }
+    
+    
 }
