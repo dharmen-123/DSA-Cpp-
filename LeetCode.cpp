@@ -77,28 +77,64 @@
 //     cout << endl;
 // }
 
+ // // // ##################### Valid parenthesis ###################
+
+//  #include<iostream>
+//  #include<bits/stdc++.h>
+//  using namespace std;
+//      bool isBalanced(string& k) {
+//         stack<char>st;
+//         char a;
+//         for(int i=0;i<k.length();i++){
+//          if(k[i] == '{' || k[i] == '(' || k[i] == '['){
+//               st.push(k[i]);
+//          }
+//          else{
+//             if(st.empty()) return false;
+//              a=st.top();
+//              if((k[i]==')' && a=='(') ||
+//              (k[i]=='}' && a=='{') ||
+//              (k[i]==']' && a=='['))
+//               st.pop();
+//              else{
+//                return false;
+//              }
+//          }
+//         }
+//         if(st.empty()){
+//          return true;
+//         }
+//         else{
+//          return false;
+//         }
+//     }
+//  int main(){
+//     string k= "{)]}" ;
+//     cout<<isBalanced(k);
+//  }
+
 
 // // // ################## Q.162  Peak Element ###################
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-    int findPeakElement(vector<int>& nums) {
-         int n=nums.size();
-         int i=1;
-         int peak;
-         if(n==1 || nums[0]>nums[1])   return 0;
-         else if(nums[n-1]>nums[n-2]) return n-2;
-         while(n-1>i){
-            if((nums[i-1]<nums[i]) && nums[i]>nums[i+1]){
-                peak= i;
-            }
-            i++;
-        }
-        return peak;
-    }
-int main(){
-     vector<int>nums{1,2,1,3,5,6,4};
-    //  vector<int>nums{1,2};
-     cout<<findPeakElement(nums);
-}
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//     int findPeakElement(vector<int>& nums) {
+//          int n=nums.size();
+//          int i=1;
+//          int peak;
+//          if(n==1 || nums[0]>nums[1])   return 0;
+//          else if(nums[n-1]>nums[n-2]) return n-2;
+//          while(n-1>i){
+//             if((nums[i-1]<nums[i]) && nums[i]>nums[i+1]){
+//                 peak= i;
+//             }
+//             i++;
+//         }
+//         return peak;
+//     }
+// int main(){
+//      vector<int>nums{1,2,1,3,5,6,4};
+//     //  vector<int>nums{1,2};
+//      cout<<findPeakElement(nums);
+// }

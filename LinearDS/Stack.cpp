@@ -163,41 +163,6 @@
 // }
 // }
 
- // // // ##################### Valid parenthesis ###################
-
- #include<iostream>
- #include<bits/stdc++.h>
- using namespace std;
-     bool isBalanced(string& k) {
-        stack<char>st;
-        char a;
-        for(int i=0;i<k.length();i++){
-         if(k[i] == '{' || k[i] == '(' || k[i] == '['){
-              st.push(k[i]);
-         }
-         else{
-            if(st.empty()) return false;
-             a=st.top();
-             if((k[i]==')' && a=='(') ||
-             (k[i]=='}' && a=='{') ||
-             (k[i]==']' && a=='['))
-              st.pop();
-             else{
-               return false;
-             }
-         }
-        }
-        if(st.empty()){
-         return true;
-        }
-        else{
-         return false;
-        }
-    }
- int main(){
-    string k= "{)]}" ;
-    cout<<isBalanced(k);
- }
 
        //   while(!st.empty()){
       //    cout<<st.top();
