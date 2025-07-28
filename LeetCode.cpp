@@ -86,17 +86,19 @@ using namespace std;
     int findPeakElement(vector<int>& nums) {
          int n=nums.size();
          int i=1;
+         int peak;
          if(n==1 || nums[0]>nums[1])   return 0;
          else if(nums[n-1]>nums[n-2]) return n-2;
          while(n-1>i){
             if((nums[i-1]<nums[i]) && nums[i]>nums[i+1]){
-                return i;
+                peak= i;
             }
             i++;
         }
+        return peak;
     }
 int main(){
-    //  vector<int>nums{1,2,1,3,5,6,4};
-     vector<int>nums{1,2};
+     vector<int>nums{1,2,1,3,5,6,4};
+    //  vector<int>nums{1,2};
      cout<<findPeakElement(nums);
 }
