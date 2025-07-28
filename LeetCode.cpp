@@ -138,3 +138,40 @@
 //     //  vector<int>nums{1,2};
 //      cout<<findPeakElement(nums);
 // }
+
+// // // ########### Q. 155 Min Stack ##################
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+class MinStack {
+public:
+
+MinStack() {
+
+    }
+    
+    void push(int val) {
+
+    }
+    
+    void pop() {
+        
+    }
+    
+    int top() {
+        
+    }
+    
+    int getMin() {
+        
+    }
+};
+
+int main(){
+    MinStack* obj = new MinStack();
+    obj->push(2);
+    obj->pop();
+    int param_3 = obj->top();
+    int param_4 = obj->getMin();
+}
