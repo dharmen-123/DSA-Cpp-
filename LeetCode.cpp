@@ -141,37 +141,37 @@
 
 // // // ########### Q. 155 Min Stack ##################
 
-// #include<iostream>
-// #include<bits/stdc++.h>
-// using namespace std;
-// class MinStack {
-// public:
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+class MinStack {
+public:
 
-// MinStack() {
+MinStack() {
 
-//     }
+    }
     
-//     void push(int val) {
+    void push(int val) {
 
-//     }
+    }
     
-//     void pop() {
+    void pop() {
         
-//     }
+    }
     
-//     int top() {
+    int top() {
         
-//     }
+    }
     
-//     int getMin() {
+    int getMin() {
         
-//     }
-// };
+    }
+};
 
-// int main(){
-//     MinStack* obj = new MinStack();
-//     obj->push(2);
-//     obj->pop();
-//     int param_3 = obj->top();
-//     int param_4 = obj->getMin();
-// }
+int main(){
+    MinStack* obj = new MinStack();
+    obj->push(2);
+    obj->pop();
+    int param_3 = obj->top();
+    int param_4 = obj->getMin();
+}
