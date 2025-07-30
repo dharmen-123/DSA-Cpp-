@@ -175,3 +175,46 @@
 //     int param_3 = obj->top();
 //     int param_4 = obj->getMin();
 // }
+
+// //// ################# 204 ###############
+
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//  int countPrimes(int n) {
+//         if(n==0 || n==1) return 0;
+//         int count=0,c=0;
+//         int i=2;
+//         while(n>i){
+//            for(int j=1;j<=i;j++){
+//                   if(i%j==0){
+//                       c++;  
+//                   }
+//            }
+//           if(c==2){
+//                 count++;
+//           } 
+//           c=0;   
+//            i++;
+//         }
+//     return count;
+// }
+
+// int main(){
+//    int n=0;
+//    cout<<countPrimes(n);
+// }
+
+// // // ############### 231 ######################
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+    bool isPowerOfTwo(int n) {
+        if(n%2!=0) return false;
+        int a=pow(n,0.5);
+    }
+int main(){
+   int n=16;
+   cout<<isPowerOfTwo(n);
+}
