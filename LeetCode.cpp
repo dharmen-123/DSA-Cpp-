@@ -211,10 +211,10 @@
 #include<bits/stdc++.h>
 using namespace std;
     bool isPowerOfTwo(int n) {
-        if(n%2!=0) return false;
-        int a=pow(n,0.5);
+    if (n <= 0) return false;
+    return (n & (n - 1)) == 0;
     }
 int main(){
-   int n=16;
+   int n=12;
    cout<<isPowerOfTwo(n);
 }
