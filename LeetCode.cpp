@@ -207,14 +207,30 @@
 
 // // // ############### 231 ######################
 
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//     bool isPowerOfTwo(int n) {
+//     if (n <= 0) return false;
+//     return (n & (n - 1)) == 0;
+//     }
+// int main(){
+//    int n=12;
+//    cout<<isPowerOfTwo(n);
+// }
+
+
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-    bool isPowerOfTwo(int n) {
-    if (n <= 0) return false;
-    return (n & (n - 1)) == 0;
+    bool isPowerOfThree(int n) {
+     if( n > 0 && 1162261467 % n == 0)
+         return true;
+    
+    return false;
     }
+
 int main(){
-   int n=12;
-   cout<<isPowerOfTwo(n);
+    int n=243;
+    cout<<isPowerOfThree(n);
 }
