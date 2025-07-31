@@ -205,7 +205,7 @@
 //    cout<<countPrimes(n);
 // }
 
-// // // ############### 231 ######################
+// // // ############### Q.231 ######################
 
 // #include<iostream>
 // #include<bits/stdc++.h>
@@ -219,18 +219,96 @@
 //    cout<<isPowerOfTwo(n);
 // }
 
+// // // ############## Q.   ####################################
+
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//     bool isPowerOfThree(int n) {
+//      if( n > 0 && 1162261467 % n == 0)
+//          return true;
+    
+//     return false;
+//     }
+
+// int main(){
+//     int n=243;
+//     cout<<isPowerOfThree(n);
+// }
+
+
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std; 
+// string longestPalindrome(string s) {
+//         int n = s.length();      // String ki length
+//         int start = 0;           // Palindrome kahaan se shuru ho raha hai
+//         int maxLen = 1;          // Palindrome ki maximum length
+
+//         // Har character ko center maan kar check karo
+//         for (int i = 0; i < n; i++) {
+
+//             // 🟢 1. Odd Length Palindrome (like: "aba")
+//             int l = i, r = i;  // center ek letter
+//             while (l >= 0 && r < n && s[l] == s[r]) {
+//                 if (r - l + 1 > maxLen) {
+//                     start = l;                 // naya start index
+//                     maxLen = r - l + 1;        // nayi max length
+//                 }
+//                 l--; r++;                      // expand left & right
+//             }
+//             // 🔵 2. Even Length Palindrome (like: "abba")
+//             l = i, r = i + 1;  // center do letters
+//             while (l >= 0 && r < n && s[l] == s[r]) {
+//                 if (r - l + 1 > maxLen) {
+//                     start = l;
+//                     maxLen = r - l + 1;
+//                 }
+//                 l--; r++;
+//             }
+//         }
+
+//         // Return final longest palindrome substring
+//         return s.substr(start, maxLen);  // string.substr(start_index, length)
+//     }
+
+// int main(){
+//      string s="abcbcbdefs";
+//      cout<<longestPalindrome(s);
+// }
+
 
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-    bool isPowerOfThree(int n) {
-     if( n > 0 && 1162261467 % n == 0)
-         return true;
-    
-    return false;
-    }
+ string longpallindrome(string s){
+      int n=s.length();
+      int  start=0, maxlen=1;
 
+      for(int i=0;i<n;i++){
+        int l=i, r=i;
+        while(l>=0 && r<n && s[l]==s[r]){
+             if(r-l+1>maxlen){
+                  start=l;
+                  maxlen=r-l+1; 
+             }
+            l--; r++;
+        }
+
+           l=i, r=i+1;
+        while(l>=0 && r<n && s[l]==s[r]){
+             if(r-l+1>maxlen){
+                  start=l;
+                  maxlen=r-l+1; 
+             }
+            l--; r++;
+        }
+      }
+
+
+      return s.substr(start, maxlen);
+ }
 int main(){
-    int n=243;
-    cout<<isPowerOfThree(n);
+    string s="abcbcbdefs";
+    cout<<longpallindrome(s);
 }
