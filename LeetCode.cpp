@@ -271,3 +271,31 @@
 //     cout<<longpallindrome(s);
 // }
 
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int subarrayBitwiseORs(vector<int>& arr) {
+    unordered_set<int> res;
+    unordered_set<int> curr;
+
+    for (int num : arr) {
+        unordered_set<int> next;
+        next.insert(num);
+       cout<<"value of num:"<<num<<endl;
+        for (int x : curr) {
+            next.insert(x | num);
+    cout<<"value of mode: "<<(x | num)<<endl;
+            cout<<"value of x:"<<x<<endl;
+        }
+        curr = next;
+        res.insert(curr.begin(), curr.end());
+    }
+    return res.size();
+}
+
+
+int main(){
+   vector<int>arr{1,2,4};
+   cout<<subarrayBitwiseORs(arr);
+}
