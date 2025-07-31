@@ -271,31 +271,88 @@
 //     cout<<longpallindrome(s);
 // }
 
+// // // ############ Bitwise ORs of subarray ####################
+
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// int subarrayBitwiseORs(vector<int>& arr) {
+//     unordered_set<int> res;
+//     unordered_set<int> curr;
+
+//     for (int num : arr) {
+//         unordered_set<int> next;
+//         next.insert(num);
+//         for (int x : curr) {
+//             next.insert(x | num);
+//         }
+//         curr = next;
+//         res.insert(curr.begin(), curr.end());
+//     }
+//     return res.size();
+// }
+// int main(){
+//    vector<int>arr{1,2,4};
+//    cout<<subarrayBitwiseORs(arr);
+// }
+
+// // //  ##################### Q.  myAtoi #########################
+
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//  int myAtoi(string s) {
+//     long long a = 0;
+//     int sign = 1;
+//     bool started = false;
+
+//     for (int i = 0; i < s.size(); i++) {
+//         if (s[i] == '-' && !started) {
+//             sign = -1;
+//             started = true;
+//         } else if (isdigit(s[i])) {
+//             a = a * 10 + (s[i] - '0');
+//             started = true;
+//             if(sign*a<= INT_MIN)  return INT_MIN;
+//             if(sign*a>= INT_MAX)  return INT_MAX;
+//         } else if (started) {
+//             break; 
+//         }else if(s[i] == ' '){
+//             continue;
+//          }
+//          else {
+//             return 0;
+//         }
+//     }
+//     return a * sign;
+//     }
+// int main(){
+//      string s="42";
+//      cout<<myAtoi(s);
+// }
+
 
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-int subarrayBitwiseORs(vector<int>& arr) {
-    unordered_set<int> res;
-    unordered_set<int> curr;
-
-    for (int num : arr) {
-        unordered_set<int> next;
-        next.insert(num);
-       cout<<"value of num:"<<num<<endl;
-        for (int x : curr) {
-            next.insert(x | num);
-    cout<<"value of mode: "<<(x | num)<<endl;
-            cout<<"value of x:"<<x<<endl;
+bool isNumber(string s) {
+     int n=s.length();
+    for(int i=0;i<n;i++){
+        if(i==0 && !isdigit(s[i])){
+           return false;
         }
-        curr = next;
-        res.insert(curr.begin(), curr.end());
+        else if(!isdigit(s[n-1])){
+           return false;
+        }
+        else if(s[i]== '-' || s[i]=='+'){
+            if(s[i+1]=='-' || s[i+1]=='+')   return false;
+        }
     }
-    return res.size();
+     return true;
 }
-
 
 int main(){
-   vector<int>arr{1,2,4};
-   cout<<subarrayBitwiseORs(arr);
+     string s= "0089";
+     cout<<isNumber(s);
 }
+// "2", "0089", "-0.1", "+3.14", "4.", "-.9", "2e10", "-90E3", "3e+7", "+6e-1", "53.5e93", "-123.456e789"
