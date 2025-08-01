@@ -336,34 +336,34 @@
 // #include<bits/stdc++.h>
 // using namespace std;
 // bool isNumber(string s) {
-//      int n = s.length();
-//     int c = 0;
-//     bool p = false;
-//     if (n == 1 && (s[0] == '.' || isalpha(s[0]))) return false;
-//     for (int i = 0; i < n; i++) {
-//         if (i == 0 && !isdigit(s[i]) && s[i] != '-' && s[i] != '+' && s[i] != '.') {
-//             return false;
-//         }
-//         else if (n != 1) {
-//             if (isalpha(s[n - 1])) return false;
-//         }
-//         if (isalpha(s[i])) {
-//             c++;
-//             p = true;
-//             if (c == 2) return false;
-//         }
-//         else if (p && s[i] == '.') {
-//             return false;
-//         }
-//         else if (s[i] == '.') {
-//             c++;
-//             if (c > 1) return false;
-//         }
-//         else if ((s[i] == '-' || s[i] == '+') && i != 0) {
-//             return false;
-//         }
-//     }
-//     return true;
+    //  int n = s.length();
+    // int c = 0;
+    // bool p = false;
+    // if (n == 1 && (s[0] == '.' || isalpha(s[0]))) return false;
+    // for (int i = 0; i < n; i++) {
+    //     if (i == 0 && !isdigit(s[i]) && s[i] != '-' && s[i] != '+' && s[i] != '.') {
+    //         return false;
+    //     }
+    //     else if (n != 1) {
+    //         if (isalpha(s[n - 1])) return false;
+    //     }
+    //     if (isalpha(s[i])) {
+    //         c++;
+    //         p = true;
+    //         if (c == 2) return false;
+    //     }
+    //     else if (p && s[i] == '.') {
+    //         return false;
+    //     }
+    //     else if (s[i] == '.') {
+    //         c++;
+    //         if (c > 1) return false;
+    //     }
+    //     else if ((s[i] == '-' || s[i] == '+') && i != 0) {
+    //         return false;
+    //     }
+    // }
+    // return true;
 // }
 
 // int main(){
@@ -409,28 +409,28 @@
 
 // // //  ############ Q.58 #####################
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-int lengthOfLastWord(string s) {
-      reverse(s.begin(),s.end());
-      string w="";
-      bool p=false;
-      for(int i=0;i<s.length();i++){
-          if(s[i]!=' '){
-            p=true;
-            w+=s[i];
-          }
-          else{
-            if(p){
-                break;
-            }
-              p=false;
-          }
-      }
-    return w.length();
-}
-int main(){
-   string s="luffy is still joyboy" ;
-   cout<<lengthOfLastWord(s);
-}
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// int lengthOfLastWord(string s) {
+//       reverse(s.begin(),s.end());
+//       string w="";
+//       bool p=false;
+//       for(int i=0;i<s.length();i++){
+//           if(s[i]!=' '){
+//             p=true;
+//             w+=s[i];
+//           }
+//           else{
+//             if(p){
+//                 break;
+//             }
+//               p=false;
+//           }
+//       }
+//     return w.length();
+// }
+// int main(){
+//    string s="luffy is still joyboy" ;
+//    cout<<lengthOfLastWord(s);
+// }
