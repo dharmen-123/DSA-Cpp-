@@ -378,11 +378,30 @@ using namespace std;
 vector<vector<int>> generate(int numRows) {
         vector<vector<int>>pas;
         vector<int>tri;
-       for(int i=0;i<numRows;i++){
-                 
-
+        tri.push_back(1);
+         int j=0;
+       while(numRows>0){
+            pas.push_back(tri);
+             tri.clear();
+            int n=pas[j].size();
+            tri.push_back(1);
+          for(int i=0;i<n-1;i++){
+               int a=tri[i]+tri[i+1];
+                   tri.push_back(a);   
+             }
+             tri.push_back(1);   
+           
+           j++;
+           numRows--;  
+       }
+       for(auto a:pas){
+        for(auto b:a){
+            cout<<b<<" ";
+        }
+        cout<<endl;
        }
 }
+//[[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
 int main(){
    int n=5;
    generate(n);
