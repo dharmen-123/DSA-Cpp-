@@ -370,3 +370,20 @@
 //      string s= "..";
 //      cout<<isNumber(s);
 // }
+
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+vector<vector<int>> generate(int numRows) {
+        vector<vector<int>>pas;
+        vector<int>tri;
+       for(int i=0;i<numRows;i++){
+                 
+
+       }
+}
+int main(){
+   int n=5;
+   generate(n);
+}
