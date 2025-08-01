@@ -332,27 +332,41 @@
 // }
 
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-bool isNumber(string s) {
-     int n=s.length();
-    for(int i=0;i<n;i++){
-        if(i==0 && !isdigit(s[i])){
-           return false;
-        }
-        else if(!isdigit(s[n-1])){
-           return false;
-        }
-        else if(s[i]== '-' || s[i]=='+'){
-            if(s[i+1]=='-' || s[i+1]=='+')   return false;
-        }
-    }
-     return true;
-}
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// bool isNumber(string s) {
+//      int n = s.length();
+//     int c = 0;
+//     bool p = false;
+//     if (n == 1 && (s[0] == '.' || isalpha(s[0]))) return false;
+//     for (int i = 0; i < n; i++) {
+//         if (i == 0 && !isdigit(s[i]) && s[i] != '-' && s[i] != '+' && s[i] != '.') {
+//             return false;
+//         }
+//         else if (n != 1) {
+//             if (isalpha(s[n - 1])) return false;
+//         }
+//         if (isalpha(s[i])) {
+//             c++;
+//             p = true;
+//             if (c == 2) return false;
+//         }
+//         else if (p && s[i] == '.') {
+//             return false;
+//         }
+//         else if (s[i] == '.') {
+//             c++;
+//             if (c > 1) return false;
+//         }
+//         else if ((s[i] == '-' || s[i] == '+') && i != 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
 
-int main(){
-     string s= "-123.456e789";
-     cout<<isNumber(s);
-}
-// "2", "0089", "-0.1", "+3.14", "4.", "-.9", "2e10", "-90E3", "3e+7", "+6e-1", "53.5e93", "-123.456e789"
+// int main(){
+//      string s= "..";
+//      cout<<isNumber(s);
+// }
