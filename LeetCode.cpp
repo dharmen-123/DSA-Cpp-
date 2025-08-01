@@ -396,7 +396,6 @@
 //        }
 //     return pas;
 // }
-// //[[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
 // int main(){
 //    int n=5;
 //   vector<vector<int>>pas= generate(n);
@@ -408,14 +407,30 @@
 //        }
 // }
 
+// // //  ############ Q.58 #####################
 
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-    int lengthOfLastWord(string s) {
-        
-    }
-
+int lengthOfLastWord(string s) {
+      reverse(s.begin(),s.end());
+      string w="";
+      bool p=false;
+      for(int i=0;i<s.length();i++){
+          if(s[i]!=' '){
+            p=true;
+            w+=s[i];
+          }
+          else{
+            if(p){
+                break;
+            }
+              p=false;
+          }
+      }
+    return w.length();
+}
 int main(){
-
+   string s="luffy is still joyboy" ;
+   cout<<lengthOfLastWord(s);
 }
