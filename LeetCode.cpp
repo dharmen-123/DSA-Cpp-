@@ -434,3 +434,47 @@
 //    string s="luffy is still joyboy" ;
 //    cout<<lengthOfLastWord(s);
 // }
+
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// long long minCost(vector<int>& basket1, vector<int>& basket2) {
+//      int n=basket1.size();  
+//      int m=basket2.size();
+//      if(n!=m) return -1;  
+    
+
+
+//  }
+// int main(){
+//     vector<int>basket1{4,2,2,2};
+//     vector<int>basket2{1,4,1,2};   
+//      cout<<minCost(basket1,basket2);
+
+// }
+
+
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+        int a=m+n;  
+        for(int i=0;i<n;i++){
+            nums1.pop_back();        
+        }
+        for(int j=0;j<n;j++){
+            nums1.push_back(nums2[j]);
+        }
+        sort(nums1.begin(),nums1.end());
+        
+        for(auto p:nums1){
+            cout<<p<<" ";
+        }
+    }
+int main(){
+    vector<int>nums1{1,2,3,0,0,0};
+    vector<int>nums2{2,5,6};
+    int m=3,n=3;
+    merge(nums1,m,nums2,n);
+}
