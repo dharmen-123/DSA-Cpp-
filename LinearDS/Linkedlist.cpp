@@ -339,6 +339,7 @@ struct Node{
     }
 };
 
+
 int main(){
    Node* li=new Node(2);
     li->next=new Node(3);
