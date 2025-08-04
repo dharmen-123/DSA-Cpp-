@@ -65,23 +65,25 @@
 
 // /// //  #################### Q.46 #############################
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-string multiply(string num1, string num2) {
-     int a=0,b=0;
-    for(int i=0;i<num1.length();i++){
-          a=a*10+(num1[i]-'0');      
-    }
-    for(int i=0;i<num2.length();i++){
-          b=b*10+(num2[i]-'0');
-    }
-       string s=to_string(a*b);
-        return s;
-}
-int main(){
-    string num1="123";
-    string num2="456";
-    cout<<multiply(num1,num2);
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// string multiply(string num1, string num2) {
+//      int a=0,b=0;
+//     for(int i=0;i<num1.length();i++){
+//           a=a*10+(num1[i]-'0');      
+//     }
+//     for(int i=0;i<num2.length();i++){
+//           b=b*10+(num2[i]-'0');
+//     }
+//        string s=to_string(a*b);
+//         return s;
+// }
+// int main(){
+//     string num1="123";
+//     string num2="456";
+//     cout<<multiply(num1,num2);
 
-}
+// }
+
+
