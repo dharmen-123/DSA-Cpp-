@@ -480,11 +480,29 @@
 // }
 
 
-// #include<iostream>
-// #include<bits/stdc++.h>
-// using namespace std;
-
-
-// int main(){
-
-// }
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+vector<int> searchRange(vector<int>& nums, int target) {
+        vector<int>value;
+        bool p=true;
+        for(int i=0;i<nums.size()-1;i++){
+           if(nums[i]==target && p){
+               value.push_back(i);
+               p=false;
+           }
+           else if(nums[i]==target && nums[i+1]!=target){
+                   value.push_back(i);
+           }
+           
+        }
+      return value;
+}
+int main(){
+      vector<int>nums{5,7,7,8,10};
+      int target=8;
+      vector<int>a=searchRange(nums,target);
+         for(auto b:a){
+            cout<<b<<" ";
+         }   
+}
