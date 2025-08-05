@@ -484,23 +484,20 @@
 #include<bits/stdc++.h>
 using namespace std;
 vector<int> searchRange(vector<int>& nums, int target) {
-        vector<int>value;
+        vector<int>value(2,-1);
         bool p=true;
-        for(int i=0;i<nums.size()-1;i++){
-           if(nums[i]==target && p){
-               value.push_back(i);
-               p=false;
+        for(int i=0;i<nums.size();i++){
+           if(nums[i]==target){
+                if(value[0]==-1) 
+                     value[0]=i;
+             value[1]=i;
            }
-           else if(nums[i]==target && nums[i+1]!=target){
-                   value.push_back(i);
-           }
-           
         }
       return value;
 }
 int main(){
-      vector<int>nums{5,7,7,8,10};
-      int target=8;
+      vector<int>nums{5,7,7,7,8,10};
+      int target=7;
       vector<int>a=searchRange(nums,target);
          for(auto b:a){
             cout<<b<<" ";
