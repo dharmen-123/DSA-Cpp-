@@ -511,8 +511,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 bool isPerfectSquare(int num) {
-        float a=pow(num,0.5);
-        int b=a;
+        double a=pow(num,0.5);
+        long long b=a;
         if(a!=b){
             return false;
         }
