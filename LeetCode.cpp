@@ -519,6 +519,6 @@ bool isPerfectSquare(int num) {
         return true;
     }
 int main(){
-    int num=16;
+    int num=14;
     cout<<isPerfectSquare(num);
 }
