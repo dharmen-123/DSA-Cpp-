@@ -479,27 +479,46 @@
 //     merge(nums1,m,nums2,n);
 // }
 
+// // //  ###################### Q.34 ########################
+
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// vector<int> searchRange(vector<int>& nums, int target) {
+//         vector<int>value(2,-1);
+//         bool p=true;
+//         for(int i=0;i<nums.size();i++){
+//            if(nums[i]==target){
+//                 if(value[0]==-1) 
+//                      value[0]=i;
+//              value[1]=i;
+//            }
+//         }
+//       return value;
+// }
+// int main(){
+//       vector<int>nums{5,7,7,7,8,10};
+//       int target=7;
+//       vector<int>a=searchRange(nums,target);
+//          for(auto b:a){
+//             cout<<b<<" ";
+//          }   
+// }
+
+// // // ##################### Q.367 ######################
 
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-vector<int> searchRange(vector<int>& nums, int target) {
-        vector<int>value(2,-1);
-        bool p=true;
-        for(int i=0;i<nums.size();i++){
-           if(nums[i]==target){
-                if(value[0]==-1) 
-                     value[0]=i;
-             value[1]=i;
-           }
+bool isPerfectSquare(int num) {
+        float a=pow(num,0.5);
+        int b=a;
+        if(a!=b){
+            return false;
         }
-      return value;
-}
+        return true;
+    }
 int main(){
-      vector<int>nums{5,7,7,7,8,10};
-      int target=7;
-      vector<int>a=searchRange(nums,target);
-         for(auto b:a){
-            cout<<b<<" ";
-         }   
+    int num=16;
+    cout<<isPerfectSquare(num);
 }
