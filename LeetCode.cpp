@@ -507,18 +507,19 @@
 
 // // // ##################### Q.367 ######################
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-bool isPerfectSquare(int num) {
-        double a=pow(num,0.5);
-        long long b=a;
-        if(a!=b){
-            return false;
-        }
-        return true;
-    }
-int main(){
-    int num=14;
-    cout<<isPerfectSquare(num);
-}
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// bool isPerfectSquare(int num) {
+//         double a=pow(num,0.5);
+//         long long b=a;
+//         if(a!=b){
+//             return false;
+//         }
+//         return true;
+//     }
+// int main(){
+//     int num=14;
+//     cout<<isPerfectSquare(num);
+// }
+
