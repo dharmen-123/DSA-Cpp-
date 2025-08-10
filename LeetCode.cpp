@@ -559,7 +559,8 @@ vector<int> plusOne(vector<int>& digits) {
           n=n*10+digits[i];
       }  
       n=n+1;
-      while(n>=0){
+      cout<<n<<endl;
+      while(n>0){
         int y=n%10;
         nums.push_back(y);
         n=n/10;
