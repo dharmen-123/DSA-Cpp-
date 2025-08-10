@@ -526,24 +526,50 @@
 
 // // //  ######################## Q.121 ##############################
 
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// int maxProfit(vector<int>& prices) {
+//     int min_price = INT_MAX;
+//     int max_profit = 0;
+//     for (int price : prices) {
+//         if (price < min_price) {
+//             min_price = price;
+//         } else {
+//             max_profit = max(max_profit, price - min_price);
+//         }
+//     }
+//     return max_profit;
+// }
+// int main(){
+//  vector<int>prices{7,1,5,3,6,4};
+//  cout<<maxProfit(prices);
+// }
+
+
+// // // ######################### Q.66 ####################
+
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-int maxProfit(vector<int>& prices) {
-    int min_price = INT_MAX;
-    int max_profit = 0;
-    for (int price : prices) {
-        if (price < min_price) {
-            min_price = price;
-        } else {
-            max_profit = max(max_profit, price - min_price);
-        }
+vector<int> plusOne(vector<int>& digits) {
+    vector<int>nums;
+      long long n=0;
+      for(int i=0;i<digits.size();i++){
+          n=n*10+digits[i];
+      }  
+      n=n+1;
+      while(n>=0){
+        int y=n%10;
+        nums.push_back(y);
+        n=n/10;
+      }
+    for(auto x:nums){
+        cout<<x<<" ";
     }
-    return max_profit;
+    
 }
 int main(){
- vector<int>prices{7,1,5,3,6,4};
- cout<<maxProfit(prices);
+  vector<int>digits{4,3,2,1};
+  plusOne(digits);
 }
-
-
