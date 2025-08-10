@@ -554,7 +554,7 @@
 using namespace std;
 vector<int> plusOne(vector<int>& digits) {
     vector<int>nums;
-      long long n=0;
+      int n=0;
       for(int i=0;i<digits.size();i++){
           n=n*10+digits[i];
       }  
