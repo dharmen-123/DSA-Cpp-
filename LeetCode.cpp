@@ -566,8 +566,7 @@ vector<int> plusOne(vector<int>& digits) {
       }
     for(auto x:nums){
         cout<<x<<" ";
-    }
-    
+    } 
 }
 int main(){
   vector<int>digits{4,3,2,1};
