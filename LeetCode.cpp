@@ -565,11 +565,13 @@ vector<int> plusOne(vector<int>& digits) {
         nums.push_back(y);
         n=n/10;
       }
-    for(auto x:nums){
-        cout<<x<<" ";
-    } 
+    reverse(nums.begin(),nums.end());
+    return nums;
 }
 int main(){
   vector<int>digits{4,3,2,1};
-  plusOne(digits);
+  vector<int>a= plusOne(digits);
+    for(auto b:a){
+        cout<<b<<" ";
+    }
 }
