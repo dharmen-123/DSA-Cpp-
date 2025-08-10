@@ -569,7 +569,7 @@ vector<int> plusOne(vector<int>& digits) {
     return nums;
 }
 int main(){
-  vector<int>digits{4,3,2,1};
+  vector<int>digits{9};
   vector<int>a= plusOne(digits);
     for(auto b:a){
         cout<<b<<" ";
