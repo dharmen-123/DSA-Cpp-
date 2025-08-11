@@ -553,20 +553,34 @@
 #include<bits/stdc++.h>
 using namespace std;
 vector<int> plusOne(vector<int>& digits) {
-    vector<int>nums;
-      int n=0;
-      for(int i=0;i<digits.size();i++){
-          n=n*10+digits[i];
-      }  
-      n=n+1;
-      cout<<n<<endl;
-      while(n>0){
-        int y=n%10;
-        nums.push_back(y);
-        n=n/10;
-      }
-    reverse(nums.begin(),nums.end());
-    return nums;
+        vector<int> nums;
+        string numStr = "";
+
+        // Step 1: Convert digits to a string number
+        for (int i = 0; i < digits.size(); i++) {
+            numStr += to_string(digits[i]);
+        }
+
+        // Step 2: Add one to the string number
+        int carry = 1;
+        for (int i = numStr.size() - 1; i >= 0; i--) {
+            int digit = numStr[i] - '0';
+            int sum = digit + carry;
+            numStr[i] = (sum % 10) + '0';
+            carry = sum / 10;
+        }
+
+        if (carry) {
+            numStr = '1' + numStr;
+        }
+
+        // Step 3: Convert string back to vector<int>
+        for (char c : numStr) {
+            nums.push_back(c - '0');
+        }
+
+        return nums;
+
 }
 int main(){
   vector<int>digits{9};
