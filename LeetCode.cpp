@@ -555,13 +555,9 @@ using namespace std;
 vector<int> plusOne(vector<int>& digits) {
         vector<int> nums;
         string numStr = "";
-
-        // Step 1: Convert digits to a string number
         for (int i = 0; i < digits.size(); i++) {
             numStr += to_string(digits[i]);
         }
-
-        // Step 2: Add one to the string number
         int carry = 1;
         for (int i = numStr.size() - 1; i >= 0; i--) {
             int digit = numStr[i] - '0';
@@ -569,18 +565,13 @@ vector<int> plusOne(vector<int>& digits) {
             numStr[i] = (sum % 10) + '0';
             carry = sum / 10;
         }
-
         if (carry) {
             numStr = '1' + numStr;
         }
-
-        // Step 3: Convert string back to vector<int>
         for (char c : numStr) {
             nums.push_back(c - '0');
         }
-
         return nums;
-
 }
 int main(){
   vector<int>digits{9};
