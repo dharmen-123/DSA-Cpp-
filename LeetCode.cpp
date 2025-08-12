@@ -549,34 +549,34 @@
 
 // // // ######################### Q.66 ####################
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-vector<int> plusOne(vector<int>& digits) {
-        vector<int> nums;
-        string numStr = "";
-        for (int i = 0; i < digits.size(); i++) {
-            numStr += to_string(digits[i]);
-        }
-        int carry = 1;
-        for (int i = numStr.size() - 1; i >= 0; i--) {
-            int digit = numStr[i] - '0';
-            int sum = digit + carry;
-            numStr[i] = (sum % 10) + '0';
-            carry = sum / 10;
-        }
-        if (carry) {
-            numStr = '1' + numStr;
-        }
-        for (char c : numStr) {
-            nums.push_back(c - '0');
-        }
-        return nums;
-}
-int main(){
-  vector<int>digits{4,3,2,1};
-  vector<int>a= plusOne(digits);
-    for(auto b:a){
-        cout<<b<<" ";
-    }
-}
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+// vector<int> plusOne(vector<int>& digits) {
+//         vector<int> nums;
+//         string numStr = "";
+//         for (int i = 0; i < digits.size(); i++) {
+//             numStr += to_string(digits[i]);
+//         }
+//         int carry = 1;
+//         for (int i = numStr.size() - 1; i >= 0; i--) {
+//             int digit = numStr[i] - '0';
+//             int sum = digit + carry;
+//             numStr[i] = (sum % 10) + '0';
+//             carry = sum / 10;
+//         }
+//         if (carry) {
+//             numStr = '1' + numStr;
+//         }
+//         for (char c : numStr) {
+//             nums.push_back(c - '0');
+//         }
+//         return nums;
+// }
+// int main(){
+//   vector<int>digits{4,3,2,1};
+//   vector<int>a= plusOne(digits);
+//     for(auto b:a){
+//         cout<<b<<" ";
+//     }
+// }
