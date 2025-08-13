@@ -595,6 +595,6 @@ using namespace std;
     return 0;
     }
 int main(){
-   vector<int>nums{1,3,4,2,2};
+   vector<int>nums{3,3,3,3,3};
    cout<<findDuplicate(nums);
 }
