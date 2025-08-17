@@ -604,27 +604,20 @@
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-int thirdMax(vector<int>& nums) {
-    for(auto a:nums){
-        cout<<a<<" ";
+    int thirdMax(vector<int>& nums) {
+        auto nums2=unique(nums.begin(),nums.end());
+        nums.erase(nums2,nums.end());
+        sort(nums.begin(),nums.end());
+        int n=nums.size();
+        if(n<=2){
+            return nums[n-1];
+        }
+        else{
+            reverse(nums.begin(),nums.end());
+            return nums[2];
+        }
     }
-    auto nums2=unique(nums.begin(),nums.end());
-    cout<<endl;
-     nums.erase(nums2,nums.end());
-    for(auto a:nums){
-        cout<<a<<" ";
-    }
-    cout<<endl;
-     int n=nums.size();
-    if(n<=2){
-        return nums[n-1];
-    }
-    else{
-        return nums[2];
-    }
-}
-
 int main(){
-  vector<int>nums{2,2,3,1};
+  vector<int>nums{1,2,2,5,3,5};
   cout<<thirdMax(nums);
 }
