@@ -614,6 +614,7 @@ int thirdMax(vector<int>& nums) {
     for(auto a:nums){
         cout<<a<<" ";
     }
+    cout<<endl;
      int n=nums.size();
     if(n<=2){
         return nums[n-1];
