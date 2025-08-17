@@ -605,10 +605,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 int thirdMax(vector<int>& nums) {
-    auto nums2=unique(nums.begin(),nums.end());
     for(auto a:nums){
         cout<<a<<" ";
     }
+    auto nums2=unique(nums.begin(),nums.end());
     cout<<endl;
      nums.erase(nums2,nums.end());
     for(auto a:nums){
