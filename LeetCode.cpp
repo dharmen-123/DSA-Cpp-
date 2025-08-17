@@ -582,19 +582,48 @@
 // }
 
 
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//     int findDuplicate(vector<int>& nums) {
+//         sort(nums.begin(),nums.end());
+//         for(int i=0;i<nums.size()-1;i++){
+//             if(nums[i]==nums[i+1]){
+//                 return nums[i];
+//             }
+//         }
+//     return 0;
+//     }
+// int main(){
+//    vector<int>nums{3,3,3,3,3};
+//    cout<<findDuplicate(nums);
+// }
+
+// // // ################# Q.414 ##################################
+
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-    int findDuplicate(vector<int>& nums) {
-        sort(nums.begin(),nums.end());
-        for(int i=0;i<nums.size()-1;i++){
-            if(nums[i]==nums[i+1]){
-                return nums[i];
-            }
-        }
-    return 0;
+int thirdMax(vector<int>& nums) {
+    auto nums2=unique(nums.begin(),nums.end());
+    for(auto a:nums){
+        cout<<a<<" ";
     }
+    cout<<endl;
+     nums.erase(nums2,nums.end());
+    for(auto a:nums){
+        cout<<a<<" ";
+    }
+     int n=nums.size();
+    if(n<=2){
+        return nums[n-1];
+    }
+    else{
+        return nums[2];
+    }
+}
+
 int main(){
-   vector<int>nums{3,3,3,3,3};
-   cout<<findDuplicate(nums);
+  vector<int>nums{2,2,3,1};
+  cout<<thirdMax(nums);
 }
