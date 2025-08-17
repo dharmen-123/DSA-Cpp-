@@ -605,9 +605,17 @@
 #include<bits/stdc++.h>
 using namespace std;
     int thirdMax(vector<int>& nums) {
+        for(auto a:nums){
+            cout<<a<<" ";
+        }
+        cout<<endl;
+        sort(nums.begin(),nums.end());
         auto nums2=unique(nums.begin(),nums.end());
         nums.erase(nums2,nums.end());
-        sort(nums.begin(),nums.end());
+        for(auto a:nums){
+            cout<<a<<" ";
+        }
+        cout<<endl;
         int n=nums.size();
         if(n<=2){
             return nums[n-1];
