@@ -602,31 +602,43 @@
 // // // ################# Q.414 ##################################
 
 
+// #include<iostream>
+// #include<bits/stdc++.h>
+// using namespace std;
+//     int thirdMax(vector<int>& nums) {
+//         for(auto a:nums){
+//             cout<<a<<" ";
+//         }
+//         cout<<endl;
+//         sort(nums.begin(),nums.end());
+//         auto nums2=unique(nums.begin(),nums.end());
+//         nums.erase(nums2,nums.end());
+//         for(auto a:nums){
+//             cout<<a<<" ";
+//         }
+//         cout<<endl;
+//         int n=nums.size();
+//         if(n<=2){
+//             return nums[n-1];
+//         }
+//         else{
+//             reverse(nums.begin(),nums.end());
+//             return nums[2];
+//         }
+//     }
+// int main(){
+//   vector<int>nums{1,2,2,5,3,5};
+//   cout<<thirdMax(nums);
+// }
+
+// // // ############# Q.    ###########################
+
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-    int thirdMax(vector<int>& nums) {
-        for(auto a:nums){
-            cout<<a<<" ";
-        }
-        cout<<endl;
-        sort(nums.begin(),nums.end());
-        auto nums2=unique(nums.begin(),nums.end());
-        nums.erase(nums2,nums.end());
-        for(auto a:nums){
-            cout<<a<<" ";
-        }
-        cout<<endl;
-        int n=nums.size();
-        if(n<=2){
-            return nums[n-1];
-        }
-        else{
-            reverse(nums.begin(),nums.end());
-            return nums[2];
-        }
-    }
+
+
 int main(){
-  vector<int>nums{1,2,2,5,3,5};
-  cout<<thirdMax(nums);
+   vector<int>nums{};
+   cout<<endl;
 }
