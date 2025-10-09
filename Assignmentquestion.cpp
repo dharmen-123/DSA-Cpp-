@@ -80,45 +80,45 @@
 
   // ################# Split an array into two equal Sum subarrays  ########## 
 
-// #include<iostream>
-// #include<bits/stdc++.h>
-// using namespace std;
-// vector<vector<int>>Split(vector<int>& arr){
-//     vector<int>v;
-//     vector<vector<int>>mp;
-//       int sum=0,p;
-//       for(auto a:arr){
-//         sum+=a;
-//       }
-//       p=sum/2;
-//       if(p%2==0){
-//            sum=0;
-//          for(int i=0;i<=arr.size();i++){
-//              if(sum!=p){
-//                 sum+=arr[i];
-//                 v.push_back(arr[i]);
-//             } else{
-//                 mp.push_back(v);
-//                 v.clear();
-//                 sum=0;
-//                 i--;
-//             }
-//         }
-//         return mp;
-//       }
-//       else{
-//         cout<<"Not Possible";
-//       }
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+vector<vector<int>>Split(vector<int>& arr){
+    vector<int>v;
+    vector<vector<int>>mp;
+      int sum=0,p;
+      for(auto a:arr){
+        sum+=a;
+      }
+      p=sum/2;
+      if(p%2==0){
+           sum=0;
+         for(int i=0;i<=arr.size();i++){
+             if(sum!=p){
+                sum+=arr[i];
+                v.push_back(arr[i]);
+            } else{
+                mp.push_back(v);
+                v.clear();
+                sum=0;
+                i--;
+            }
+        }
+        return mp;
+      }
+      else{
+        cout<<"Not Possible";
+      }
 
-// }
-// int main(){
-//   //  vector<int>arr{1 , 2 , 3 , 4 , 5 , 5 };
-//    vector<int>arr{4, 1, 2, 3 };
-//    vector<vector<int>>result = Split(arr);
-//    for(auto r:result){
-//     for(auto col:r){
-//         cout<<col<<" ";
-//     }
-//     cout<<endl;
-//    }
-// }
+}
+int main(){
+  //  vector<int>arr{1 , 2 , 3 , 4 , 5 , 5 };
+   vector<int>arr{4, 1, 2, 3 };
+   vector<vector<int>>result = Split(arr);
+   for(auto r:result){
+    for(auto col:r){
+        cout<<col<<" ";
+    }
+    cout<<endl;
+   }
+}
