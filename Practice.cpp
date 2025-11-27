@@ -323,7 +323,13 @@
 //    question Pending ? 
 
 
-// // Q.7 , Q,12, Q,13  Q.15 ,Q.55 ,Q.56  Q.2091 
+#include<iostream>
+using namespace std;
 
+int main(){
+   int a=5/3;
+   cout<<"Output is "<<a<<endl;
+
+}
 
 
