@@ -320,16 +320,16 @@
 //     sortColors(nums);
 // }
 
-#include<bits/stdc++.h>
-#include<iostream>
-using namespace std;
+// #include<bits/stdc++.h>
+// #include<iostream>
+// using namespace std;
 
-int main(){
-  int n;
-  cout<<"Enter the number :";
-  cin>>n;
-   cout<<"Number is :"<<n;
-}
+// int main(){
+//   int n;
+//   cout<<"Enter the number :";
+//   cin>>n;
+//    cout<<"Number is :"<<n;
+// }
 
 
 
